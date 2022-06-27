@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Menu\CreateFormRequest;
+use App\Http\Requests\Menu\ProvinceFormRequest;
 use App\Models\Province;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -23,6 +25,8 @@ class ProvinceController extends Controller
         // $data = DB::select('select * from province');
         // $data = DB::table('province')->orderBy('id','desc')->paginate(2);
         $data = DB::table('province')->orderBy('id','desc')->paginate(3);
+        // $data = DB::table('province')->get();
+        // dd($data);
         // $data = DB::table('province')->orderBy('id','desc')->search()->paginate(1);
         if($key = request()->key){
         $data = DB::table('province')->orderBy('id','desc')->where('name','like','%'.$key.'%')->paginate(1);
@@ -31,6 +35,7 @@ class ProvinceController extends Controller
         // $newDateFormat3 = Carbon::parse($data->create_at)->format('d/m/Y');
         // $newDateFormat2 = date('d/m/Y', strtotime($user->created_at));
         return view('admin.province.index',['data'=>$data]);
+        // return $data;
     }
 
     /**
@@ -50,8 +55,16 @@ class ProvinceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProvinceFormRequest $request)
     {
+        // $request->validate([
+        //     'name' => 'required',
+        //     ''
+        // ],
+        // [
+        //     'name.required' => 'Tên không được để trống'
+        // ]
+        // );
         // dd($request->all());
         if($request->has('file_upload')){
             $file = $request->file_upload;
@@ -63,6 +76,7 @@ class ProvinceController extends Controller
             // dd($file_name);
             $file->move(public_path('uploads'),$file_name);
         }
+        
         $request->merge(['thumbnail'=> $file_name]);
         // dd($request->all());
     // if(DB::table('province')($request->all())){
@@ -138,12 +152,16 @@ class ProvinceController extends Controller
             $ext = $request->file_upload->extension();
             // dd($ext);
             // $file_name = $file->getClientoriginalName();
-            $file_name = time().'-'.'harmoney.'.$ext;
+            $file_name = time().'-'.'province.'.$ext;
             // dd($file_name);
             $file->move(public_path('uploads'),$file_name);
+            
+        }else{
+            $file_name = $request->thumbnail;
         }
+        // dd($request);
         $request->merge(['thumbnail'=> $file_name]);
-        // dd($province);
+        // dd($request);
         $province->update($request->all());
         return redirect()->route('province.index')
         ->with('success','Company has been updated successfully.');

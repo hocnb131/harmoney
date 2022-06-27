@@ -1,10 +1,20 @@
 <?php
 
-use App\Http\Controllers\BranchController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProvinceController;
+use App\Http\Controllers\BranchController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CouponController;
+use App\Http\Controllers\TicketController;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,13 +34,20 @@ Route::get('/', function () {
 Auth::routes();
 Route::prefix('home')->group(function(){
         Route::get('/',[HomeController::class,'index'])->name('home');
+        
         // Route::get('province',  'province')->name('province');
         Route::resources([
-            'province' => ProvinceController::class,
-            'branch'   => BranchController::class,
+            'province' =>   ProvinceController::class,
+            'branch'   =>   BranchController::class,
+            'room'     =>   RoomController::class,
+            'service'  =>   ServiceController::class,
+            'blog'     =>   BlogController::class,
+            'user'     =>   UserController::class,
+            'ticket'   =>   TicketController::class,
+            'coupon'   =>   CouponController::class,
+            'payment'  =>   PaymentController::class,
+            'review'   =>   ReviewController::class,
         ]);
-        
-    
 });
     
 

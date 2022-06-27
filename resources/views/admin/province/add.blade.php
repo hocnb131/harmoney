@@ -9,23 +9,23 @@
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name" placeholder="Input name">
                 @error('name')
-                <small class="help-block">{{message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="">Creat_At</label>
                 <input type="text" class="form-control" name="create_at" placeholder="Input create_at">
                 @error('creat_at')
-                <small class="help-block">{{message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
-            </div>
+            </div> -->
             <div class="form-group">
                 <label for="">Description</label>
                 
                 <textarea name="description" class="form-control" id="content" placeholder="Input description"></textarea>
                 
                 @error('description')
-                <small class="help-block">{{message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
         </div>
@@ -41,21 +41,21 @@
                 </select>
                 
                 @error('province')
-                <small class="help-block">{{message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div> -->
             <div class="form-group">
                 <label for="">thumbnail</label>
                 <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">
-                @error('thumbnail')
-                <small class="help-block">{{message}}</small>
+                @error('file_upload')
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">ThumbnailDescription</label>
                 <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
                 @error('ThumbnailDescription')
-                <small class="help-block">{{message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             
@@ -76,7 +76,7 @@
                     <label for="">Prioty</label>
                     <input type="number" class="form-control" name="prioty" placeholder="Nhập số lượng">
                     @error('prioty')
-                    <small class="help-block">{{message}}</small>
+                    <small class="badge badge-danger">{{$message}}</small>
                     @enderror
                 </div> -->
             </div>

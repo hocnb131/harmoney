@@ -14,4 +14,5 @@ class Branch extends Model
     public function provinces(){
         return $this->hasOne(Province::class,'id','province_id');
     }
+    
 }

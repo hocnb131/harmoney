@@ -17,11 +17,11 @@ return new class extends Migration
             $table->id();
             $table->integer('name');
             // $table->date('create_at');
-            $table->char('create_at');
+            // $table->char('create_at');
             $table->integer('status');
-            $table->char('thumbnail',255);
-            $table->char('thumbnailDescription',255);
-            $table->char('description',255);           
+            $table->char('thumbnail',255)->nullable();
+            $table->char('thumbnailDescription',255)->nullable();
+            $table->char('description',255)->nullable();           
             $table->timestamps();
             // $table->integer('total_branch');
         });

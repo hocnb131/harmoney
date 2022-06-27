@@ -20,12 +20,15 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Create_At</th>
+            <!-- <th>Create_At</th> -->
+        
             <th>Status</th>
             <th>Thumbnail</th>
             <th>ThumbnailDescription</th>
             <th>Description</th>
             <th>Action</th>
+            <th>Created_At</th>
+            <th>Updated_At</th>
             <!-- <th>Image</th> -->
             <!-- <th>Created_At</th>
             <th>Updated_At</th> -->
@@ -39,7 +42,7 @@
             <td>{{$d->name}}</td>
 
            
-            <td>{{$d->create_at}}</td>
+
             <td>
                 @if($d->status == 0)
                 <span class="badge badge-danger">Private</span>
@@ -54,7 +57,6 @@
 
             <td>{{$d->thumbnailDescription}}</td>
             <td>{{$d->description}}</td>
-            
         
             <td>
                 
@@ -73,6 +75,9 @@
 
 
             </td>
+            <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
+            <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
+
             <!-- <td><img src="{{url('/uploads')}}/{{$d->thumbnail}}" width="50" alt=""></td> -->
         </tr>
         @endforeach

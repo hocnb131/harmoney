@@ -25,7 +25,7 @@ return new class extends Migration
             $table->char('name');
             $table->char('nameEn');
             $table->char('slug');
-            // $table->timestamps();
+            $table->timestamps();
         });
     }
 

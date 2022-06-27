@@ -19,7 +19,7 @@ class ProvinceTableSeeder extends Seeder
         ->insert(
             [
             'name' => 1,
-            'create_at'=>'10-10-1995',
+            // 'create_at'=>'10-10-1995',
             // 'create_at'=>Carbon::parse(2022-15-6),
             'status' => 1,
             'thumbnail'=>'hinh1',
@@ -32,7 +32,7 @@ class ProvinceTableSeeder extends Seeder
         ->insert(
             [
             'name' => 2,
-            'create_at'=>'10-10-1995',
+            // 'create_at'=>'10-10-1995',
             // 'create_at'=>Carbon::parse(2022-16-7),
             'status' => 0,
             'thumbnail'=>'hinh2',
