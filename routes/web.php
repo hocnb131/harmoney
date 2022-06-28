@@ -34,7 +34,6 @@ Route::get('/', function () {
 Auth::routes();
 Route::prefix('home')->group(function(){
         Route::get('/',[HomeController::class,'index'])->name('home');
-        
         // Route::get('province',  'province')->name('province');
         Route::resources([
             'province' =>   ProvinceController::class,

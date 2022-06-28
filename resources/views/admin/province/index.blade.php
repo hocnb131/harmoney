@@ -40,9 +40,6 @@
         <tr>
             <td>{{$d->id}}</td>
             <td>{{$d->name}}</td>
-
-           
-
             <td>
                 @if($d->status == 0)
                 <span class="badge badge-danger">Private</span>

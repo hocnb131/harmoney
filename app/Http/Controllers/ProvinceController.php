@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Requests\Menu\CreateFormRequest;
 use App\Http\Requests\Menu\ProvinceFormRequest;
 use App\Models\Province;
 use Illuminate\Http\Request;
@@ -86,7 +84,7 @@ class ProvinceController extends Controller
             $province = new Province;
         // $province->id = $request->id;
         $province->name = $request->name;
-        $province->create_at = $request->create_at;
+        // $province->create_at = $request->create_at;
         $province->status = $request->status;
         $province->thumbnail = $request->thumbnail;
         $province->thumbnailDescription = $request->thumbnailDescription;

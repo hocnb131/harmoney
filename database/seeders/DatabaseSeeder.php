@@ -23,7 +23,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserTableSeeder::class,
             ProvinceTableSeeder::class,
-            BranchTableSeeder::class
+            BranchTableSeeder::class,
+            RoomTableSeeder::class,
+            TableSeeder::class,
+            TableSeeder::class,
+            TableSeeder::class,
+            TableSeeder::class,
+            TableSeeder::class,
+            TableSeeder::class,
         ]);
     }
 }

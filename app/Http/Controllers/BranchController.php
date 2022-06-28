@@ -15,13 +15,12 @@ class BranchController extends Controller
      */
     public function index()
     {
-        // $data = Province::orderBy('create_at','DESC')->paginate(15);
-        // return view('admin.province.index',compact('data'));
-        // $data = DB::select('select * from province');
-        $data = DB::table('branch')->orderBy('id','desc')->paginate(10);
-        // $newDateFormat3 = Carbon::parse($data->create_at)->format('d/m/Y');
-        // $newDateFormat2 = date('d/m/Y', strtotime($user->created_at));
-        return view('admin.branch.index',['data'=>$data]);
+        $data = DB::table('branch')->orderBy('id','desc')->paginate(5);
+        if($key = request()->key){
+        $data = DB::table('province')->orderBy('id','desc')->where('name','like','%'.$key.'%')->paginate(1);
+
+        }
+        return view('admin.province.index',['data'=>$data]);
     }
 
     /**
