@@ -90,9 +90,9 @@
 </div>
 @stop();
 
-@section('js')
+<!-- @section('js')
 
-<!-- <script>
+<script>
     $('.btndelete').click(function (ev) {
         ev.preventDefault();
         var _href = $(this).attr('href');
@@ -102,7 +102,7 @@
             $('form#form-delete').submit();
         }
   })
-</script> -->
+</script>
 
-@stop();
+@stop(); -->
  

@@ -90,7 +90,7 @@
 
 
 @stop();
-@section('css')
+<!-- @section('css')
 <link rel="stylesheet" href="{{url('/css')}}/plugins/summernote/summernote-bs4.min.css">
 @stop();
 @section('js')
@@ -101,4 +101,4 @@
     });
     // alert(212);
 </script>
-@stop();
+@stop(); -->

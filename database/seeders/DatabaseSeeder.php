@@ -25,12 +25,12 @@ class DatabaseSeeder extends Seeder
             ProvinceTableSeeder::class,
             BranchTableSeeder::class,
             RoomTableSeeder::class,
-            TableSeeder::class,
-            TableSeeder::class,
-            TableSeeder::class,
-            TableSeeder::class,
-            TableSeeder::class,
-            TableSeeder::class,
+            TicketTableSeeder::class,
+            PaymentTableSeeder::class,
+            BlogTableSeeder::class,
+            CouponTableSeeder::class,
+            ReviewTableSeeder::class,
+            ServiceTableSeeder::class,
         ]);
     }
 }

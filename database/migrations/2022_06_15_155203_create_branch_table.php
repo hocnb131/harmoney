@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::create('branch', function (Blueprint $table) {
             $table->id();
-            $table->char('thumbnail');
-            $table->char('thumbnailDescription');
-            $table->char('description');
-            $table->integer('status');
+            $table->char('name');
+            $table->char('email');
             $table->char('address');
             $table->integer('phoneNumber');
-            $table->char('email');
-            $table->char('name');
-            $table->char('nameEn');
+            $table->char('description')->nullable();
+            $table->char('thumbnail')->nullable();
+            $table->char('thumbnailDescription');
             $table->char('slug');
+            $table->integer('status');
+            $table->char('nameEn');
             $table->timestamps();
         });
     }
