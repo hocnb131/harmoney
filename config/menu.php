@@ -145,7 +145,7 @@
                 'route' => 'coupon.index', 
                 ],
                 [
-                'label' => 'Add Blog', 
+                'label' => 'Add Coupon', 
                 'route' => 'coupon.create', 
                 ],
             ]
