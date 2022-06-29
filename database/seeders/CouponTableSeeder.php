@@ -39,5 +39,17 @@ class CouponTableSeeder extends Seeder
             'used'=> 1,
             ],   
         );
+        DB::table('coupon')
+        ->insert(
+            [
+            'code' => 12345,
+            // 'started_at'=>Carbon::parse(7-2022-6),
+            'started_at'=> '2022-02-01',
+            'ended_at'=> '2022-02-03',
+            'percent'=>60,
+            'amount'=>50000,
+            'used'=> 0,
+            ],
+        );
     }
 }
