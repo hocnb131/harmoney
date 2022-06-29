@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
-
+use Carbon\Carbon;
 class ServiceTableSeeder extends Seeder
 {
     /**
@@ -14,6 +15,15 @@ class ServiceTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('service')
+        ->insert(
+            [
+            'name' => 'Day la ten',
+            'icon' => 'Icon day',
+            'room_id'=>'1',
+            'serviceType'=>'Loai dich vu',
+            ],   
+        );
+      
     }
 }

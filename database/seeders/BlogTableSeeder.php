@@ -15,7 +15,18 @@ class BlogTableSeeder extends Seeder
      */
     public function run()
     {
-       
+        DB::table('blog')
+        ->insert(
+            [
+            'status' => 1,
+            'content' => 'abc',
+            'slug'=>'abc',
+            'name'=>'abc',
+            'nameEn'=>1,
+            'thumbnail'=>'abc',
+            // 'total_branch'=>'',
+            ],   
+        );
       
     }
 }
