@@ -90,7 +90,7 @@
 </div>
 @stop();
 
-@section('js')
+{{-- @section('js')
 
 <!-- <script>
     $('.btndelete').click(function (ev) {
@@ -105,4 +105,4 @@
 </script> -->
 
 @stop();
- 
+  --}}

@@ -137,16 +137,16 @@
         // Coupon
         [
             'label' => 'Coupon',
-            'route' => 'blog.index',
+            'route' => 'coupon.index',
             'icon' => 'fa-home',
             'item' => [
                 [
-                'label' => 'All Blog', 
-                'route' => 'blog.index', 
+                'label' => 'All Coupon', 
+                'route' => 'coupon.index', 
                 ],
                 [
                 'label' => 'Add Blog', 
-                'route' => 'blog.create', 
+                'route' => 'coupon.create', 
                 ],
             ]
         ],
