@@ -24,11 +24,21 @@ class DatabaseSeeder extends Seeder
             UserTableSeeder::class,
             ProvinceTableSeeder::class,
             BranchTableSeeder::class,
+<<<<<<< HEAD
             CouponTableSeeder::class,
             PaymentTableSeeder::class,
             ReviewTableSeeder::class,
             ServiceTableSeeder::class,
             BlogTableSeeder::class,
+=======
+            RoomTableSeeder::class,
+            TicketTableSeeder::class,
+            PaymentTableSeeder::class,
+            BlogTableSeeder::class,
+            CouponTableSeeder::class,
+            ReviewTableSeeder::class,
+            ServiceTableSeeder::class,
+>>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f
         ]);
     }
 }

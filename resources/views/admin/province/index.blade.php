@@ -90,9 +90,13 @@
 </div>
 @stop();
 
+<<<<<<< HEAD
 {{-- @section('js')
+=======
+<!-- @section('js')
+>>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f
 
-<!-- <script>
+<script>
     $('.btndelete').click(function (ev) {
         ev.preventDefault();
         var _href = $(this).attr('href');
@@ -102,7 +106,12 @@
             $('form#form-delete').submit();
         }
   })
-</script> -->
+</script>
 
+<<<<<<< HEAD
 @stop();
   --}}
+=======
+@stop(); -->
+ 
+>>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f

@@ -13,18 +13,23 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('branch', function (Blueprint $table) {
+        Schema::create('Room', function (Blueprint $table) {
             $table->id();
             $table->char('name');
-            $table->char('email');
-            $table->char('address');
-            $table->integer('phoneNumber');
-            $table->char('description')->nullable();
+            $table->integer('adults');
+            $table->integer('children');
+            $table->char('description');
+            $table->date('calendar');
             $table->char('thumbnail')->nullable();
-            $table->char('thumbnailDescription');
+            $table->char('thumbnailDescription')->nullable();
+            $table->integer('price');
+            $table->char('bedType');
+            $table->integer('area');
             $table->char('slug');
+            $table->integer('nameEn')->nullable();
             $table->integer('status');
-            $table->char('nameEn');
+            $table->integer('branch_id');
+            $table->integer('roomType');
             $table->timestamps();
         });
     }
@@ -36,6 +41,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('branch');
+        Schema::dropIfExists('Room');
     }
 };

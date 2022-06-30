@@ -73,6 +73,8 @@ class ProvinceController extends Controller
             $file_name = time().'-'.'harmoney.'.$ext;
             // dd($file_name);
             $file->move(public_path('uploads'),$file_name);
+        }else{
+            $file_name = $request->thumbnail;
         }
         
         $request->merge(['thumbnail'=> $file_name]);
@@ -162,7 +164,7 @@ class ProvinceController extends Controller
         // dd($request);
         $province->update($request->all());
         return redirect()->route('province.index')
-        ->with('success','Company has been updated successfully.');
+        ->with('success','Province has been updated successfully.');
     }
 
     /**

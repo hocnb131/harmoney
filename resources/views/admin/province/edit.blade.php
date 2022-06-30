@@ -89,8 +89,13 @@
 </form>
 
 
+<<<<<<< HEAD
 {{-- @stop();
 @section('css')
+=======
+@stop();
+<!-- @section('css')
+>>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f
 <link rel="stylesheet" href="{{url('/css')}}/plugins/summernote/summernote-bs4.min.css">
 @stop();
 @section('js')
@@ -101,4 +106,8 @@
     });
     // alert(212);
 </script>
+<<<<<<< HEAD
 @stop(); --}}
+=======
+@stop(); -->
+>>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f
