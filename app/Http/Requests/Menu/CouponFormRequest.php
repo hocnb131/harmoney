@@ -4,7 +4,7 @@ namespace App\Http\Requests\Menu;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProvinceFormRequest extends FormRequest
+class CouponFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class ProvinceFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -23,19 +23,23 @@ class ProvinceFormRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'code' => 'required',
-            'started_at' => 'required'
-            
+        return [          
+            'code' => 'required|max:10|',
+            'started_at' => 'required',
+            'ended_at' => 'required',
+            'price'=>'required',
+            'bedType'=>'required',
+            'area'=>'required',
         ];
     }
-// thong bao tieng viet
-    public function messages()
-    {
+    public function messages(){
         return [
-            'code.required' => 'Nhập tên theo số không được để trống',
-            'started_at.required' => 'Xin vui lòng nhập ngày'
-
+            'name.required'=>'Xin hãy nhập Tên',
+            'name.max'=>'Tối đa là 100',
+            'adults.required'=>'Xin hãy nhập số lượng người lớn',
+            'adults.min'=>'Tối thiểu là 1',
+            'adults.max'=>'Tối thiểu là 10',
+            'children.required'=>'Xin hãy nhập số lượng trẻ em',
         ];
     }
 }

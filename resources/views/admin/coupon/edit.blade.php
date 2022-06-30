@@ -11,35 +11,35 @@
                 <label for="">Code</label>
                 <input type="number" class="form-control" name="code" value="{{$coupon->code}}" placeholder="Input code">
                 @error('code')
-                <small class="help-block">{{$$message}}</small>
+                <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Started</label>
                 <input type="date" class="form-control" value="{{$coupon->started_at}}" name="started_at" placeholder="Input started_at">
                 @error('started_at')
-                <small class="help-block">{{$$message}}</small>
+                <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Ended</label>
                 <input type="date" class="form-control" value="{{$coupon->ended_at}}" name="ended_at" placeholder="Input ended_at">
                 @error('ended_at')
-                <small class="help-block">{{$$message}}</small>
+                <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Percent</label>
                 <input type="number" class="form-control" name="percent" value="{{$coupon->percent}}" placeholder="Input percent">
                 @error('percent')
-                <small class="help-block">{{$$message}}</small>
+                <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Amount</label>
                 <input type="number" class="form-control" name="amount" value="{{$coupon->amount}}" placeholder="Input amount">
                 @error('amount')
-                <small class="help-block">{{$$message}}</small>
+                <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-gourp">

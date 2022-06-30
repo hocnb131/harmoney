@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-
+use Carbon\Carbon;
 class UserTableSeeder extends Seeder
 {
     /**
@@ -15,50 +15,47 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')
+        DB::table('user')
         ->insert(
             [
-            'name' => 'Nguyen Cong Quyen',
+            'fullName' => 'Nguyen Cong Quyen',
             'email' => 'quyen@gmail.com',
+            'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'admin'
+            'role' => 'admin',
+            'status' => 0
             ],   
         );
-        DB::table('users')->insert(
+        DB::table('user')->insert(
             [
-            'name' => 'Dinh Thanh Hai',
+            'fullName' => 'Dinh Thanh Hai',
             'email' => 'hai@gmail.com',
+            'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'editor'
+            'role' => 'editor',
+            'status' => 1
             ],
         );
-        DB::table('users')->insert(
+        DB::table('user')->insert(
             [
-            'name' => 'Nguyen Ba Hoc',
+            'fullName' => 'Nguyen Ba Hoc',
             'email' => 'hoc@gmail.com',
+            'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'write'
+            'role' => 'write',
+            'status' => 1
             ],
         );
-        DB::table('users')->insert(
+        DB::table('user')->insert(
             [
-            'name' => 'Tran Phuoc Dat',
+            'fullName' => 'Tran Phuoc Dat',
             'email' => 'dat@gmail.com',
+            'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'write'
+            'role' => 'write',
+            'status' => 0
             ],
         );
             
-            // [
-            // 'name' => 'write',
-            // 'email' => 'hoc@gmail.com',
-            // 'password' => bcrypt('hehe'),
-            // ],
-            // [
-            // 'name' => 'write',
-            // 'email' => 'dat@gmail.com',
-            // 'password' => bcrypt('hehe'),
-            // ]
-   
     }
 }

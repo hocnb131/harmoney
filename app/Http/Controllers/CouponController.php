@@ -15,7 +15,7 @@ class CouponController extends Controller
     {
         $data = DB::table('coupon')->orderBy('id','desc')->paginate(3);
         if($key = request()->key){
-        $data = DB::table('coupon')->orderBy('id','desc')->where('code','%'.$key.'%')->paginate(1);
+        $data = DB::table('coupon')->orderBy('id','desc')->where('code','like','%'.$key.'%')->paginate(1);
         }
         return view('admin.coupon.index',['data'=>$data]);
         return $data;
