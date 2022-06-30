@@ -14,13 +14,13 @@
                 <small class="help-block">{{message}}</small>
                 @enderror
             </div>
-            {{-- <div class="form-group">
-                <label for="">Creat_At</label>
-                <input type="text" class="form-control" value="{{$blog->create_at}}" name="create_at" placeholder="Input creat_at">
-                @error('creat_at')
+            <div class="form-group">
+                <label for="">Content</label>
+                <input type="text" class="form-control" name="content" value="{{$blog->content}}" placeholder="Input name">
+                @error('content')
                 <small class="help-block">{{message}}</small>
                 @enderror
-            </div> --}}
+            </div>
            
         </div>
         <div class="col-md-3">

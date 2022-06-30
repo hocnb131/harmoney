@@ -12,7 +12,7 @@
                     <textarea name="name" class="form-control" id="name" placeholder="Input name"></textarea>
 
                     @error('name')
-                        <small class="help-block">{{ $message }}</small>
+                        <small class="badge badge-danger">{{ $message }}</small>
                     @enderror
                 </div>
                 <div class="form-group">
@@ -21,7 +21,7 @@
                     <textarea name="icon" class="form-control" id="Icon" placeholder="Input icon"></textarea>
 
                     @error('icon')
-                        <small class="help-block">{{ $message }}</small>
+                        <small class="badge badge-danger">{{ $message }}</small>
                     @enderror
                 </div>
             </div>
@@ -31,14 +31,14 @@
                 <textarea name="serviceType" class="form-control" id="serviceType" placeholder="Input Service Type"></textarea>
 
                 @error('serviceType')
-                    <small class="help-block">{{ $message }}</small>
+                    <small class="badge badge-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Room ID</label>
                 <input type="number" class="form-control" name="room_id" placeholder="Nhap so phong">
                 @error('room_id')
-                    <small class="help-block">{{ $message }}</small>
+                    <small class="badge badge-danger">{{ $message }}</small>
                 @enderror
             </div>
             <div class="col-md-3">
@@ -53,7 +53,7 @@
                     </select>
                     
                     @error('service')
-        <small class="help-block">{{ $message }}</small>
+        <small class="badge badge-danger">{{ $message }}</small>
     @enderror
                 </div> -->
                 {{-- <div class="form-group">

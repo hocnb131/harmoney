@@ -4,7 +4,7 @@ namespace App\Http\Requests\Menu;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BlogFormRequest extends FormRequest
+class ServiceFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,14 +25,17 @@ class BlogFormRequest extends FormRequest
     {
         return [
             'name'=>'required',
-            'content'=>'required'
-
+            'icon'=>'required',
+            'room_id'=>'required',
+            'serviceType'=>'required'
         ];
     }
     public function messages(){
         return [
-            'name.required' => 'Xin hãy nhập tên blog',
-            'content.required'=>'Xin hãy nhập nội dung'
+            'name.required' =>'Xin hãy nhập tên dịch vụ',
+            'icon.required' => 'Xin hãy nhập icon',
+            'room_id.required' => 'Xin hãy nhập số phòng',
+            'serviceType.required'=>'Xin hãy nhập loại dịch vụ'
         ];
     }
 }

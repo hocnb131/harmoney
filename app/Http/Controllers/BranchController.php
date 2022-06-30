@@ -71,7 +71,7 @@ class BranchController extends Controller
         //     'name.required' => 'Tên không được để trống'
         // ]
         // );
-        dd($request->all());
+
         if($request->has('file_upload')){
             $file = $request->file_upload;
             // dd($file);

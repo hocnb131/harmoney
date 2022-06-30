@@ -18,14 +18,14 @@ return new class extends Migration
             $table->char('name');
             $table->integer('adults');
             $table->integer('children');
-            $table->char('description');
+            $table->char('description')->nullable();
             $table->date('calendar');
             $table->char('thumbnail')->nullable();
             $table->char('thumbnailDescription')->nullable();
-            $table->integer('price');
+            $table->double('price',8,2);
             $table->char('bedType');
             $table->integer('area');
-            $table->char('slug');
+            $table->char('slug')->nullable();
             $table->integer('nameEn')->nullable();
             $table->integer('status');
             $table->integer('branch_id');

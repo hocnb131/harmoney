@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use Illuminate\Http\Request;
-// use App\Http\Requests\Menu\RoomFormRequest;
+use App\Http\Requests\Menu\RoomFormRequest;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
@@ -44,7 +44,7 @@ class RoomController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RoomFormRequest $request)
     {
  
         if($request->has('file_upload')){

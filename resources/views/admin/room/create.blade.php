@@ -7,23 +7,23 @@
         <div class="col-md-9">
             <div class="form-group">
                 <label for="">Name</label>
-                <input type="text" class="form-control" name="name" placeholder="Input name">
+                <input type="text" class="form-control" name="name" placeholder="Nhập tên">
                 @error('name')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Adults</label>
-                <input type="number" class="form-control" name="adults" placeholder="Input adults">
+                <input type="number" class="form-control" name="adults" placeholder="Nhập số lượng người lớn">
                 @error('adults')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Children</label>
                 <input type="number" class="form-control" name="children" placeholder="Input children">
                 @error('children')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
           
@@ -33,35 +33,35 @@
                 <textarea name="description" class="form-control" id="content" placeholder="Input description"></textarea>
                 
                 @error('description')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Calendar</label>
                 <input type="date" class="form-control" name="calendar" placeholder="Input calendar">
                 @error('calendar')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">thumbnail</label>
                 <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">
                 @error('thumbnail')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">ThumbnailDescription</label>
                 <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
                 @error('ThumbnailDescription')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Price</label>
                 <input type="number" class="form-control" name="price" placeholder="Input price">
                 @error('price')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
@@ -75,7 +75,7 @@
                 </select>
                 
                 @error('room')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div> 
             <div class="form-group">
@@ -84,14 +84,14 @@
                 <textarea name="area" class="form-control" id="content" placeholder="Input area"></textarea>
                 
                 @error('area')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Slug</label>
                 <input type="text" class="form-control" name="slug" placeholder="Input slug">
                 @error('slug')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
@@ -125,7 +125,7 @@
                     <label for="">Prioty</label>
                     <input type="number" class="form-control" name="prioty" placeholder="Nhập số lượng">
                     @error('prioty')
-                    <small class="help-block">{{message}}</small>
+                    <small class="badge badge-danger">{{message}}</small>
                     @enderror
                 </div> -->
             </div>
@@ -140,7 +140,7 @@
                 </select>
                 
                 @error('room')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div> 
             <div class="form-group">
@@ -154,7 +154,7 @@
                 </select>
                 
                 @error('roomTypes')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div> 
         </div>

@@ -49,15 +49,17 @@ class BlogController extends Controller
  
         if($request->has('file_upload')){
             $file = $request->file_upload;
-      
+     
             $ext = $request->file_upload->extension();
          
-            $file_name = time().'-'.'harmoney.'.$ext;
+            $file_name = time().'-'.'blog.'.$ext;
          
             $file->move(public_path('uploads'),$file_name);
+        }else{
+            $file_name = $request->thumbnail;
         }
+    
         $request->merge(['thumbnail'=> $file_name]);
-      
             $blog = new Blog;
         $blog->id = $request->id;
         $blog->status = $request->status;
@@ -117,6 +119,8 @@ class BlogController extends Controller
             $file_name = time().'-'.'blog.'.$ext;
 
             $file->move(public_path('uploads'),$file_name);
+        }else{
+            $file_name = $request->thumbnail;
         }
         $request->merge(['thumbnail'=> $file_name]);
   

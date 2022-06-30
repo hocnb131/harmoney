@@ -85,23 +85,5 @@
     <button type="submit" class="btn btn-primary">Save Data</button>
 </form>
 @stop();
-<<<<<<< HEAD
-{{-- @section('css')
-=======
-<!-- @section('css')
->>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f
-<link rel="stylesheet" href="{{url('/css')}}/plugins/summernote/summernote-bs4.min.css">
-@stop();
-@section('js')
-<script src="{{url('/css')}}/plugins/summernote/summernote-bs4.min.js"></script>
-<script>
-    $(function(){
-        $('#content').summernote();
-    });
-    // alert(212);
-</script>
-<<<<<<< HEAD
-@stop(); --}}
-=======
-@stop(); -->
->>>>>>> e12cc98e486b3601ce39b693cc813986a767ce0f
+
+

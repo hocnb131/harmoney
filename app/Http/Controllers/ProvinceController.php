@@ -45,7 +45,7 @@ class ProvinceController extends Controller
     public function create()
     {
         $data = DB::table('province')->orderBy('name','asc')->select('id','name')->get();
-        return view('admin.province.add',['data'=>$data]);
+        return view('admin.province.create',['data'=>$data]);
     }
 
     /**
