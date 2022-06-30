@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('Ticket', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('room_id');
+            $table->biginteger('payment_id');
+            $table->biginteger('user_id');
+            $table->integer('status');
             $table->timestamps();
         });
     }
