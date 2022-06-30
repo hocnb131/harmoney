@@ -75,7 +75,8 @@ $menu = config('menu');
       <!-- Brand Logo -->
       <a href="{{url('/css')}}/index3.html" class="brand-link">
         <img src="{{url('/css')}}/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">{{ Auth::user()->role }}</span>
+        {{-- <span class="brand-text font-weight-light">{{ Auth::user()->role }}</span> --}}
+        <span class="brand-text font-weight-light"></span>
       </a>
 
       <!-- Sidebar -->
@@ -86,7 +87,9 @@ $menu = config('menu');
             <img src="{{url('/css')}}/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+            {{-- <a href="#" class="d-block">{{ Auth::user()->fullName }}</a> --}}
+            <a href="#" class="d-block"></a>
+
           </div>
         </div>
 

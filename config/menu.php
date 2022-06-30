@@ -10,7 +10,7 @@
         [
             'label' => 'Province',
             'route' => 'province.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-address-book',
             'item' => [
                 [
                 'label' => 'All Province', 
@@ -26,7 +26,7 @@
         [
             'label' => 'Branch',
             'route' => 'branch.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-list-ol',
             'item' => [
                 [
                 'label' => 'All Branch', 
@@ -42,7 +42,7 @@
         [
             'label' => 'Room',
             'route' => 'room.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-bed',
             'item' => [
                 [
                 'label' => 'All Room', 
@@ -58,7 +58,7 @@
         [
             'label' => 'Service',
             'route' => 'service.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-bath',
             'item' => [
                 [
                 'label' => 'All Service', 
@@ -74,7 +74,7 @@
         [
             'label' => 'Payment',
             'route' => 'payment.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-credit-card',
             'item' => [
                 [
                 'label' => 'All Payment', 
@@ -90,7 +90,7 @@
         [
             'label' => 'Review',
             'route' => 'review.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-comments',
             'item' => [
                 [
                 'label' => 'All Review', 
@@ -106,7 +106,7 @@
         [
             'label' => 'Ticket',
             'route' => 'service.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-bookmark',
             'item' => [
                 [
                 'label' => 'All Ticket', 
@@ -122,7 +122,7 @@
         [
             'label' => 'Blog',
             'route' => 'blog.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-file',
             'item' => [
                 [
                 'label' => 'All Blog', 
@@ -138,7 +138,7 @@
         [
             'label' => 'Coupon',
             'route' => 'coupon.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-gift',
             'item' => [
                 [
                 'label' => 'All Coupon', 
@@ -154,7 +154,7 @@
         [
             'label' => 'User',
             'route' => 'user.index',
-            'icon' => 'fa-home',
+            'icon' => 'fa-user-circle',
             'item' => [
                 [
                 'label' => 'All User', 
