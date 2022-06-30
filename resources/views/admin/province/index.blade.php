@@ -20,6 +20,8 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+  
+
             <!-- <th>Create_At</th> -->
         
             <th>Status</th>
@@ -40,6 +42,10 @@
         <tr>
             <td>{{$d->id}}</td>
             <td>{{$d->name}}</td>
+
+
+            
+
             <td>
                 @if($d->status == 0)
                 <span class="badge badge-danger">Private</span>

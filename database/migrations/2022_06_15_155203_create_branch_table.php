@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('branch', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->char('name');
             $table->char('email');
             $table->char('address');
@@ -25,6 +25,9 @@ return new class extends Migration
             $table->char('slug');
             $table->integer('status');
             $table->char('nameEn');
+            $table->bigInteger('province_id');
+            // $table->foreignId('province_id');
+
             $table->timestamps();
         });
     }

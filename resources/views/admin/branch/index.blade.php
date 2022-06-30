@@ -12,7 +12,9 @@
             <th>Description</th>
             <th>Thumbnail</th>
             <th>ThumbnailDescription</th>
+            <!-- <th>Province</th> -->
             <th>Slug</th>
+            <th>province_id</th>
             <th>Status</th>
             <th>NameEn</th>
             <th>Action</th>
@@ -30,7 +32,9 @@
             <td>{{$d->description}}</td>
             <td><img src="{{url('/uploads')}}/{{$d->thumbnail}}" width="50" alt=""></td>
             <td>{{$d->thumbnailDescription}}</td>
+            
             <td>{{$d->slug}}</td>
+            <td>{{$d->province_id}}</td>
             <td>
                 @if($d->status == 0)
                 <span class="badge badge-danger">Private</span>
@@ -58,6 +62,7 @@
                         <i class="fas fa-trash"></i>
                     </button>
                 </form>
+                
                 
 
 

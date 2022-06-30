@@ -28,6 +28,8 @@ class BranchTableSeeder extends Seeder
             'name'=>'hcm',
             'nameEn'=>'hcmEn',
             'slug'=>'harmoney hcm',
+            'province_id'=>'4',
+
             ],   
         );
     }

@@ -26,7 +26,7 @@ class Province extends Model
     // join 1 - n
     public function branchs(){
         // return $this->hasMany(Branch::class,'province_id','id');
-        return $this->hasMany(Branch::class,'id','province_id');
+        return $this->hasMany(Branch::class,'province_id','id');
     }
     // join 1 - n
     // public function branchs(){

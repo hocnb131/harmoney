@@ -45,12 +45,12 @@
             </div>
         </div>
         <div class="col-md-3">
-        <!-- <div class="form-group">
+        <div class="form-group">
                 <label for="">Province</label>
                 
                 <select name="province_id" class="form-control">
                     <option value="">---SELECT-ONE---</option>
-                    @foreach($data as $d)
+                    @foreach($datab as $d)
                     <option value="{{$d->id}}">{{$d->name}}</option>
                     @endforeach
                 </select>
@@ -58,7 +58,7 @@
                 @error('province')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
-            </div> -->
+            </div>
             <div class="form-group">
                 <label for="">thumbnail</label>
                 <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">

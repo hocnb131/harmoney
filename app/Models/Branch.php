@@ -21,12 +21,12 @@ class Branch extends Model
         'slug',
         'status',
         'nameEn',
-
+        'province_id'
         // 'created_at',
         // 'updated_at',
     ];
     // join 1 - 1
-    public function provinces(){
+    public function cat(){
         return $this->hasOne(Province::class,'id','province_id');
     }
     
