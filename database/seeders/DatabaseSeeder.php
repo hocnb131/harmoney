@@ -26,7 +26,6 @@ class DatabaseSeeder extends Seeder
             BranchTableSeeder::class,
             CouponTableSeeder::class,
             PaymentTableSeeder::class,
-            ReviewTableSeeder::class,
             ServiceTableSeeder::class,
             BlogTableSeeder::class,
             RoomTableSeeder::class,
