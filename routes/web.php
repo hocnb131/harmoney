@@ -14,7 +14,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
-
+use App\Models\Province;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +48,8 @@ Route::prefix('home')->group(function(){
             'review'   =>   ReviewController::class,
         ]);
 });
+
+
     
 
 

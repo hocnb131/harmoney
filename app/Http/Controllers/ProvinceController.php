@@ -32,7 +32,8 @@ class ProvinceController extends Controller
         }
         // $newDateFormat3 = Carbon::parse($data->create_at)->format('d/m/Y');
         // $newDateFormat2 = date('d/m/Y', strtotime($user->created_at));
-        return view('admin.province.index',['data'=>$data]);
+        // return view('admin.province.index',['data'=>$data]);
+        return view('admin.province.index',compact('data'));
         // return $data;
     }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Http\Requests\Menu\branchFormRequest;
 use App\Models\Branch;
+use App\Models\Province;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -23,6 +24,9 @@ class BranchController extends Controller
         // $data = DB::select('select * from branch');
         // $data = DB::table('branch')->orderBy('id','desc')->paginate(2);
         $data = DB::table('branch')->orderBy('id','desc')->paginate(5);
+        $datab = DB::table('province')->get();
+        // $provinces = Province::find(1)->provinces;
+        // dd($provinces);
         // $data = DB::table('branch')->get();
         // dd($data);
         // $data = DB::table('branch')->orderBy('id','desc')->search()->paginate(1);
@@ -32,7 +36,7 @@ class BranchController extends Controller
         }
         // $newDateFormat3 = Carbon::parse($data->create_at)->format('d/m/Y');
         // $newDateFormat2 = date('d/m/Y', strtotime($user->created_at));
-        return view('admin.branch.index',['data'=>$data]);
+        return view('admin.branch.index',['data'=>$data],['datab'=>$datab]);
         // return $data;
     }
 
@@ -43,8 +47,11 @@ class BranchController extends Controller
      */
     public function create()
     {
+        $datab = DB::table('province')->get();
+        // dd($datab);
+
         $data = DB::table('branch')->orderBy('name','asc')->select('id','name')->get();
-        return view('admin.branch.create',['data'=>$data]);
+        return view('admin.branch.create',['data'=>$data],['datab'=>$datab]);
     }
 
     /**
@@ -55,6 +62,7 @@ class BranchController extends Controller
      */
     public function store(Request $request)
     {
+
         // $request->validate([
         //     'name' => 'required',
         //     ''
@@ -63,7 +71,7 @@ class BranchController extends Controller
         //     'name.required' => 'Tên không được để trống'
         // ]
         // );
-        // dd($request->all());
+        dd($request->all());
         if($request->has('file_upload')){
             $file = $request->file_upload;
             // dd($file);
@@ -78,6 +86,7 @@ class BranchController extends Controller
         }
         
         $request->merge(['thumbnail'=> $file_name]);
+        
         // dd($request->all());
     // if(DB::table('branch')($request->all())){
     //     return redirect()->route('branch.index')->with('success','Thêm mới branch thành công');
@@ -95,6 +104,7 @@ class BranchController extends Controller
         $branch->slug = $request->slug;
         $branch->status = $request->status;
         $branch->nameEn = $request->nameEn;
+        $branch->province_id = $request->province_id;
         $branch->save();
         return redirect()->route('branch.index')
         ->with('success','Branch has been created successfully.');
@@ -124,8 +134,9 @@ class BranchController extends Controller
             // $branch = DB::table('branch')->orderBy('name','asc')->select('id','name')->get();
             // $branch = DB::table('branch')->get();
             // return view('admin.branch.edit',['data'=>$branch]);
+            $datab = DB::table('province')->get();
             $data = DB::table('branch')->orderBy('name','asc')->select('id','name')->get();
-            return view('admin.branch.edit',compact('branch','data'));
+            return view('admin.branch.edit',compact('branch','data'),compact('branch','datab'));
             // dd($branch);
         }
     }
