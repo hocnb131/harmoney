@@ -4,7 +4,7 @@
 <form action="{{route('user.store')}}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-7">
             <div class="form-group">
                 <label for="">Full Name</label>
                 <input type="text" class="form-control" name="fullName" placeholder="Input fullName">
@@ -26,6 +26,8 @@
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
+        </div>    
+        <div class="col-md-5">      
             <div class="form-group">
                 <label for="">Password</label>
                 <input type="text" class="form-control" name="password" placeholder="Input password">
@@ -40,7 +42,6 @@
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
-        </div>
             <div class="form-gourp">
                 <label for="">Status</label>
 

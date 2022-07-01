@@ -28,6 +28,8 @@
                 <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
+        </div>    
+        <div class="col-md-3">    
             <div class="form-group">
                 <label for="">Role</label>
                 <input type="text" class="form-control" name="role" value="{{$user->role}}" placeholder="Input role">
@@ -37,7 +39,6 @@
             </div>
             <div class="form-gourp">
                 <label for="">Status</label>
-
                 <div class="radio">
                     <label>
                         <input type="radio" name="status" value="0" checked>

@@ -13,7 +13,7 @@ class CouponFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,22 +24,23 @@ class CouponFormRequest extends FormRequest
     public function rules()
     {
         return [          
-            'code' => 'required|max:10|',
+            'code' => 'required|max:8|',
             'started_at' => 'required',
             'ended_at' => 'required',
-            'price'=>'required',
-            'bedType'=>'required',
-            'area'=>'required',
+            'percent'=>'required|max:2|',
+            'amount'=>'required|max:5|',
         ];
     }
     public function messages(){
         return [
-            'name.required'=>'Xin hãy nhập Tên',
-            'name.max'=>'Tối đa là 100',
-            'adults.required'=>'Xin hãy nhập số lượng người lớn',
-            'adults.min'=>'Tối thiểu là 1',
-            'adults.max'=>'Tối thiểu là 10',
-            'children.required'=>'Xin hãy nhập số lượng trẻ em',
+            'code.required'=>'Xin hãy nhập Code',
+            'code.max'=>'Tối đa là 10',
+            'started_at.required'=>'Xin hãy chọn ngày',
+            'ended_at.required'=>'Xin hãy chọn ngày',
+            'percent.required'=>'Xin hãy nhập số',
+            'percent.max'=>'Tối đa là 2',
+            'amount.required'=>'Xin hãy nhập số',
+            'amount.max'=>'Tối đa là 5',        
         ];
     }
 }

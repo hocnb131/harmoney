@@ -9,35 +9,44 @@
                 <label for="">Code</label>
                 <input type="number" class="form-control" name="code" placeholder="Input code">
                 @error('code')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Started</label>
                 <input type="date" class="form-control" name="started_at" placeholder="Input started_at">
                 @error('started_at')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Ended</label>
                 <input type="date" class="form-control" name="ended_at" placeholder="Input ended_at">
                 @error('ended_at')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
+        </div>   
+        <div class="col-md-3">
             <div class="form-group">
                 <label for="">Percent</label>
                 <input type="number" class="form-control" name="percent" placeholder="Input percent">
                 @error('percent')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Amount</label>
                 <input type="number" class="form-control" name="amount" placeholder="Input amount">
                 @error('amount')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label for="">Ticket</label>
+                <input type="number" class="form-control" name="ticket_id" placeholder="Input ticket_id">
+                @error('ticket_id')
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
         </div>
@@ -55,7 +64,7 @@
                     </label>
                 </div>
             </div>
-    </div>
+        </div>
     <button type="submit" class="btn btn-primary">Save Data</button>
 </form>
 @stop();

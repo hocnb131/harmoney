@@ -28,6 +28,22 @@
                 <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
+            <div class="form-gourp">
+                <label for="">Used</label>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="used" value="0" checked>
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="used" value="1" checked>
+                        No
+                    </label>
+                </div>
+            </div> 
+        </div>    
+        <div class="col-md-3">    
             <div class="form-group">
                 <label for="">Percent</label>
                 <input type="number" class="form-control" name="percent" value="{{$coupon->percent}}" placeholder="Input percent">
@@ -42,21 +58,13 @@
                 <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
-            <div class="form-gourp">
-                <label for="">Used</label>
-
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="used" value="0" checked>
-                        Yes
-                    </label>
-                    <label>
-                        <input type="radio" name="used" value="1" checked>
-                        No
-                    </label>
-                </div>
-            </div>   
-        </div>
+            <div class="form-group">
+                <label for="">Ticket</label>
+                <input type="number" class="form-control" name="ticket_id" value="{{$coupon->ticket_id}}" placeholder="Input ticket_id">
+                @error('ticket_id')
+                <small class="help-block">{{$message}}</small>
+                @enderror
+            </div>
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Save Data</button>

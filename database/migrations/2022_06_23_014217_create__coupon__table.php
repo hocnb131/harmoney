@@ -20,7 +20,8 @@ return new class extends Migration
             $table->date('ended_at');
             $table->integer('percent');
             $table->integer('amount');
-            $table->integer('used');           
+            $table->integer('used');
+            $table->integer('ticket_id');                      
             $table->timestamps();
         });
     }

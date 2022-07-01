@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use App\Http\Requests\Menu\CouponFormRequest;
 use App\Models\Coupon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -13,9 +14,9 @@ class CouponController extends Controller
      */
     public function index()
     {
-        $data = DB::table('coupon')->orderBy('id','desc')->paginate(3);
+        $data = DB::table('coupon')->orderBy('id','desc')->paginate(5);
         if($key = request()->key){
-        $data = DB::table('coupon')->orderBy('id','desc')->where('code','like','%'.$key.'%')->paginate(1);
+        $data = DB::table('coupon')->orderBy('id','desc')->where('code','like','%'.$key.'%')->paginate(10);
         }
         return view('admin.coupon.index',['data'=>$data]);
         return $data;
@@ -28,7 +29,7 @@ class CouponController extends Controller
     public function create()
     {
         $data = DB::table('coupon')->orderBy('code','asc')->select('id','code')->get();
-        return view('admin.coupon.add',['data'=>$data]);
+        return view('admin.coupon.create',['data'=>$data]);
     }
     /**
      * Store a newly created resource in storage.
@@ -36,15 +37,8 @@ class CouponController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CouponFormRequest $request)
     {
-        if($request->has('file_upload')){
-            $file = $request->file_upload;
-            $ext = $request->file_upload->extension();
-            $file_name = time().'-'.'demo.'.$ext;
-            
-            $file->move(publih('uploads'),$file_name);
-        }
             $coupon = new Coupon;
         // $coupon->id = $request->id;
         $coupon->code = $request->code;
@@ -53,6 +47,7 @@ class CouponController extends Controller
         $coupon->percent = $request->percent;
         $coupon->amount = $request->amount;
         $coupon->used = $request->used;
+        $coupon->ticket_id = $request->ticket_id;
         $coupon->save();
         return redirect()->route('coupon.index')
         ->with('success','Coupon has been created successfully.');
@@ -91,16 +86,6 @@ class CouponController extends Controller
      */
     public function update(Request $request, Coupon $coupon)
     {
-        if($request->has('file_upload')){
-            $file = $request->file_upload;
-            // dd($file);
-            $ext = $request->file_upload->extension();
-            // dd($ext);
-            // $file_name = $file->getClientoriginalName();
-            $file_name = time().'-'.'coupon.'.$ext;
-            // dd($file_name);
-            $file->move(public_path('uploads'),$file_name);
-        }
         // dd($coupon);
         $coupon->update($request->all());
         return redirect()->route('coupon.index')

@@ -17,9 +17,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        $data = DB::table('user')->orderBy('id','desc')->paginate(3);
+        $data = DB::table('user')->orderBy('id','desc')->paginate(5);
         if($key = request()->key){
-        $data = DB::table('user')->orderBy('id','desc')->where('fullName','like','%'.$key.'%')->paginate(1);
+        $data = DB::table('user')->orderBy('id','desc')->where('fullName','like','%'.$key.'%')->paginate(10);
         }
         return view('admin.user.index',['data'=>$data]);
         return $data;

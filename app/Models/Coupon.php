@@ -16,5 +16,6 @@ class Coupon extends Model
         'percent',
         'amount',
         'used',
+        'ticket_id',
     ];
 }
