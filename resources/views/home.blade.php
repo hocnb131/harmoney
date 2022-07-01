@@ -234,6 +234,7 @@ $menu = config('menu');
   <!-- AdminLTE for demo purposes -->
   <script src="{{url('/css')}}/dist/js/demo.js"></script>
   <!-- Code injected by live-server -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript">
     // <![CDATA[  <-- For SVG support
     if ('WebSocket' in window) {

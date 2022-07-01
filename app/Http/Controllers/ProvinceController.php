@@ -22,12 +22,12 @@ class ProvinceController extends Controller
         // return view('admin.province.index',compact('data'));
         // $data = DB::select('select * from province');
         // $data = DB::table('province')->orderBy('id','desc')->paginate(2);
-        $data = DB::table('province')->orderBy('id','desc')->paginate(3);
+        $data = DB::table('province')->orderBy('id','desc')->paginate(5);
         // $data = DB::table('province')->get();
         // dd($data);
         // $data = DB::table('province')->orderBy('id','desc')->search()->paginate(1);
         if($key = request()->key){
-        $data = DB::table('province')->orderBy('id','desc')->where('name','like','%'.$key.'%')->paginate(1);
+        $data = DB::table('province')->orderBy('id','desc')->where('name','like','%'.$key.'%')->paginate(10);
 
         }
         // $newDateFormat3 = Carbon::parse($data->create_at)->format('d/m/Y');
