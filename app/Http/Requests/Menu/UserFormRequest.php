@@ -24,26 +24,31 @@ class UserFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'fullName'=>'required|max:40|',
-            'email' => 'required|max:40|',
-            'phoneNumber'=>'required|max:10|',
-            'password'=>'required|min:8|',
+            'fullName'=>'required|max:50|min:5',
+            'email' => 'required|max:40|min:10',
+            'phoneNumber'=>'required|gt:0|max:11|min:10',
+            'password'=>'required|min:8|max:32',
             'role'=>'required',
             'status'=>'required',
         ];
     }
     public function messages(){
         return [
-            'fullName.required'=>'Xin hãy nhập Tên',
-            'fullName.max'=>'nhập Tên không quá 40 ký tự',
-            'email.required'=>'Xin hãy nhập email',
-            'email.max'=>'Tối thiểu là 40 ký tự',
-            'phoneNumber.required'=>'Xin hãy nhập số điện thoại',
-            'phoneNumber.max'=>'Tối đa là 10 ký tự',
-            'password.required'=>'Nhập password',
-            'password.min'=>'Nhập ít nhất 8 ký tự',
-            'role.required'=>'Xin hãy nhập',
-            'status.required'=>'Xin hãy chọn',
+            'fullName.required'=>'Vui lòng không để trống Tên',
+            'fullName.max'=>'Vui lòng nhập Tên không quá 50 kí tự',
+            'fullName.max'=>'Vui lòng nhập Tên ít nhất 5 kí tự',
+            'email.required'=>'Vui lòng không để trống Email',
+            'email.max'=>'Vui lòng nhập Email không quá 40 kí tự',
+            'email.min'=>'Vui lòng nhập Email ít nhất 10 kí tự',
+            'phoneNumber.required'=>'Vui lòng không để trống SĐT',
+            'phoneNumber.max'=>'Vui lòng nhập SĐT không quá 11 kí tự',
+            'phoneNumber.min'=>'Vui lòng nhập SĐT ít nhất 10 kí tự',
+            'phoneNumber.gt'=>'Vui lòng không nhập số nhỏ hơn 0',
+            'password.required'=>'Vui lòng không để trống Password',
+            'password.min'=>'Vui lòng nhập ít nhất 8 kí tự',
+            'password.max'=>'Vui lòng nhập Password không quá 32 kí tự',
+            'role.required'=>'Vui lòng chọn Role',
+            'status.required'=>'Vui lòng chọn Trạng thái',
         ];
     }
 }

@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('Coupon', function (Blueprint $table) {
             $table->id();
-            $table->integer('code');
+            $table->char('code');
             $table->date('started_at');
             $table->date('ended_at');
             $table->integer('percent');
             $table->integer('amount');
-            $table->integer('used');
+            $table->json('used');
             $table->integer('ticket_id');                      
             $table->timestamps();
         });

@@ -24,23 +24,27 @@ class CouponFormRequest extends FormRequest
     public function rules()
     {
         return [          
-            'code' => 'required|max:8|',
-            'started_at' => 'required',
-            'ended_at' => 'required',
-            'percent'=>'required|max:2|',
-            'amount'=>'required|max:5|',
+            'code' => 'required|max:11|min:11',
+            'started_at' => 'required|date_format:Y/m/d|after:yesterday',
+            'ended_at' => 'required|date_format:Y/m/d|after:yesterday',
+            'percent'=>'required|max:2|gt:0',
+            'amount'=>'required|max:5|gt:0',
         ];
     }
     public function messages(){
         return [
-            'code.required'=>'Xin hãy nhập Code',
-            'code.max'=>'Tối đa là 10',
-            'started_at.required'=>'Xin hãy chọn ngày',
-            'ended_at.required'=>'Xin hãy chọn ngày',
-            'percent.required'=>'Xin hãy nhập số',
-            'percent.max'=>'Tối đa là 2',
-            'amount.required'=>'Xin hãy nhập số',
-            'amount.max'=>'Tối đa là 5',        
+            'code.required'=>'Vui lòng không để trống Code',
+            'code.max'=>'Vui lòng nhập Code không quá 11 kí tự',
+            'code.min'=>'Vui lòng nhập Code ít nhất 11 kí tự',
+            'started_at.required'=>'Vui lòng chọn ngày bắt đầu',
+            'ended_at.required'=>'Vui lòng chọn ngày kết thúc',
+            'percent.required'=>'Vui lòng không để trống %',
+            'percent.max'=>'Vui lòng nhập % không quá 2 kí tự',
+            'percent.gt'=>'Vui lòng không nhập số nhỏ hơn 0',
+            'amount.required'=>'Vui lòng không để trống Giá trị',        
+            'amount.max'=>'Vui lòng nhập không quá 5 kí tự',
+            'amount.min'=>'Vui lòng nhập ít nhất 5 kí tự',
+            'amount.gt'=>'Vui lòng không nhập số nhỏ hơn 0',      
         ];
     }
 }
