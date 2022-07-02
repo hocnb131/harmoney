@@ -25,8 +25,8 @@ class CouponFormRequest extends FormRequest
     {
         return [          
             'code' => 'required|max:11|min:11',
-            'started_at' => 'required|date_format:Y/m/d|after:yesterday',
-            'ended_at' => 'required|date_format:Y/m/d|after:yesterday',
+            'started_at' => 'required',
+            'ended_at' => 'required',
             'percent'=>'required|max:2|gt:0',
             'amount'=>'required|max:5|gt:0',
         ];
