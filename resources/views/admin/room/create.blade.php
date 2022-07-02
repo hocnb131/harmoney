@@ -4,7 +4,7 @@
 <form action="{{route('room.store')}}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-3">
             <div class="form-group">
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name" placeholder="Nhập tên">
@@ -26,7 +26,48 @@
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
-          
+            <div class="form-group">
+                <label for="">Price</label>
+                <input type="number" class="form-control" name="price" placeholder="Input price">
+                @error('price')
+                <small class="badge badge-danger">{{$message}}</small>
+                @enderror
+            </div>
+           
+            <div class="form-group">
+                <label for="">Calendar</label>
+                <input type="date" class="form-control" name="calendar" placeholder="Input calendar">
+                @error('calendar')
+                <small class="badge badge-danger">{{$message}}</small>
+                @enderror
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="">thumbnail</label>
+                <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">
+                @error('thumbnail')
+                <small class="badge badge-danger">{{$message}}</small>
+                @enderror
+            </div>
+        
+            <div class="form-group">
+                <label for="">ThumbnailDescription</label>
+                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
+                @error('ThumbnailDescription')
+                <small class="badge badge-danger">{{$message}}</small>
+                @enderror
+            </div>
+           
+            <div class="form-group">
+                <label for="">Slug</label>
+                <input type="text" class="form-control" name="slug" placeholder="Input slug">
+                @error('slug')
+                <small class="badge badge-danger">{{$message}}</small>
+                @enderror
+            </div>
+
+
             <div class="form-group">
                 <label for="">Description</label>
                 
@@ -36,34 +77,20 @@
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
+       
             <div class="form-group">
-                <label for="">Calendar</label>
-                <input type="date" class="form-control" name="calendar" placeholder="Input calendar">
-                @error('calendar')
+                <label for="">Area</label>
+                
+                <textarea name="area" class="form-control" id="content" placeholder="Input area"></textarea>
+                
+                @error('area')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
-            <div class="form-group">
-                <label for="">thumbnail</label>
-                <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">
-                @error('thumbnail')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div>
-            <div class="form-group">
-                <label for="">ThumbnailDescription</label>
-                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
-                @error('ThumbnailDescription')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div>
-            <div class="form-group">
-                <label for="">Price</label>
-                <input type="number" class="form-control" name="price" placeholder="Input price">
-                @error('price')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div>
+        </div>
+        <div class="col-md-3">
+    
+            
             <div class="form-group">
                 <label for="">Bed Type</label>
                 
@@ -79,21 +106,35 @@
                 @enderror
             </div> 
             <div class="form-group">
-                <label for="">Area</label>
+                <label for="">Branch_ID</label>
                 
-                <textarea name="area" class="form-control" id="content" placeholder="Input area"></textarea>
+                <select name="branch_id" class="form-control">
+                    <option value="">---SELECT-ONE---</option>
+                    @foreach($data as $d)
+                    <option value="{{$d->id}}">{{$d->name}}</option>
+                    @endforeach
+                </select>
                 
-                @error('area')
+                @error('room')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
-            </div>
+            </div> 
             <div class="form-group">
-                <label for="">Slug</label>
-                <input type="text" class="form-control" name="slug" placeholder="Input slug">
-                @error('slug')
+                <label for="">RoomType</label>
+                
+                <select name="roomType" class="form-control">
+                    <option value="">---SELECT-ONE---</option>
+                    @foreach($data as $d)
+                    <option value="{{$d->id}}">{{$d->name}}</option>
+                    @endforeach
+                </select>
+                
+                @error('roomTypes')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
-            </div>
+            </div> 
+            
+            
             <div class="form-group">
                 <label for="">NameEn</label>
             <div class="radio">
@@ -129,36 +170,9 @@
                     @enderror
                 </div> -->
             </div>
-            <div class="form-group">
-                <label for="">Branch_ID</label>
-                
-                <select name="branch_id" class="form-control">
-                    <option value="">---SELECT-ONE---</option>
-                    @foreach($data as $d)
-                    <option value="{{$d->id}}">{{$d->name}}</option>
-                    @endforeach
-                </select>
-                
-                @error('room')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div> 
-            <div class="form-group">
-                <label for="">RoomType</label>
-                
-                <select name="roomType" class="form-control">
-                    <option value="">---SELECT-ONE---</option>
-                    @foreach($data as $d)
-                    <option value="{{$d->id}}">{{$d->name}}</option>
-                    @endforeach
-                </select>
-                
-                @error('roomTypes')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div> 
         </div>
-   
+  
+        
     </div>
     <button type="submit" class="btn btn-primary">Save Data</button>
 </form>
