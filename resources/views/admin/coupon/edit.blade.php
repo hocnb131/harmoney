@@ -9,7 +9,7 @@
         <div class="col-md-9">
             <div class="form-group">
                 <label for="">Code</label>
-                <input type="number" class="form-control" name="code" value="{{$coupon->code}}" placeholder="Input code">
+                <input type="text" class="form-control" name="code" value="{{$coupon->code}}" placeholder="Input code">
                 @error('code')
                 <small class="help-block">{{$message}}</small>
                 @enderror

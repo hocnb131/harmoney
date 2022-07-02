@@ -7,7 +7,7 @@
         <div class="col-md-9">
             <div class="form-group">
                 <label for="">Code</label>
-                <input type="number" class="form-control" name="code" placeholder="Input code">
+                <input type="text" class="form-control" name="code" placeholder="Input code">
                 @error('code')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
