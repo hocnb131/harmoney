@@ -24,9 +24,8 @@ class ProvinceFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'file_upload' => 'required'
-            
+            'name' => 'required|numeric|',
+            // 'name' => 'required|regex:/^([a-zA-Z]+)([a-zA-Z]+)*$/'
         ];
     }
 // thong bao tieng viet
@@ -34,7 +33,8 @@ class ProvinceFormRequest extends FormRequest
     {
         return [
             'name.required' => 'Nhập tên theo số không được để trống',
-            'file_upload.required' => 'Xin vui lòng chọn ảnh'
+            // 'name.regex' => 'Nhập tên chữ',
+            'name.numeric' => 'Nhập tên số',
 
         ];
     }

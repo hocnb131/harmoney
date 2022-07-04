@@ -14,7 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('Review', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->bigInteger('user_id');
+            $table->bigInteger('room_id');
+            $table->string('comment');
+            $table->integer('rate');
+            $table->integer('status');
             $table->timestamps();
         });
     }
