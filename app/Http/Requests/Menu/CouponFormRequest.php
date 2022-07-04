@@ -24,7 +24,7 @@ class CouponFormRequest extends FormRequest
     public function rules()
     {
         return [          
-            'code' => 'required|max:11|min:11',
+            'code' => 'required|min:11|max:11',
             'started_at' => 'required',
             'ended_at' => 'required',
             'percent'=>'required|max:2|gt:0',

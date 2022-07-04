@@ -26,7 +26,7 @@ class UserFormRequest extends FormRequest
         return [
             'fullName'=>'required|max:50|min:5',
             'email' => 'required|max:40|min:10',
-            'phoneNumber'=>'required|gt:0|max:11|min:10',
+            'phoneNumber'=>'required|min:10|max:11|gt:0',
             'password'=>'required|min:8|max:32',
             'role'=>'required',
             'status'=>'required',
