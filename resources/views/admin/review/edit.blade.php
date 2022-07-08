@@ -1,65 +1,67 @@
 @extends('home')
-@section('title', 'Edit Province')
+@section('title', 'Edit review')
 @section('main')
 
-<form action="{{route('province.update',$province->id)}}" method="POST" role="form" enctype="multipart/form-data">
+<form action="{{route('review.update',$review->id)}}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
 @method('PUT')
     <div class="row">
         <div class="col-md-9">
-            <div class="form-group">
-                <label for="">Name</label>
-                <input type="text" class="form-control" name="name" value="{{$province->name}}" placeholder="Input name">
-                @error('name')
-                <small class="help-block">{{$message}}</small>
-                @enderror
-            </div>
             <!-- <div class="form-group">
                 <label for="">Creat_At</label>
-                <input type="text" class="form-control" value="{{$province->create_at}}" name="create_at" placeholder="Input creat_at">
+                <input type="text" class="form-control" value="{{$review->create_at}}" name="create_at" placeholder="Input creat_at">
                 @error('creat_at')
                 <small class="help-block">{{$message}}</small>
                 @enderror
             </div> -->
             <div class="form-group">
-                <label for="">Description</label>
+                <label for="">Comment</label>
                 
-                <textarea name="description" class="form-control" value="{{$province->description}}" id="content" placeholder="Input description"></textarea>
+                <textarea name="comment" class="form-control" value="{{$review->comment}}" id="content" placeholder="Input comment"></textarea>
                 
-                @error('description')
+                @error('comment')
                 <small class="help-block">{{$message}}</small>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label for="">Rate</label>
+                <input type="number" min="1" max="5" class="form-control" name="{{$review->rate}}" placeholder="Input rate">
+                @error('rate')
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
         </div>
         <div class="col-md-3">
         <div class="form-group">
-                <label for="">Province</label>
+                <label for="">User</label>
                 
-                <select name="province_id" class="form-control">
-                    <option value="">---SELECT-ONE---</option>
-                    @foreach($data as $d)
+                <select name="user_id" class="form-control">
+                    <option value="{{$review->room_id}}">---SELECT-ONE---</option>
+                    @foreach($data_u as $d)
                     <option value="{{$d->id}}">{{$d->name}}</option>
                     @endforeach
                 </select>
                 
-                @error('province')
+                @error('user_id')
                 <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
-                <label for="">thumbnail</label>
-                <input type="file" class="form-control"  name="file_upload" placeholder="Input thumbnail">
-                @error('file_upload')
+                <label for="">Room</label>
+                
+                <select name="room_id" class="form-control">
+                    <option value="">---SELECT-ONE---</option>
+                    @foreach($data_r as $d)
+                    <option value="{{$d->id}}">{{$d->rate}}</option>
+                    @endforeach
+                </select>
+                
+                @error('room_id')
                 <small class="help-block">{{$message}}</small>
                 @enderror
             </div>
-            <div class="form-group">
-                <label for="">ThumbnailDescription</label>
-                <input type="text" class="form-control" value="{{$province->thumbnailDescription}}" name="thumbnailDescription" placeholder="Input thumbnailDescription">
-                @error('ThumbnailDescription')
-                <small class="help-block">{{$message}}</small>
-                @enderror
-            </div>
+            
+           
             
             <div class="form-gourp">
                 <label for="">Status</label>

@@ -31,5 +31,8 @@ class Room extends Model
         'branch_id',
         'roomType',
     ];
-  
+    public function reviews(){
+        // return $this->hasMany(Branch::class,'province_id','id');
+        return $this->hasMany(Review::class,'room_id','id');
+    }
 }

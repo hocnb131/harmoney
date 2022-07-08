@@ -131,7 +131,7 @@ class RoomController extends Controller
   
         $room->update($request->all());
         return redirect()->route('room.index')
-        ->with('success','Company has been updated successfully.');
+        ->with('success','Room has been updated successfully.');
     }
 
     /**
@@ -142,9 +142,7 @@ class RoomController extends Controller
      */
     public function destroy(Room $room)
     {
-      
         $room->delete();
-        return redirect()->back()
-->with('success','Room has been deleted successfully');
+        return redirect()->back()->with('success','Room has been deleted successfully');
     }
 }

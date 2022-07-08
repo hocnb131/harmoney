@@ -24,7 +24,6 @@ class BlogController extends Controller
 
         }
         return view('admin.blog.index',['data'=>$data]);
-        return $data;
     }
 
     /**

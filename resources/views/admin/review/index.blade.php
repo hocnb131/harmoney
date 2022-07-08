@@ -51,17 +51,17 @@
                     @endif
                 </td>
                 <td>
-                    <a href="{{ route('province.edit',$d->id) }}" class="btn btn-sm btn-success">
+                    <a href="{{ route('review.edit',$d->id) }}" class="btn btn-sm btn-success">
                         <i class="fas fa-edit"></i>
                     </a>
 
-                    <a href="{{route('province.destroy',$d->id)}}" class="btn btn-sm btn-danger btndelete">
+                    <a href="{{route('review.destroy',$d->id)}}" class="btn btn-sm btn-danger btndelete">
                         <i class="fas fa-trash"></i>
                     </a>
 
                 </td>
-                <td>{{\Carbon\Carbon::now('Asia/Ho_Chi_Minh')->diffForHumans(\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y'))}}</td>  
-                <td>{{\Carbon\Carbon::parse($d->updated_at)->Format('d-m-Y')}}</td>               
+                <td>{{$d->created_at}}</td>  
+                <td>{{$d->updated_at}}</td>               
             </tr>
             @endforeach
             <tr>

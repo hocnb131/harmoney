@@ -41,8 +41,8 @@
                 
                 <select name="room_id" class="form-control">
                     <option value="">---SELECT-ONE---</option>
-                    @foreach($data as $d)
-                    <option value="{{$d->id}}">{{$d->rate}}</option>
+                    @foreach($data_r as $r)
+                    <option value="{{$r->id}}">{{$r->name}}</option>
                     @endforeach
                 </select>
                 

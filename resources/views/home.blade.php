@@ -41,7 +41,6 @@ $menu = config('menu');
   <link rel="stylesheet" href="{{url('/css')}}/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{url('/css')}}/dist/css/adminlte.min.css">
-  {{-- <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=AFyy4lW-BBxmZHurFpklZPvnqm6NxkBzEFfBhb1HiwOXN7NHqB32TYtY-g1Q5aEpFQ3SzPVHVvL6FpcOXanFxNjZeyss39AQufmA0sJdPCI" charset="UTF-8"></script> --}}
   @yield('js')
 
   @yield('css')

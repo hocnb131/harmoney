@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Menu\ReviewFormRequest;
 use App\Models\Review;
+use App\Models\Room;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -18,13 +20,14 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $data_u = DB::table('user')->get();
-        $data_r = DB::table('room')->get();
+        $data_u = Review::with('users')->get();
+        $data_r =  Review::with('rooms')->get();
+        // dd($data_u);
         $data = DB::table('review')->orderBy('id', 'desc')->paginate(5);
         if ($key = request()->key) {
             $data = DB::table('review')->orderBy('id', 'desc')->where('rate', 'like', '%' . $key . '%')->paginate(10);
         }
-        return view('admin.review.index', compact('data'),compact('data_u'));
+        return view('admin.review.index',compact('data'),compact('data_u'),compact('data_r'));
     }
 
     /**
@@ -34,9 +37,12 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        $data_u = DB::table('user')->get();
+        $data_r = Review::with('rooms')->get();
+        
+        $data_u = Review::with('users')->get();
+        dd($data_r);
         $data = DB::table('review')->orderBy('id', 'asc')->select('id', 'rate')->get();
-        return view('admin.review.create', ['data' => $data],compact('data_u'));
+        return view('admin.review.create')->with(compact('data'))->with(compact('data_u'))->with(compact('data_r'));
     }
 
     /**
@@ -81,8 +87,11 @@ class ReviewController extends Controller
             // $review = DB::table('review')->orderBy('name','asc')->select('id','name')->get();
             // $review = DB::table('review')->get();
             // return view('admin.review.edit',['data'=>$review]);
-            $data = DB::table('review')->orderBy('name', 'asc')->select('id', 'name')->get();
-            return view('admin.review.edit', compact('review', 'data'));
+            $data_u = Review::with('users')->get();
+            // dd($data_u);
+            $data_r =  Review::with('rooms')->get();
+            $data = DB::table('review')->orderBy('rate', 'asc')->select('id', 'rate')->get();
+            return view('admin.review.edit')->with(compact('review'))->with(compact('data'))->with(compact('data_u'))->with(compact('data_r'));
             // dd($review);
         }
     }
@@ -120,6 +129,6 @@ class ReviewController extends Controller
         // return redirect()->back();
         $review->delete();
         return redirect()->back()
-            ->with('success', 'review has been deleted successfully');
+            ->with('success', 'Review has been deleted successfully');
     }
 }
