@@ -32,9 +32,15 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::prefix('home')->group(function(){
-        Route::get('/',[HomeController::class,'index'])->name('home');
+Route::prefix('admin')->group(function(){
+        // Route::get('/',[HomeController::class,'index'])->name('home');
+        Route::get('/',[AdminController::class,'index'])->name('home');
         // Route::get('province',  'province')->name('province');
+        Route::get('role',[UserController::class,'role'])->name('user.role');
+        // Route::get('create-role',[UserController::class,'create_role'])->name('create-role');
+        // Route::get('permission',[UserController::class,'permission'])->name('permission');
+        // Route::get('create-permission',[UserController::class,'create_permission'])->name('create-permission');
+        // Route::resource('role',[UserController::class]);
         Route::resources([
             'province' =>   ProvinceController::class,
             'branch'   =>   BranchController::class,
@@ -46,6 +52,7 @@ Route::prefix('home')->group(function(){
             'coupon'   =>   CouponController::class,
             'payment'  =>   PaymentController::class,
             'review'   =>   ReviewController::class,
+
         ]);
 });
 

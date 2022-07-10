@@ -150,7 +150,7 @@
                 ],
             ]
         ],
-        // Coupon
+        // User
         [
             'label' => 'User',
             'route' => 'user.index',
@@ -164,7 +164,47 @@
                 'label' => 'Add User', 
                 'route' => 'user.create', 
                 ],
+                [
+                'label' => 'Add Role', 
+                'route' => 'user.role', 
+                ],
+                // [
+                // 'label' => 'Add Permission', 
+                // 'route' => 'user.permission', 
+                // ],        
             ]
         ],
+        // Role
+        // [
+        //     'label' => 'Role',
+        //     'route' => 'user.role',
+        //     'icon' => 'fa-user-circle',
+        //     'item' => [
+        //         [
+        //         'label' => 'All Role', 
+        //         'route' => 'user.role', 
+        //         ],
+        //         [
+        //         'label' => 'Add Role', 
+        //         'route' => 'user.create_role', 
+        //         ],    
+        //     ]
+        // ],
+        // Permission
+        // [
+        //     'label' => 'Permission',
+        //     'route' => 'user.permission',
+        //     'icon' => 'fa-user-circle',
+        //     'item' => [
+        //         [
+        //         'label' => 'All Role', 
+        //         'route' => 'user.permission', 
+        //         ],
+        //         [
+        //         'label' => 'Add Role', 
+        //         'route' => 'user.create_permission', 
+        //         ],    
+        //     ]
+        // ],
     ]
 ?>

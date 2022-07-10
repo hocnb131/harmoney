@@ -22,7 +22,6 @@ class UserController extends Controller
         $data = DB::table('user')->orderBy('id','desc')->where('fullName','like','%'.$key.'%')->paginate(10);
         }
         return view('admin.user.index',['data'=>$data]);
-        return $data;
     }
     /**
      * Show the form for creating a new resource.
@@ -47,15 +46,18 @@ class UserController extends Controller
             $ext = $request->file_upload->extension();
             $file_name = time().'-'.'demo.'.$ext;
             
-            $file->move(publih('uploads'),$file_name);
+            $file->move(public_path('uploads'),$file_name);
         }
+
             $user = new User;
         // $user->id = $request->id;
         $user->fullName = $request->fullName;
         $user->email = $request->email;
         $user->phoneNumber = $request->phoneNumber;
         $user->password = Hash::make($request['password']);
+
         $user->role = $request->role;
+
         $user->status = $request->status;
         $user->save();
         return redirect()->route('user.index')
@@ -122,4 +124,28 @@ class UserController extends Controller
         return redirect()->back()
 ->with('success','User has been deleted successfully');
     }
+    // index role
+    public function role(){
+
+        return view('admin.user.role');
+    }
+
+    // create role 
+    public function create_role(){
+
+        return view('admin.user.create_role');
+    }
+    
+    // index permission
+    public function permission(){
+
+        return view('admin.user.permission');
+    }
+
+    // create permission
+    public function create_permission(){
+
+        return view('admin.user.create_permission');
+    }
+
 }

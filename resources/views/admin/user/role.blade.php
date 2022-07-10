@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                        Create-Role
+                        Role
                     {{ __('You are logged in!') }}
                 </div>
             </div>

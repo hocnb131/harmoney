@@ -19,7 +19,7 @@
             <th>Full Name</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>Password</th>
+            <!-- <th>Password</th> -->
             <th>Role</th>
             <th>Status</th>
             <th>Action</th>
@@ -41,7 +41,7 @@
             <td>{{$d->fullName}}</td>
             <td>{{$d->email}}</td>
             <td>{{$d->phoneNumber}}</td>
-            <td style="max-width: 6.9cm;">{{$d->password}}</td>
+            <!-- <td style="max-width: 5cm;">{{$d->password}}</td> -->
             <td>{{$d->role}}</td>
             <td>
                 @if($d->status == 0)
