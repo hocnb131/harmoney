@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Add User')
 @section('main')
 <form action="{{route('user.store')}}" method="POST" role="form" enctype="multipart/form-data">
@@ -7,21 +7,21 @@
         <div class="col-md-7">
             <div class="form-group">
                 <label for="">Full Name</label>
-                <input type="text" class="form-control" name="fullName" placeholder="Input fullName">
+                <input type="text" class="form-control" value="{{old('fullName')}}" name="fullName" placeholder="Input fullName">
                 @error('fullName')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Email</label>
-                <input type="email" class="form-control" name="email" placeholder="Input email">
+                <input type="email" class="form-control" value="{{old('email')}}" name="email" placeholder="Input email">
                 @error('email')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Phone</label>
-                <input type="number" class="form-control" name="phoneNumber" placeholder="Input phoneNumber">
+                <input type="number" class="form-control" value="{{old('phoneNumber')}}" name="phoneNumber" placeholder="Input phoneNumber">
                 @error('phoneNumber')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
@@ -30,14 +30,14 @@
         <div class="col-md-5">      
             <div class="form-group">
                 <label for="">Password</label>
-                <input type="text" class="form-control" name="password" placeholder="Input password">
+                <input type="text" class="form-control" value="{{old('password')}}" name="password" placeholder="Input password">
                 @error('password')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Role</label>
-                <input type="text" class="form-control" name="role" placeholder="Input role">
+                <input type="text" class="form-control" value="{{old('role')}}" name="role" placeholder="Input role">
                 @error('role')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror

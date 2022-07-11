@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'User List')
 @section('main')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -21,10 +21,13 @@
             <th>Phone</th>
             <!-- <th>Password</th> -->
             <th>Role</th>
+            <!-- <th>Permission</th> -->
             <th>Status</th>
             <th>Action</th>
-            <th>Created</th>
-
+            <th>Created_At</th>
+            <th>Updated_At</th>
+            <th>Permission</th>
+            <th>Manager</th>
         </tr>
     </thead>
     <tbody>
@@ -51,7 +54,8 @@
                 <span class="badge badge-success">Off</span>
                 @endif
             </td>
-            <td>               
+            <td>          
+        
                 <a href="{{ route('user.edit',$d->id) }}" class="btn btn-sm btn-success">
                     <i class="fas fa-edit"></i>
                 </a>
@@ -59,7 +63,19 @@
                     <i class="fas fa-trash"></i>
                 </a> 
             </td>
-            <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
+            <td>{{\Carbon\Carbon::create($d->created_at)->format('d-m-Y')}}</td>
+            <td>{{\Carbon\Carbon::parse($d->updated_at)->diffForHumans()}}</td>
+            <td>
+                
+            </td>
+            <td>
+                <a href="{{ route('phanquyen',$d->id) }}" class="btn btn-sm btn-success">
+                    <i class="fas fa-user">Phân Quyền</i>
+                </a>
+                <a href="{{ route('phanquyen',$d->id) }}" class="btn btn-sm btn-primary">
+                    <i class="fas fa-user">Chuyển Quyền</i>
+                </a> 
+            </td>
         </tr>
         @endforeach
         <tr>

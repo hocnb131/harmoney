@@ -125,27 +125,34 @@ class UserController extends Controller
 ->with('success','User has been deleted successfully');
     }
     // index role
-    public function role(){
+    // public function role(){
 
-        return view('admin.user.role');
-    }
+    //     return view('admin.user.role');
+    // }
 
-    // create role 
-    public function create_role(){
+    // // create role 
+    // public function create_role(){
 
-        return view('admin.user.create_role');
-    }
+    //     return view('admin.user.create_role');
+    // }
     
-    // index permission
-    public function permission(){
+    // // index permission
+    // public function permission(){
 
-        return view('admin.user.permission');
-    }
+    //     return view('admin.user.permission');
+    // }
 
-    // create permission
-    public function create_permission(){
+    // // create permission
+    // public function create_permission(){
 
-        return view('admin.user.create_permission');
+    //     return view('admin.user.create_permission');
+    // }
+    public function phanquyen($id){
+        $user = User::find($id);
+        $name_role = $user->role->first()->name;
+        $role = Role::orderBy('id','DESC')->get();
+        $all_column_roles = $user->roles->first();
+        return view('admin.user.phanquyen',compact('user','role','all_column_roles'));
     }
 
 }

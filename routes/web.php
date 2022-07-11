@@ -36,10 +36,12 @@ Route::prefix('admin')->group(function(){
         // Route::get('/',[HomeController::class,'index'])->name('home');
         Route::get('/',[AdminController::class,'index'])->name('home');
         // Route::get('province',  'province')->name('province');
-        Route::get('role',[UserController::class,'role'])->name('user.role');
+        // Route::get('role',[UserController::class,'role'])->name('user.role');
         // Route::get('create-role',[UserController::class,'create_role'])->name('create-role');
-        // Route::get('permission',[UserController::class,'permission'])->name('permission');
+        // Route::get('permission',[UserController::class,'permission'])->name('user.permission');
         // Route::get('create-permission',[UserController::class,'create_permission'])->name('create-permission');
+        Route::get('/phanquyen/{id}',[UserController::class,'phanquyen'])->name('phanquyen');
+
         // Route::resource('role',[UserController::class]);
         Route::resources([
             'province' =>   ProvinceController::class,

@@ -164,10 +164,10 @@
                 'label' => 'Add User', 
                 'route' => 'user.create', 
                 ],
-                [
-                'label' => 'Add Role', 
-                'route' => 'user.role', 
-                ],
+                // [
+                // 'label' => 'Add Role', 
+                // 'route' => 'user.role', 
+                // ],
                 // [
                 // 'label' => 'Add Permission', 
                 // 'route' => 'user.permission', 
