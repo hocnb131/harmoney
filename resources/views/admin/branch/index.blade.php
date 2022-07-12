@@ -1,7 +1,7 @@
 @extends('admin.dashboard')
 @section('title', 'Branch List')
 @section('main')
-<table class="table table-hover">
+<table class="table table-hover table-responsive">
     <thead>
         <tr>
             <th>ID</th>

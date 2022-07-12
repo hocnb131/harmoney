@@ -15,7 +15,7 @@
         </button>
     </form>
     <hr>
-    <table class="table table-hover">
+    <table class="table table-hover table-responsive" >
         <thead>
             <tr>
                 <th>ID</th>
@@ -29,11 +29,13 @@
                 <th>Price</th>
                 <th>Bed Type</th>
                 <th>Area</th>
-                {{-- <th>Created_At</th>
-                <th>Updated_At</th> --}}
+                <th>Created_At</th>
+                <th>Updated_At</th>
                 <th>Slug</th>
                 <th>NameEN</th>
                 <th>Status</th>
+                <th>Action</th>
+
           
              
             </tr>
@@ -52,8 +54,8 @@
                     <td>{{ $d->price }}</td>
                     <td>{{ $d->bedType }}</td>
                     <td>{{ $d->area }}</td>
-                    {{-- <td>{{ \Carbon\Carbon::parse($d->created_at)->Format('d-m-Y') }}</td>
-                    <td>{{ \Carbon\Carbon::parse($d->created_at)->Format('d-m-Y') }}</td> --}}
+                    <td>{{ \Carbon\Carbon::parse($d->created_at)->Format('d-m-Y') }}</td>
+                    <td>{{ \Carbon\Carbon::parse($d->created_at)->Format('d-m-Y') }}</td>
                     <td>{{ $d->slug }}</td>
                     <td>{{ $d->nameEn }}</td>
 

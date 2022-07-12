@@ -31,7 +31,7 @@ class RoomFormRequest extends FormRequest
             // 'thumbnail'=>'required',
             'price'=>'required',
             'bedType'=>'required',
-            'area'=>'required',
+            'area'=>'required|numeric|',
             'status'=>'required',
             'roomType'=>'required'
 
@@ -52,6 +52,7 @@ class RoomFormRequest extends FormRequest
             'price.required'=>'Xin hãy nhập giá',
             'bedType.required'=>'Xin hãy nhập loại giường',
             'area.required'=>'Xin hãy nhập khu vực',
+            'area.numeric'=>'Xin hãy nhập bằng số',
             'status.required'=>'Xin hãy nhập trạng thái',
             'roomType.required'=>'Xin hãy nhập loại phòng',
         ];
