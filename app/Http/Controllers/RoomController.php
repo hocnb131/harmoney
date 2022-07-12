@@ -49,16 +49,18 @@ class RoomController extends Controller
  
         if($request->has('file_upload')){
             $file = $request->file_upload;
-      
+     
             $ext = $request->file_upload->extension();
          
-            $file_name = time().'-'.'harmoney.'.$ext;
+            $file_name = time().'-'.'room.'.$ext;
          
             $file->move(public_path('uploads'),$file_name);
+        }else{
+            $file_name = $request->thumbnail;
         }
         $request->merge(['thumbnail'=> $file_name]);
-      
-            $room = new Room;
+     
+        $room = new Room;
         $room->id = $request->id;
         $room->name = $request->name;
         $room->adults = $request->adults;
@@ -126,6 +128,8 @@ class RoomController extends Controller
             $file_name = time().'-'.'room.'.$ext;
 
             $file->move(public_path('uploads'),$file_name);
+        }else{
+            $file_name = $request->thumbnail;
         }
         $request->merge(['thumbnail'=> $file_name]);
   
