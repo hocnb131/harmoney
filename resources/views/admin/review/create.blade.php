@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Add Review')
 @section('main')
 <form action="{{route('review.store')}}" method="POST" role="form" enctype="multipart/form-data">

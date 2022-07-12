@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Service List')
 @section('main')
 

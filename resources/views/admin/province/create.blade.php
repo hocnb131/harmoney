@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Add Province')
 @section('main')
 <form action="{{route('province.store')}}" method="POST" role="form" enctype="multipart/form-data">

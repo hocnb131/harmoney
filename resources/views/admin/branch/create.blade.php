@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Add Branch')
 @section('main')
 <form action="{{route('branch.store')}}" method="POST" role="form" enctype="multipart/form-data">

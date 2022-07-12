@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Add Coupon')
 @section('main')
 <form action="{{route('coupon.store')}}" method="POST" role="form" enctype="multipart/form-data">

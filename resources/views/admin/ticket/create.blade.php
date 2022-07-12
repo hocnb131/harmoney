@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Create ticket')
 @section('main')
 <form action="{{route('ticket.store')}}" method="POST" role="form" enctype="multipart/form-data">

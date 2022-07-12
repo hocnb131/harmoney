@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Add Blog')
 @section('main')
     <form action="{{ route('blog.store') }}" method="POST" role="form" enctype="multipart/form-data">

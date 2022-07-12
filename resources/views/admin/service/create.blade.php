@@ -1,4 +1,4 @@
-@extends('home')
+@extends('admin.dashboard')
 @section('title', 'Create Service')
 @section('main')
     <form action="{{ route('service.store') }}" method="POST" role="form" enctype="multipart/form-data">
