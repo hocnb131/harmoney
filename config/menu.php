@@ -174,22 +174,23 @@
                 // ],        
             ]
         ],
-        // Role
-        // [
-        //     'label' => 'Role',
-        //     'route' => 'user.role',
-        //     'icon' => 'fa-user-circle',
-        //     'item' => [
-        //         [
-        //         'label' => 'All Role', 
-        //         'route' => 'user.role', 
-        //         ],
-        //         [
-        //         'label' => 'Add Role', 
-        //         'route' => 'user.create_role', 
-        //         ],    
-        //     ]
-        // ],
+        //Role
+        [
+            'label' => 'Role',
+            'route' => 'role.index',
+            'icon' => 'fa-user-circle',
+            'item' => [
+                [
+                'label' => 'All Role', 
+                'route' => 'role.index', 
+                ],
+                [
+                'label' => 'Add Role', 
+                'route' => 'role.create', 
+                ],    
+            ]
+        ],
+     
         // Permission
         // [
         //     'label' => 'Permission',

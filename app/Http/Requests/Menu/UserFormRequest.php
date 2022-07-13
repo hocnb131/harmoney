@@ -28,7 +28,7 @@ class UserFormRequest extends FormRequest
             'email' => 'required|max:40|min:10',
             'phoneNumber'=>'required|min:10|max:11|gt:0',
             'password'=>'required|min:8|max:32',
-            'role'=>'required',
+
             'status'=>'required',
         ];
     }
@@ -47,7 +47,7 @@ class UserFormRequest extends FormRequest
             'password.required'=>'Vui lòng không để trống Password',
             'password.min'=>'Vui lòng nhập ít nhất 8 kí tự',
             'password.max'=>'Vui lòng nhập Password không quá 32 kí tự',
-            'role.required'=>'Vui lòng chọn Role',
+
             'status.required'=>'Vui lòng chọn Trạng thái',
         ];
     }

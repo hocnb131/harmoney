@@ -20,7 +20,7 @@
             <th>Email</th>
             <th>Phone</th>
             <!-- <th>Password</th> -->
-            <th>Role</th>
+  
             <!-- <th>Permission</th> -->
             <th>Status</th>
             <th>Action</th>
@@ -45,7 +45,7 @@
             <td>{{$d->email}}</td>
             <td>{{$d->phoneNumber}}</td>
             <!-- <td style="max-width: 5cm;">{{$d->password}}</td> -->
-            <td>{{$d->role}}</td>
+    
             <td>
                 @if($d->status == 0)
                 <span class="badge badge-danger">On</span>

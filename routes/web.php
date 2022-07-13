@@ -14,6 +14,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CouponController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\RoleController;
 use App\Models\Province;
 
 /*
@@ -49,12 +50,12 @@ Route::prefix('admin')->group(function(){
             'room'     =>   RoomController::class,
             'service'  =>   ServiceController::class,
             'blog'     =>   BlogController::class,
-            'user'     =>   UserController::class,
+                'user'     =>   UserController::class,
             'ticket'   =>   TicketController::class,
             'coupon'   =>   CouponController::class,
             'payment'  =>   PaymentController::class,
             'review'   =>   ReviewController::class,
-
+            'role'   =>   RoleController::class,
         ]);
 });
 

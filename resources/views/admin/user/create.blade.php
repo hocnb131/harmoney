@@ -35,13 +35,7 @@
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
-            <div class="form-group">
-                <label for="">Role</label>
-                <input type="text" class="form-control" value="{{old('role')}}" name="role" placeholder="Input role">
-                @error('role')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div>
+         
             <div class="form-gourp">
                 <label for="">Status</label>
 

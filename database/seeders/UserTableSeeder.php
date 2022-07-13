@@ -22,7 +22,7 @@ class UserTableSeeder extends Seeder
             'email' => 'quyen@gmail.com',
             'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'admin',
+            // 'role' => 'admin',
             'status' => 0
             ],   
         );
@@ -32,7 +32,7 @@ class UserTableSeeder extends Seeder
             'email' => 'hai@gmail.com',
             'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'editor',
+            // 'role' => 'editor',
             'status' => 1
             ],
         );
@@ -42,7 +42,7 @@ class UserTableSeeder extends Seeder
             'email' => 'hoc@gmail.com',
             'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'write',
+
             'status' => 1
             ],
         );
@@ -52,7 +52,7 @@ class UserTableSeeder extends Seeder
             'email' => 'dat@gmail.com',
             'phoneNumber'=> '0123456789',
             'password' => bcrypt('hehe'),
-            'role' => 'write',
+
             'status' => 0
             ],
         );
