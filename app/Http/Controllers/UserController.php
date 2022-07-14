@@ -36,6 +36,7 @@ class UserController extends Controller
         $data = DB::table('user')->orderBy('id','desc')->where('fullName','like','%'.$key.'%')->paginate(10);
         }
         // return view('admin.user.index',['data'=>$data],['role'=>$role],['permission'=>$permission]);
+
         return view('admin.user.index',['data'=>$data]);
     }
     /**
@@ -175,8 +176,15 @@ class UserController extends Controller
     public function create_role(Request $request,$id){
         $data = $request->all();
         $user = User::find($id);
+
         $user->syncRoles($data['role']);
         return redirect()->back()->with('success','Thêm vai trò thành công');
+
+        $name_role = $user->role->first()->name;
+        // $role = Role::orderBy('id','DESC')->get();
+        $all_column_roles = $user->roles->first();
+        return view('admin.user.phanquyen',compact('user','role','all_column_roles'));
+
     }
 
 }

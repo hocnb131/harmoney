@@ -4,10 +4,10 @@
 <form action="{{route('province.store')}}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="form-group">
                 <label for="">Name</label>
-                <input type="text" class="form-control" name="name" placeholder="Input name">
+                <input type="text" class="form-control" name="name" placeholder="Nhập tỉnh thành">
                 @error('name')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
@@ -22,14 +22,14 @@
             <div class="form-group">
                 <label for="">Description</label>
                 
-                <textarea name="description" class="form-control" id="content" placeholder="Input description"></textarea>
+                <textarea name="description" class="form-control" id="content" placeholder="Mô tả"></textarea>
                 
                 @error('description')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
         <!-- <div class="form-group">
                 <label for="">Province</label>
                 
@@ -53,7 +53,7 @@
             </div>
             <div class="form-group">
                 <label for="">ThumbnailDescription</label>
-                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
+                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Mô tả hình ảnh">
                 @error('ThumbnailDescription')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror

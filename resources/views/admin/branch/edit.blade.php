@@ -5,7 +5,7 @@
     @csrf
     @method('PUT')
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-6">
             <div class="form-group">
                 <label for="">Name</label>
                 <input type="text" class="form-control" value="{{$branch->name}}" name="name" placeholder="Input name">
@@ -44,7 +44,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
         <div class="form-group">
                 <label for="">Province</label>
                 
@@ -55,7 +55,7 @@
                     @endforeach
                 </select>
                 
-                @error('province')
+                @error('province_id')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>

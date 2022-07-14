@@ -5,14 +5,15 @@
         @csrf
         <div class="row">
             <div class="col-md-6">
-              
-                {{-- <div class="form-group">
-                <label for="">Creat_At</label>
-                <input type="text" class="form-control" name="create_at" placeholder="Input create_at">
-                @error('creat_at')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div> --}}
+                <div class="form-group">
+                    <label for="">Name</label>
+    
+                    <textarea name="name" class="form-control" id="content" placeholder="Input name"></textarea>
+    
+                    @error('name')
+                        <small class="badge badge-danger">{{ $message }}</small>
+                    @enderror
+                </div>
                 <div class="form-group">
                     <label for="">Content</label>
 
@@ -24,88 +25,58 @@
                 </div>
                 <div class="form-group">
                     <label for="">Slug</label>
-
+    
                     <textarea name="slug" class="form-control" id="content" placeholder="Input slug"></textarea>
-
+    
                     @error('slug')
                         <small class="badge badge-danger">{{ $message }}</small>
                     @enderror
                 </div>
+               
            
-            <div class="form-group">
-                <label for="">Name</label>
-
-                <textarea name="name" class="form-control" id="content" placeholder="Input name"></textarea>
-
-                @error('name')
-                    <small class="badge badge-danger">{{ $message }}</small>
-                @enderror
-            </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
-                <label for="">NameEn</label>
-                <input type="number" class="form-control" name="nameEn" placeholder="Nhap so">
-                @error('nameEn')
+                <label for="">Thumbnail</label>
+                <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">
+                @error('thumbnail')
                     <small class="badge badge-danger">{{ $message }}</small>
                 @enderror
             </div>
            
-                <!-- <div class="form-group">
-                    <label for="">Province</label>
-                    
-                    <select name="province_id" class="form-control">
-                        <option value="">---SELECT-ONE---</option>
-                        @foreach ($data as $d)
-    <option value="{{ $d->id }}">{{ $d->name }}</option>
-    @endforeach
-                    </select>
-                    
-                    @error('blog')
-        <small class="badge badge-danger">{{ $message }}</small>
-    @enderror
-                </div> -->
-                <div class="form-group">
-                    <label for="">Thumbnail</label>
-                    <input type="file" class="form-control" name="file_upload" placeholder="Input thumbnail">
-                    @error('thumbnail')
-                        <small class="badge badge-danger">{{ $message }}</small>
-                    @enderror
+            <div class="form-gourp">
+                <label for="">NameEn</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="nameEn" value="1" checked>
+                        En
+                    </label>
+                    <label>
+                        <input type="radio" name="nameEn" value="0" checked>
+                        Vi
+                    </label>
                 </div>
-                <div class="form-gourp">
-                    <label for="">Status</label>
-                    
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="status" value="1" checked>
-                            Public
-                        </label>
-                        <label>
-                            <input type="radio" name="status" value="0" checked>
-                            Private
-                        </label>
-                    </div>
-                    <!-- <div class="form-group">
-                        <label for="">Prioty</label>
-                        <input type="number" class="form-control" name="prioty" placeholder="Nhập số lượng">
-                        @error('prioty')
-        <small class="badge badge-danger">{{ $message }}</small>
-    @enderror
-                    </div> -->
+            </div>
+            <div class="form-gourp">
+                <label for="">Status</label>
+                
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="status" value="1" checked>
+                        Public
+                    </label>
+                    <label>
+                        <input type="radio" name="status" value="0" checked>
+                        Private
+                    </label>
                 </div>
-                {{-- <div class="form-group">
-                <label for="">ThumbnailDescription</label>
-                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
-                @error('ThumbnailDescription')
-                <small class="badge badge-danger">{{$message}}</small>
-                @enderror
-            </div> --}}
+            </div>
+        </div>  
+        <div class="col-md-3">
 
-         
-      
-        </div>
-        </div>
         <button type="submit" class="btn btn-primary">Save Data</button>
+        </div>
+        </div>
     </form>
 @stop();
 {{-- @section('css')

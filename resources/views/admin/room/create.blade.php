@@ -7,7 +7,7 @@
         <div class="col-md-3">
             <div class="form-group">
                 <label for="">Name</label>
-                <input type="text" class="form-control" name="name" placeholder="Nhập tên">
+                <input type="text" class="form-control" name="name" placeholder="Nhập tên phòng">
                 @error('name')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
@@ -21,14 +21,14 @@
             </div>
             <div class="form-group">
                 <label for="">Children</label>
-                <input type="number" class="form-control" name="children" placeholder="Input children">
+                <input type="number" class="form-control" name="children" placeholder="Nhập số lượng trẻ em">
                 @error('children')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <div class="form-group">
                 <label for="">Price</label>
-                <input type="number" class="form-control" name="price" placeholder="Input price">
+                <input type="number" class="form-control" name="price" placeholder="Nhập giá">
                 @error('price')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
@@ -53,7 +53,7 @@
         
             <div class="form-group">
                 <label for="">ThumbnailDescription</label>
-                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
+                <input type="text" class="form-control" name="thumbnailDescription" placeholder="Mô tả hình ảnh">
                 @error('ThumbnailDescription')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
@@ -61,7 +61,7 @@
            
             <div class="form-group">
                 <label for="">Slug</label>
-                <input type="text" class="form-control" name="slug" placeholder="Input slug">
+                <input type="text" class="form-control" name="slug" placeholder="Slug">
                 @error('slug')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
@@ -71,7 +71,7 @@
             <div class="form-group">
                 <label for="">Description</label>
                 
-                <textarea name="description" class="form-control" id="content" placeholder="Input description"></textarea>
+                <textarea name="description" class="form-control" id="content" placeholder="Mô tả"></textarea>
                 
                 @error('description')
                 <small class="badge badge-danger">{{$message}}</small>
@@ -81,7 +81,7 @@
             <div class="form-group">
                 <label for="">Area</label>
                 
-                <textarea name="area" class="form-control" id="content" placeholder="Input area"></textarea>
+                <textarea name="area" class="form-control" id="content" placeholder="Nhập khu vực"></textarea>
                 
                 @error('area')
                 <small class="badge badge-danger">{{$message}}</small>
@@ -95,7 +95,7 @@
                 <label for="">Bed Type</label>
                 
                 <select name="bedType" class="form-control">
-                    <option value="">---SELECT-ONE---</option>
+                    <option value="">---Chọn loại giường---</option>
                     @foreach($data as $d)
                     <option value="{{$d->id}}">{{$d->name}}</option>
                     @endforeach
@@ -109,7 +109,7 @@
                 <label for="">Branch_ID</label>
                 
                 <select name="branch_id" class="form-control">
-                    <option value="">---SELECT-ONE---</option>
+                    <option value="">---Chọn chi nhánh---</option>
                     @foreach($data as $d)
                     <option value="{{$d->id}}">{{$d->name}}</option>
                     @endforeach
@@ -123,7 +123,7 @@
                 <label for="">RoomType</label>
                 
                 <select name="roomType" class="form-control">
-                    <option value="">---SELECT-ONE---</option>
+                    <option value="">---Chọn loại phòng---</option>
                     @foreach($data as $d)
                     <option value="{{$d->id}}">{{$d->name}}</option>
                     @endforeach
@@ -136,7 +136,7 @@
             
             
             <div class="form-group">
-                <label for="">NameEn</label>
+                <label for="">Ngôn ngữ</label>
             <div class="radio">
                 <label>
                     <input type="radio" name="nameEn" value="1" checked>

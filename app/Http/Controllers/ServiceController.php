@@ -104,7 +104,7 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $province
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Service $service)
+    public function update(ServiceFormRequest $request, Service $service)
     {
      
         // if($request->has('file_upload')){

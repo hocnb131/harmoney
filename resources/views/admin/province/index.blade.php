@@ -22,6 +22,7 @@
             <th>ThumbnailDescription</th>
             <th>Description</th>
             <th>Action</th>
+            {{-- <th>Province_ID</th> --}}
             <th>Created_At</th>
             <th>Updated_At</th>
         </tr>
@@ -78,6 +79,7 @@
                     </a>
 
                 </td>
+                {{-- <td>{{$d->province_id}}</td> --}}
                 <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
                 <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
             </tr>

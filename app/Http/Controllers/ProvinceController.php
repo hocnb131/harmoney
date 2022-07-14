@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\Menu\ProvinceFormRequest;
+use App\Http\Requests\Menu\ProvinceEditFormRequest;
 use App\Models\Province;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -94,7 +95,7 @@ class ProvinceController extends Controller
         $province->description = $request->description;
         $province->save();
         return redirect()->route('province.index')
-        ->with('success','Province has been created successfully.');
+        ->with('success','Tạo thành công');
         }
     
 
@@ -134,7 +135,7 @@ class ProvinceController extends Controller
      * @param  \App\Models\Province  $province
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Province $province)
+    public function update(ProvinceEditFormRequest $request, Province $province)
     {
         // $province = Province::find($province);
         // // $province->id = $request->id;
@@ -165,7 +166,7 @@ class ProvinceController extends Controller
         // dd($request);
         $province->update($request->all());
         return redirect()->route('province.index')
-        ->with('success','Province has been updated successfully.');
+        ->with('success','Cập nhật thành công');
     }
 
     /**
@@ -187,6 +188,6 @@ class ProvinceController extends Controller
         // return redirect()->back();
         $province->delete();
         return redirect()->back()
-->with('success','Province has been deleted successfully');
+->with('success','Đã xóa');
     }
 }

@@ -20,9 +20,11 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $data_u = Review::with('users')->get();
-        $data_r =  Review::with('rooms')->get();
+        // $data_u = Review::with('user')->get();
+        // $data_r =  Review::with('room')->get();
         // dd($data_u);
+        $data_u = DB::table('user')->get();
+        $data_r =  DB::table('room')->get();
         $data = DB::table('review')->orderBy('id', 'desc')->paginate(5);
         if ($key = request()->key) {
             $data = DB::table('review')->orderBy('id', 'desc')->where('rate', 'like', '%' . $key . '%')->paginate(10);
@@ -37,10 +39,11 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        $data_r = Review::with('rooms')->get();
+        // $data_r = Review::with('room')->get();
         
-        $data_u = Review::with('users')->get();
-        dd($data_r);
+        // $data_u = Review::with('user')->get();
+        $data_u = DB::table('user')->get();
+        $data_r =  DB::table('room')->get();
         $data = DB::table('review')->orderBy('id', 'asc')->select('id', 'rate')->get();
         return view('admin.review.create')->with(compact('data'))->with(compact('data_u'))->with(compact('data_r'));
     }
@@ -87,9 +90,11 @@ class ReviewController extends Controller
             // $review = DB::table('review')->orderBy('name','asc')->select('id','name')->get();
             // $review = DB::table('review')->get();
             // return view('admin.review.edit',['data'=>$review]);
-            $data_u = Review::with('users')->get();
-            // dd($data_u);
-            $data_r =  Review::with('rooms')->get();
+            // $data_u = Review::with('user')->get();
+            // // dd($data_u);
+            // $data_r =  Review::with('room')->get();
+            $data_u = DB::table('user')->get();
+            $data_r =  DB::table('room')->get();
             $data = DB::table('review')->orderBy('rate', 'asc')->select('id', 'rate')->get();
             return view('admin.review.edit')->with(compact('review'))->with(compact('data'))->with(compact('data_u'))->with(compact('data_r'));
             // dd($review);
@@ -103,7 +108,7 @@ class ReviewController extends Controller
      * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Review $review)
+    public function update(ReviewFormRequest $request, Review $review)
     {
         $review->update($request->all());
         return redirect()->route('review.index')

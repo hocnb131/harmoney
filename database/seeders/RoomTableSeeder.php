@@ -24,7 +24,7 @@ class RoomTableSeeder extends Seeder
                 'description' =>'Description',
                 'calendar'=>'2022-09-08',
                 'thumbnail' => 'thumnail',
-                'thumbnailDescription'=> 'thumnailDescription',
+              
                 'price'=> '9999',
                 'bedType'=>'TypeBed',
                 'area' =>'123',

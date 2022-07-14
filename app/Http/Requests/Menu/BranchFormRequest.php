@@ -25,10 +25,13 @@ class BranchFormRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'emai' => 'required',
+            'email' => 'required',
             'address' => 'required',
             'phoneNumber' => 'required',
-            'name' => 'required',
+            'province_id'=>'required',
+            'slug'=>'required',
+            'thumbnailDescription'=>'required',
+        
         ];
     }
 // thong bao tieng viet
@@ -36,7 +39,14 @@ class BranchFormRequest extends FormRequest
     {
         return [
             'name.required' => 'Nhập tên theo số không được để trống',
-            'file_upload.required' => 'Xin vui lòng chọn ảnh'
+            'email.required' => 'Xin hãy nhập email',
+            'address.required' => 'Xin hãy nhập địa chỉ',
+            'phoneNumber.required' => 'Xin hãy nhập số điện thoại',
+            'province_id.required' => 'Xin hãy chọn tỉnh thành',
+            'slug.required' => 'Xin hãy nhập slug',
+            'thumbnailDescription.required' => 'Xin hãy nhập mô tả hình ảnh',
+
+   
 
         ];
     }

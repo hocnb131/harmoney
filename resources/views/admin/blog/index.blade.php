@@ -23,6 +23,7 @@
             <th>Status</th>
             <th>Content</th>
             <th>Thumbnail</th>
+            <th>Slug</th>
             <th>Action</th>
             <th>Created_At</th>
             <th>Updated_At</th>
@@ -51,9 +52,10 @@
                 @endif
             </td>
             <td>{{$d->content}}</td>
-            <!-- <td>{{$d->thumbnail}}</td> -->
+          
             <td><img src="{{url('/uploads')}}/{{$d->thumbnail}}" width="50" alt=""></td>
-
+            <td>{{$d->slug}}</td>
+            
      
         
             <td>
