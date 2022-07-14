@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Cáp quyền user : {{$user_name}}</div>
-                    <form action="{{url('/create_role',[$user->id])}}" method="POST">
+                <div class="card-header">Cấp quyền user : {{$user_name}}</div>
+                    <form action="" method="POST">
                         @csrf 
                         <p>Vai trò hiện tại: {{$name->role}}</p>
                         @foreach($role as key => $r)

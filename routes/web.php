@@ -15,7 +15,8 @@ use App\Http\Controllers\CouponController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
-use App\Models\Province;
+use App\Http\Controllers\PermissionController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,8 +42,7 @@ Route::prefix('admin')->group(function(){
         // Route::get('create-role',[UserController::class,'create_role'])->name('create-role');
         // Route::get('permission',[UserController::class,'permission'])->name('user.permission');
         // Route::get('create-permission',[UserController::class,'create_permission'])->name('create-permission');
-        Route::get('/phanquyen/{id}',[UserController::class,'phanquyen'])->name('phanquyen');
-
+        Route::get('/phanquyen',[UserController::class,'phanquyen'])->name('phanquyen');
         // Route::resource('role',[UserController::class]);
         Route::resources([
             'province' =>   ProvinceController::class,
@@ -50,12 +50,13 @@ Route::prefix('admin')->group(function(){
             'room'     =>   RoomController::class,
             'service'  =>   ServiceController::class,
             'blog'     =>   BlogController::class,
-                'user'     =>   UserController::class,
+            'user'     =>   UserController::class,
             'ticket'   =>   TicketController::class,
             'coupon'   =>   CouponController::class,
             'payment'  =>   PaymentController::class,
             'review'   =>   ReviewController::class,
-            'role'   =>   RoleController::class,
+            'role'     =>   RoleController::class,
+            'permission'     =>   PermissionController::class,
         ]);
 });
 

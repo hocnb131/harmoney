@@ -17,3 +17,20 @@ use Illuminate\Support\Facades\Route;
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+
+Route::get('/customers', function(){
+    $faker = Faker\Factory::create();
+    $limit = 1000;
+    $customers = [];
+    for ($i = 0; $i < $limit; $i++) {
+        $customers[$i] = [
+            'Họ và tên'     => $faker->name,
+            'Email'         => $faker->unique()->email,
+            'Số điện thoại' => $faker->phoneNumber,
+            'Website'       => $faker->domainName,
+            'Tuổi'          => $faker->numberBetween(20,100),
+            'Địa chỉ'       => $faker->address
+        ];
+    }
+    return response()->json($customers);
+});

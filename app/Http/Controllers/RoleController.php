@@ -41,8 +41,9 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $data = DB::table('role')->orderBy('name','asc')->select('id','name')->get();
-        return view('admin.role.create',['data'=>$data]);
+        // $data = DB::table('role')->get();
+        // return view('admin.role.create',['data'=>$data]);
+        return view('admin.role.create');
     }
     /**
      * Store a newly created resource in storage.

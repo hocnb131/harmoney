@@ -192,20 +192,20 @@
         ],
      
         // Permission
-        // [
-        //     'label' => 'Permission',
-        //     'route' => 'user.permission',
-        //     'icon' => 'fa-user-circle',
-        //     'item' => [
-        //         [
-        //         'label' => 'All Role', 
-        //         'route' => 'user.permission', 
-        //         ],
-        //         [
-        //         'label' => 'Add Role', 
-        //         'route' => 'user.create_permission', 
-        //         ],    
-        //     ]
-        // ],
+        [
+            'label' => 'Permission',
+            'route' => 'permission.index',
+            'icon' => 'fa-user-circle',
+            'item' => [
+                [
+                'label' => 'All Permission', 
+                'route' => 'permission.index', 
+                ],
+                [
+                'label' => 'Add Permission', 
+                'route' => 'permission.create', 
+                ],    
+            ]
+        ],
     ]
 ?>

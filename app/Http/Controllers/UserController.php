@@ -1,16 +1,18 @@
 <?php
 namespace App\Http\Controllers;
 use App\Models\User;
+use App\Models\Role;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Requests\Menu\UserFormRequest;
-use Spatie\Permission\Models\Role;
+// use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+
 class UserController extends Controller
 
 {
@@ -21,19 +23,20 @@ class UserController extends Controller
      */
     public function index(User $user)
     {
-        $user = User::find(4);
+        // $user = User::find(4);
 
-        $role = Role::create(['name' => 'Manager-qqqqq']);
-        $permission = Permission::create(['name' => 'Blog-qqqq']);
-        $permission->syncRoles($role);
-        $permission->assignRole($role);
+        // $role = Role::create(['name' => 'Manager-qqqqq']);
+        // $permission = Permission::create(['name' => 'Blog-qqqq']);
+        // $permission->syncRoles($role);
+        // $permission->assignRole($role);
 
 
         $data = DB::table('user')->orderBy('id','desc')->paginate(5);
         if($key = request()->key){
         $data = DB::table('user')->orderBy('id','desc')->where('fullName','like','%'.$key.'%')->paginate(10);
         }
-        return view('admin.user.index',['data'=>$data],['role'=>$role],['permission'=>$permission]);
+        // return view('admin.user.index',['data'=>$data],['role'=>$role],['permission'=>$permission]);
+        return view('admin.user.index',['data'=>$data]);
     }
     /**
      * Show the form for creating a new resource.
@@ -160,12 +163,20 @@ class UserController extends Controller
 
     //     return view('admin.user.create_permission');
     // }
-    public function phanquyen($id){
+    public function phanquyen(User $user){
+        // $user = User::find($user);
+        // $name_role = $user->role->first()->name;
+        // $role = Role::orderBy('id','DESC')->get();
+        // // $role = DB::table('role')->orderBy('id','desc')->get();
+        // $all_column_roles = $user->roles->first();
+        return view('admin.user.phanquyen');
+        // return view('admin.user.phanquyen')->with(compact('user'))->with(compact('role'))->with(compact('all_column_roles'))->with(compact('name_role'));
+    }
+    public function create_role(Request $request,$id){
+        $data = $request->all();
         $user = User::find($id);
-        $name_role = $user->role->first()->name;
-        $role = Role::orderBy('id','DESC')->get();
-        $all_column_roles = $user->roles->first();
-        return view('admin.user.phanquyen',compact('user','role','all_column_roles'));
+        $user->syncRoles($data['role']);
+        return redirect()->back()->with('success','Thêm vai trò thành công');
     }
 
 }
