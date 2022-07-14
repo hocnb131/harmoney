@@ -84,7 +84,7 @@ class CouponController extends Controller
      * @param  \App\Models\Coupon  $coupon
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Coupon $coupon)
+    public function update(CouponFormRequest $request, Coupon $coupon)
     {
         // dd($coupon);
         $coupon->update($request->all());

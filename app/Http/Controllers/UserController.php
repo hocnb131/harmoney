@@ -23,17 +23,17 @@ class UserController extends Controller
     {
         $user = User::find(4);
 
-        $role = Role::create(['name' => 'Manager-qqqqq']);
-        $permission = Permission::create(['name' => 'Blog-qqqq']);
-        $permission->syncRoles($role);
-        $permission->assignRole($role);
+        // $role = Role::create(['name' => 'Manager-qqqqq']);
+        // $permission = Permission::create(['name' => 'Blog-qqqq']);
+        // $permission->syncRoles($role);
+        // $permission->assignRole($role);
 
 
         $data = DB::table('user')->orderBy('id','desc')->paginate(5);
         if($key = request()->key){
         $data = DB::table('user')->orderBy('id','desc')->where('fullName','like','%'.$key.'%')->paginate(10);
         }
-        return view('admin.user.index',['data'=>$data],['role'=>$role],['permission'=>$permission]);
+        return view('admin.user.index',['data'=>$data]);
     }
     /**
      * Show the form for creating a new resource.
@@ -163,7 +163,7 @@ class UserController extends Controller
     public function phanquyen($id){
         $user = User::find($id);
         $name_role = $user->role->first()->name;
-        $role = Role::orderBy('id','DESC')->get();
+        // $role = Role::orderBy('id','DESC')->get();
         $all_column_roles = $user->roles->first();
         return view('admin.user.phanquyen',compact('user','role','all_column_roles'));
     }

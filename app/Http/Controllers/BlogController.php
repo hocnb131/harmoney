@@ -107,7 +107,7 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $province
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(BlogFormRequest $request, Blog $blog)
     {
      
         if($request->has('file_upload')){

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('status')->nullable();
             $table->char('content');
             $table->char('slug')->nullable();
-            $table->char('name');
+            $table->char('name');   
             $table->integer('nameEn')->nullable();
             $table->char('thumbnail')->nullable();
             $table->timestamps();

@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Requests\Menu\branchFormRequest;
+use App\Http\Requests\Menu\BranchFormRequest;
+// use App\Http\Requests\Menu\BranchEditFormRequest;
+
 use App\Models\Branch;
 use App\Models\Province;
 use Illuminate\Http\Request;
@@ -60,7 +62,7 @@ class BranchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BranchFormRequest $request)
     {
 
         // $request->validate([
@@ -148,7 +150,7 @@ class BranchController extends Controller
      * @param  \App\Models\branch  $branch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Branch $branch)
+    public function update(BranchFormRequest $request, Branch $branch)
     {
         // $branch = branch::find($branch);
         // // $branch->id = $request->id;

@@ -21,8 +21,8 @@ return new class extends Migration
             $table->char('description')->nullable();
             $table->date('calendar');
             $table->char('thumbnail')->nullable();
-            $table->char('thumbnailDescription')->nullable();
-            $table->double('price',8,2);
+            $table->json('thumbnailDescription')->nullable();
+            $table->double('price');
             $table->char('bedType');
             $table->integer('area');
             $table->char('slug')->nullable();

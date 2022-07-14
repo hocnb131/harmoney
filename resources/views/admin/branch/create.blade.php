@@ -4,7 +4,7 @@
 <form action="{{route('branch.store')}}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-6">
             <div class="form-group">
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name" placeholder="Input name">
@@ -22,7 +22,7 @@
             <div class="form-group">
                 <label for="">Address</label>
                 <input type="text" class="form-control" name="address" placeholder="Input address">
-                @error('ddress')
+                @error('address')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
@@ -43,7 +43,7 @@
                 @enderror
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
         <div class="form-group">
                 <label for="">Province</label>
                 
@@ -51,10 +51,12 @@
                     <option value="">---SELECT-ONE---</option>
                     @foreach($datab as $d)
                     <option value="{{$d->id}}">{{$d->name}}</option>
+                 
                     @endforeach
+                    
                 </select>
                 
-                @error('province')
+                @error('province_id')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
@@ -68,7 +70,7 @@
             <div class="form-group">
                 <label for="">ThumbnailDescription</label>
                 <input type="text" class="form-control" name="thumbnailDescription" placeholder="Input thumbnailDescription">
-                @error('ThumbnailDescription')
+                @error('thumbnailDescription')
                 <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>

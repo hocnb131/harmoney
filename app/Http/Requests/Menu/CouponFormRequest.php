@@ -24,7 +24,7 @@ class CouponFormRequest extends FormRequest
     public function rules()
     {
         return [          
-            'code' => 'required|min:11|max:11',
+            'code' => 'required|min:1|max:11',
             'started_at' => 'required',
             'ended_at' => 'required',
             'percent'=>'required|max:2|gt:0',
@@ -35,7 +35,7 @@ class CouponFormRequest extends FormRequest
         return [
             'code.required'=>'Vui lòng không để trống Code',
             'code.max'=>'Vui lòng nhập Code không quá 11 kí tự',
-            'code.min'=>'Vui lòng nhập Code ít nhất 11 kí tự',
+            'code.min'=>'Vui lòng nhập Code ít nhất 1 kí tự',
             'started_at.required'=>'Vui lòng chọn ngày bắt đầu',
             'ended_at.required'=>'Vui lòng chọn ngày kết thúc',
             'percent.required'=>'Vui lòng không để trống %',

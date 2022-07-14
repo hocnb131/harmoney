@@ -11,7 +11,7 @@
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name" value="{{$province->name}}" placeholder="Input name">
                 @error('name')
-                <small class="help-block">{{$message}}</small>
+                <small class="badge badge-danger">{{$message}}</small>
                 @enderror
             </div>
             <!-- <div class="form-group">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Room;
 use Illuminate\Http\Request;
 use App\Http\Requests\Menu\RoomFormRequest;
+use App\Http\Requests\Menu\RoomEditFormRequest;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
@@ -103,7 +104,6 @@ class RoomController extends Controller
     public function edit(Room $room)
     {
         {
-          
             $data = DB::table('room')->orderBy('name','asc')->select('id','name')->get();
             return view('admin.room.edit',compact('room','data'));
             // dd($province);
@@ -117,7 +117,7 @@ class RoomController extends Controller
      * @param  \App\Models\Room  $province
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Room $room)
+    public function update(RoomEditFormRequest $request, Room $room)
     {
      
         if($request->has('file_upload')){
