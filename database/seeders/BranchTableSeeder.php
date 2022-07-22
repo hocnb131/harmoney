@@ -20,7 +20,7 @@ class BranchTableSeeder extends Seeder
             [
             'thumbnail' => 'hinh3',
             'thumbnailDescription'=> 'hinh333',
-            'description' => 'hinh3',
+            'description' => '1',
             'status'=> 1,
             'address'=>'100 quang trung',
             'phoneNumber'=>'0123456789',

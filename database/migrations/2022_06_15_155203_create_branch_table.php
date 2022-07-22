@@ -19,7 +19,7 @@ return new class extends Migration
             $table->char('email');
             $table->char('address');
             $table->integer('phoneNumber');
-            $table->char('description')->nullable();
+            $table->longText('description')->nullable();
             $table->char('thumbnail')->nullable();
             $table->char('thumbnailDescription');
             $table->char('slug');

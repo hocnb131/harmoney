@@ -73,6 +73,7 @@ class BranchController extends Controller
         //     'name.required' => 'Tên không được để trống'
         // ]
         // );
+        // dd($request->all());
 
         if($request->has('file_upload')){
             $file = $request->file_upload;
@@ -86,9 +87,25 @@ class BranchController extends Controller
         }else{
             $file_name = $request->thumbnail;
         }
-        
         $request->merge(['thumbnail'=> $file_name]);
+/////
+/////
+        // if($request->has('files')){
+        //     $file1 = $request->files;
+        //     dd($file1);
+        //     $ext1 = $request->files->extension();
+            // dd($ext1);
+            // $file_name1 = $file->getClientoriginalName();
+            // dd($file_name1);
+
+        //     $file_name = time().'-'.'branch.'.$ext;
+        //     // dd($file_name);
+        //     $file->move(public_path('uploads'),$file_name);
+        // }else{
+        //     $file_name = $request->thumbnail;
+        // }
         
+        // $request->merge(['thumbnail'=> $file_name]);
         // dd($request->all());
     // if(DB::table('branch')($request->all())){
     //     return redirect()->route('branch.index')->with('success','Thêm mới branch thành công');
@@ -108,6 +125,7 @@ class BranchController extends Controller
         $branch->nameEn = $request->nameEn;
         $branch->province_id = $request->province_id;
         $branch->save();
+
         return redirect()->route('branch.index')
         ->with('success','Branch has been created successfully.');
         }

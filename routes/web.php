@@ -57,6 +57,7 @@ Route::prefix('admin')->group(function(){
             'review'   =>   ReviewController::class,
             'role'     =>   RoleController::class,
             'permission'     =>   PermissionController::class,
+            
         ]);
 });
 

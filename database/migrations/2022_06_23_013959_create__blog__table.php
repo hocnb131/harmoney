@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('Blog', function (Blueprint $table) {
             $table->id();
             $table->integer('status')->nullable();
-            $table->char('content');
+            $table->longText('content');
             $table->char('slug')->nullable();
             $table->char('name');   
             $table->integer('nameEn')->nullable();
