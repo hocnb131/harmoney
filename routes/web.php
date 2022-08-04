@@ -16,6 +16,7 @@ use App\Http\Controllers\TicketController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\MailController;
 
 
 /*
@@ -32,7 +33,7 @@ use App\Http\Controllers\PermissionController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('send-mail', [MailController::class, 'index']);
 Auth::routes();
 Route::prefix('admin')->group(function(){
         // Route::get('/',[HomeController::class,'index'])->name('home');
@@ -45,18 +46,18 @@ Route::prefix('admin')->group(function(){
         Route::get('/phanquyen',[UserController::class,'phanquyen'])->name('phanquyen');
         // Route::resource('role',[UserController::class]);
         Route::resources([
-            'province' =>   ProvinceController::class,
-            'branch'   =>   BranchController::class,
-            'room'     =>   RoomController::class,
-            'service'  =>   ServiceController::class,
-            'blog'     =>   BlogController::class,
-            'user'     =>   UserController::class,
-            'ticket'   =>   TicketController::class,
-            'coupon'   =>   CouponController::class,
-            'payment'  =>   PaymentController::class,
-            'review'   =>   ReviewController::class,
-            'role'     =>   RoleController::class,
-            'permission'     =>   PermissionController::class,
+            'province'      =>   ProvinceController::class,
+            'branch'        =>   BranchController::class,
+            'room'          =>   RoomController::class,
+            'service'       =>   ServiceController::class,
+            'blog'          =>   BlogController::class,
+            'user'          =>   UserController::class,
+            'ticket'        =>   TicketController::class,
+            'coupon'        =>   CouponController::class,
+            'payment'       =>   PaymentController::class,
+            'review'        =>   ReviewController::class,
+            'role'          =>   RoleController::class,
+            'permission'    =>   PermissionController::class,
             
         ]);
 });
