@@ -8,81 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="telephone=no" name="format-detection">
     <title></title>
-    <!--[if (mso 16)]>
-    <style type="text/css">
-    a {text-decoration: none;}
-    </style>
-    <![endif]-->
-    <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
-    <!--[if gte mso 9]>
-<xml>
-    <o:OfficeDocumentSettings>
-    <o:AllowPNG></o:AllowPNG>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-    </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
 </head>
-
 <body>
     <div class="es-wrapper-color">
         <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0">
             <tbody>
                 <tr>
                     <td class="esd-email-paddings" valign="top">
-                        <table cellpadding="0" cellspacing="0" class="es-content esd-header-popover" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="es-adaptive esd-stripe" esd-custom-block-id="1733" align="center">
-                                        <table class="es-content-body" style="background-color: #efefef;" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p15t es-p15b es-p20r es-p20l" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="270" valign="top"><![endif]-->
-                                                        <table class="es-left" cellspacing="0" cellpadding="0" align="left">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="270" align="left">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="es-infoblock esd-block-text es-m-txt-c" align="left">
-                                                                                        <p>Put your preheader text here</p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="270" valign="top"><![endif]-->
-                                                        <table class="es-right" cellspacing="0" cellpadding="0" align="right">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="270" align="left">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td align="right" class="es-infoblock esd-block-text es-m-txt-c">
-                                                                                        <p><a href="https://viewstripo.email" target="_blank" class="view">View in browser</a></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                         <table cellpadding="0" cellspacing="0" class="es-header" align="center">
                             <tbody>
                                 <tr>
@@ -90,16 +22,16 @@
                                         <table class="es-header-body" style="background-color: #fef5e4;" width="600" cellspacing="0" cellpadding="0" bgcolor="#fef5e4" align="center">
                                             <tbody>
                                                 <tr>
-                                                    <td class="esd-structure es-p5t es-p5b es-p15r es-p15l" align="left">
+                                                    <td class="esd-structure es-p5t es-p5b es-p15r es-p15l" align="center">
                                                         <!--[if mso]><table width="570" cellpadding="0" cellspacing="0"><tr><td width="180" valign="top"><![endif]-->
-                                                        <table class="es-left" cellspacing="0" cellpadding="0" align="left">
+                                                        <table class="es-left" cellspacing="0" cellpadding="0" align="center">
                                                             <tbody>
                                                                 <tr>
                                                                     <td class="es-m-p0r esd-container-frame" width="180" valign="top" align="center">
                                                                         <table width="100%" cellspacing="0" cellpadding="0">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="esd-block-image es-m-p0l es-p15l es-m-txt-c" align="left" style="font-size:0"><a href="https://viewstripo.email/" target="_blank"><img src="https://tlr.stripocdn.email/content/guids/CABINET_5ebd51945adb862745b1a105fbb2c4f4/images/431502878865957.png" alt="Petshop logo" title="Petshop logo" width="118"></a></td>
+                                                                                    <td class="esd-block-image es-m-p0l es-p15l es-m-txt-c" align="center" style="font-size:0"><a href="home" target="_blank"><img src="https://tlr.stripocdn.email/content/guids/CABINET_5ebd51945adb862745b1a105fbb2c4f4/images/431502878865957.png" alt="Petshop logo" title="Petshop logo" width="118"></a></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -107,34 +39,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="370" valign="top"><![endif]-->
-                                                        <table cellspacing="0" cellpadding="0" align="right">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="370" align="left">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-menu" esd-img-prev-h="16" esd-img-prev-w="13">
-                                                                                        <table class="es-menu" width="100%" cellspacing="0" cellpadding="0">
-                                                                                            <tbody>
-                                                                                                <tr class="links">
-                                                                                                    <td class="es-p10t es-p10b es-p5r es-p5l" style="padding-bottom: 10px; padding-top: 20px; " width="25.00%" bgcolor="transparent" align="center"><a style="color: #333333; font-size: 16px;" href="https://viewstripo.email/">Accessories</a></td>
-                                                                                                    <td class="es-p10t es-p10b es-p5r es-p5l" style="padding-bottom: 10px; padding-top: 20px; " width="25.00%" bgcolor="transparent" align="center"><a style="color: #333333; font-size: 16px;" href="https://viewstripo.email/">Belts</a></td>
-                                                                                                    <td class="es-p10t es-p10b es-p5r es-p5l" style="padding-bottom: 10px; padding-top: 20px; " width="25.00%" bgcolor="transparent" align="center"><a style="color: #333333; font-size: 16px;" href="https://viewstripo.email/">Cages</a></td>
-                                                                                                    <td class="es-p10t es-p10b es-p5r es-p5l" style="padding-bottom: 10px; padding-top: 20px; " width="25.00%" bgcolor="transparent" align="center"><a style="color: #333333; font-size: 16px;" href="https://viewstripo.email/">Other</a></td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -159,16 +63,16 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p10t es-p15b" align="center">
-                                                                                        <h1>Thanks for your order<br></h1>
+                                                                                        <h1>Cảm ơn đã đặt phòng tại Harmony Hotel<br></h1>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p5t es-p5b es-p40r es-p40l" align="center">
-                                                                                        <p style="color: #333333;">You'll receive an email when your items are shipped. If you have any questions, Call us 1-800-1234-5678.</p>
+                                                                                        <p style="color: #333333;">Xác nhận đặt phòng đã được gửi tới email của bạn</p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td class="esd-block-button es-p15t es-p10b" align="center"><span class="es-button-border" style="border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-style: solid; border-color: #2cb543; border-top: 0px solid #2cb543; border-bottom: 0px solid #2cb543;"><a href="https://viewstripo.email/" class="es-button" target="_blank" style="font-size: 16px; border-top-width: 10px; border-bottom-width: 10px; border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-color: #d48344;">View order status</a></span></td>
+                                                                                    <td class="esd-block-button es-p15t es-p10b" align="center"><span class="es-button-border" style="border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-style: solid; border-color: #2cb543; border-top: 0px solid #2cb543; border-bottom: 0px solid #2cb543;"><a href="https://viewstripo.email/" class="es-button" target="_blank" style="font-size: 16px; border-top-width: 10px; border-bottom-width: 10px; border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-color: #d48344;">Kiểm tra thông tin</a></span></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -201,7 +105,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                                                        <h4>SUMMARY:</h4>
+                                                                                        <h4>TÓM TẮT</h4>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -209,15 +113,15 @@
                                                                                         <table style="width: 100%;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0" align="left">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">Order #:</span></td>
+                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">Mã booking:</span></td>
                                                                                                     <td><span style="font-size: 14px; line-height: 150%;">945645546</span></td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">Order Date:</span></td>
+                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">Ngày đặt:</span></td>
                                                                                                     <td><span style="font-size: 14px; line-height: 150%;">Oct 21, 2017</span></td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">Order Total:</span></td>
+                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">Tổng:</span></td>
                                                                                                     <td><span style="font-size: 14px; line-height: 150%;">$80.67</span></td>
                                                                                                 </tr>
                                                                                             </tbody>
@@ -240,14 +144,14 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p20t es-p10b es-p20r es-p20l" align="left">
-                                                                                        <h4>SHIPPING ADDRESS:<br></h4>
+                                                                                        <h4>ĐỊA CHỈ:<br></h4>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p20b es-p20r es-p20l" align="left">
-                                                                                        <p>Andry Petrin</p>
-                                                                                        <p>78 Somewhere St</p>
-                                                                                        <p>Somewhere, Canada 99743</p>
+                                                                                        <p>Harmony Hotel</p>
+                                                                                        <p>Brand</p>
+                                                                                        <p>Provine</p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -282,7 +186,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p20l" align="left">
-                                                                                        <h4>ITEMS ORDERED</h4>
+                                                                                        <h4>ĐƠN ĐẶT</h4>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -303,9 +207,9 @@
                                                                                         <table style="width: 100%;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td><span style="font-size:13px;">NAME</span></td>
-                                                                                                    <td style="text-align: center;" width="60"><span style="font-size:13px;"><span style="line-height: 100%;">QTY</span></span></td>
-                                                                                                    <td style="text-align: center;" width="100"><span style="font-size:13px;"><span style="line-height: 100%;">PRICE</span></span></td>
+                                                                                                    <td><span style="font-size:13px;">PHÒNG</span></td>
+                                                                                                    <td style="text-align: center;" width="60"><span style="font-size:13px;"><span style="line-height: 100%;">SỐ NGƯỜI</span></span></td>
+                                                                                                    <td style="text-align: center;" width="100"><span style="font-size:13px;"><span style="line-height: 100%;">GIÁ</span></span></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -357,7 +261,7 @@
                                                                         <table width="100%" cellspacing="0" cellpadding="0">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td class="esd-block-image" align="center" style="font-size:0"><a href="https://viewstripo.email" target="_blank"><img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/78761502968147773.jpg" alt="Natural Balance L.I.D., sale 30%" class="adapt-img" title="Natural Balance L.I.D., sale 30%" width="125"></a></td>
+                                                                                    <td class="esd-block-image" align="center" style="font-size:0"><a href="ticket" target="_blank"><img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/78761502968147773.jpg" alt="Natural Balance L.I.D., sale 30%" class="adapt-img" title="Natural Balance L.I.D., sale 30%" width="125"></a></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -588,19 +492,15 @@
                                                                                         <table style="width: 500px;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0" align="right">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">Subtotal (3 items):</td>
+                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">Tổng:</td>
                                                                                                     <td style="text-align: right; font-size: 18px; line-height: 150%;">$40.57</td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">Flat-rate Shipping:</td>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%; color: #d48344;"><strong>FREE</strong></td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">Discount:</td>
+                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">Coupon:</td>
                                                                                                     <td style="text-align: right; font-size: 18px; line-height: 150%;">$0.00</td>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;"><strong>Order Total:</strong></td>
+                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;"><strong>Giá cuối:</strong></td>
                                                                                                     <td style="text-align: right; font-size: 18px; line-height: 150%; color: #d48344;"><strong>$40.57</strong></td>
                                                                                                 </tr>
                                                                                             </tbody>
@@ -666,7 +566,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p15t es-p20b es-m-txt-c" align="left">
-                                                                                        <p style="line-height: 150%;"><span style="font-size: 20px; line-height: 150%;">Information</span></p>
+                                                                                        <p style="line-height: 150%;"><span style="font-size: 20px; line-height: 150%;">Thông tin</span></p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -687,37 +587,6 @@
                                                             </tbody>
                                                         </table>
                                                         <!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="esd-footer-popover es-content" cellspacing="0" cellpadding="0" align="center">
-                            <tbody>
-                                <tr>
-                                    <td class="esd-stripe" align="center">
-                                        <table class="es-content-body" style="background-color: transparent;" width="600" cellspacing="0" cellpadding="0" align="center">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="esd-structure es-p30t es-p30b es-p20r es-p20l" align="left">
-                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="560" valign="top" align="center">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-image es-infoblock made_with" align="center" style="font-size:0"><a target="_blank" href="https://viewstripo.email/?utm_source=templates&utm_medium=email&utm_campaign=pets&utm_content=trigger_newsletter"><img src="https://tlr.stripocdn.email/content/guids/CABINET_9df86e5b6c53dd0319931e2447ed854b/images/64951510234941531.png" alt width="125"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
                                                     </td>
                                                 </tr>
                                             </tbody>
