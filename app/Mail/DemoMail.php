@@ -31,9 +31,9 @@ class demoMail extends Mailable
     public function build()
     {
         $address = config("mail.from.address");
-        $name = 'Harmony';
+        $name = 'Harmony Hotel';
   
-        $this->subject('Mail from Hamony')
+        $this->subject('Xác nhận đặt phòng thành công')
                     ->view('emails.demoMail')
                     ->from($address, $name);
   

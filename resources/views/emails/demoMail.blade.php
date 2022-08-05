@@ -23,7 +23,6 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="esd-structure es-p5t es-p5b es-p15r es-p15l" align="center">
-                                                        <!--[if mso]><table width="570" cellpadding="0" cellspacing="0"><tr><td width="180" valign="top"><![endif]-->
                                                         <table class="es-left" cellspacing="0" cellpadding="0" align="center">
                                                             <tbody>
                                                                 <tr>
@@ -68,11 +67,11 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p5t es-p5b es-p40r es-p40l" align="center">
-                                                                                        <p style="color: #333333;">Xác nhận đặt phòng đã được gửi tới email của bạn</p>
+                                                                                        <p style="color: #333333;">Xác nhận đặt phòng đã được gửi tới {{ $mailData['name'] }}</p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
-                                                                                    <td class="esd-block-button es-p15t es-p10b" align="center"><span class="es-button-border" style="border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-style: solid; border-color: #2cb543; border-top: 0px solid #2cb543; border-bottom: 0px solid #2cb543;"><a href="https://viewstripo.email/" class="es-button" target="_blank" style="font-size: 16px; border-top-width: 10px; border-bottom-width: 10px; border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-color: #d48344;">Kiểm tra thông tin</a></span></td>
+                                                                                    <td class="esd-block-button es-p15t es-p10b" align="center"><span class="es-button-border" style="border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-style: solid; border-color: #2cb543; border-top: 0px solid #2cb543; border-bottom: 0px solid #2cb543;"><a href="ticket" class="es-button" target="_blank" style="font-size: 16px; border-top-width: 10px; border-bottom-width: 10px; border-radius: 5px; background: #d48344 none repeat scroll 0% 0%; border-color: #d48344;">Kiểm tra thông tin</a></span></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -96,7 +95,6 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="esd-structure es-p20t es-p30b es-p20r es-p20l" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="280" valign="top"><![endif]-->
                                                         <table class="es-left" cellspacing="0" cellpadding="0" align="left">
                                                             <tbody>
                                                                 <tr>
@@ -135,7 +133,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td><td width="0"></td><td width="280" valign="top"><![endif]-->
                                                         <table class="es-right" cellspacing="0" cellpadding="0" align="right">
                                                             <tbody>
                                                                 <tr>
@@ -160,7 +157,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -177,7 +173,6 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="esd-structure es-p10t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="270" valign="top"><![endif]-->
                                                         <table class="es-left" cellspacing="0" cellpadding="0" align="left">
                                                             <tbody>
                                                                 <tr>
@@ -195,7 +190,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="270" valign="top"><![endif]-->
                                                         <table cellspacing="0" cellpadding="0" align="right">
                                                             <tbody>
                                                                 <tr>
@@ -221,7 +215,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -253,7 +246,6 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="esd-structure es-p5t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="178" valign="top"><![endif]-->
                                                         <table class="es-left" cellspacing="0" cellpadding="0" align="left">
                                                             <tbody>
                                                                 <tr>
@@ -269,7 +261,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="362" valign="top"><![endif]-->
                                                         <table cellspacing="0" cellpadding="0" align="right">
                                                             <tbody>
                                                                 <tr>
@@ -297,7 +288,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -327,56 +317,6 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="esd-structure es-p5t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="178" valign="top"><![endif]-->
-                                                        <table class="es-left" cellspacing="0" cellpadding="0" align="left">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="es-m-p0r es-m-p20b esd-container-frame" width="178" valign="top" align="center">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-image" align="center" style="font-size:0"><a href="https://viewstripo.email" target="_blank"><img src="https://tlr.stripocdn.email/content/guids/CABINET_075cee78891ca18b1516e76ce7e767a0/images/53081502967864113.jpg" alt="Dog Treats" class="adapt-img" title="Dog Treats" width="125"></a></td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="362" valign="top"><![endif]-->
-                                                        <table cellspacing="0" cellpadding="0" align="right">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="esd-container-frame" width="362" align="left">
-                                                                        <table width="100%" cellspacing="0" cellpadding="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td class="esd-block-text" align="left">
-                                                                                        <p><br></p>
-                                                                                        <table style="width: 100%;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0">
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    <td>Dog Treats<br></td>
-                                                                                                    <td style="text-align: center;" width="60">1</td>
-                                                                                                    <td style="text-align: center;" width="100">$2.57</td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                        <p><br></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <tr>
                                                     <td class="esd-structure es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
                                                         <table width="100%" cellspacing="0" cellpadding="0">
                                                             <tbody>
@@ -405,7 +345,6 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="esd-structure es-p5t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="178" valign="top"><![endif]-->
                                                         <table class="es-left" cellspacing="0" cellpadding="0" align="left">
                                                             <tbody>
                                                                 <tr>
@@ -421,7 +360,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="362" valign="top"><![endif]-->
                                                         <table cellspacing="0" cellpadding="0" align="right">
                                                             <tbody>
                                                                 <tr>
@@ -449,7 +387,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -530,7 +467,6 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="esd-structure es-p20" esd-general-paddings-checked="false" align="left">
-                                                        <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="178" valign="top"><![endif]-->
                                                         <table class="es-left" cellspacing="0" cellpadding="0" align="left">
                                                             <tbody>
                                                                 <tr>
@@ -542,13 +478,13 @@
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p10t es-p5b es-m-txt-c" align="left">
-                                                                                        <p>Po Box 3453 Colins St.</p>
-                                                                                        <p>Ceduna 4096 Australia</p>
+                                                                                        <p>Hotel Harmony</p>
+                                                                                        <p>Địa chỉ</p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p5t es-m-txt-c" align="left">
-                                                                                        <p><a target="_blank" href="tel:123456789">123456789</a><br><a target="_blank" href="mailto:your@mail.com">your@mail.com</a></p>
+                                                                                        <p><a target="_blank" href="tel:123456789">Điện thoại</a><br><a target="_blank" href="mailto:your@mail.com">Email</a></p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -557,7 +493,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td><td width="20"></td><td width="362" valign="top"><![endif]-->
                                                         <table cellspacing="0" cellpadding="0" align="right">
                                                             <tbody>
                                                                 <tr>
@@ -566,18 +501,13 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-p15t es-p20b es-m-txt-c" align="left">
-                                                                                        <p style="line-height: 150%;"><span style="font-size: 20px; line-height: 150%;">Thông tin</span></p>
+                                                                                        <p style="line-height: 150%;"><span style="font-size: 20px; line-height: 150%;">Xác nhận đơn đặt phòng</span></p>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td class="esd-block-text es-m-txt-c" align="left">
-                                                                                        <p>Vector graphics designed by <a target="_blank" href="http://www.freepik.com/">Freepik</a>.<br></p>
-                                                                                        <p>You are receiving this email because you have visited our site or asked us about regular newsletter<br></p>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td align="left" class="esd-block-text es-p10t es-m-txt-c">
-                                                                                        <p style="line-height: 150%; font-size: 12px;"><a target="_blank" href style="line-height: 150%; font-size: 12px;" class="unsubscribe">Unsubscribe</a> ♦ <a target="_blank" href="https://viewstripo.email" style="font-size: 12px;">Update Preferences</a> ♦ <a target="_blank" href="https://viewstripo.email" style="font-size: 12px;">Customer Support</a></p>
+                                                                                        <p>Đơn đặt phòng đã chính xác ?<a target="_blank" href="#">Không</a></p>
+                                                                                        <p>Bạn luôn có thể xem và thay đổi đặt phòng trực tuyến<br></p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -586,7 +516,6 @@
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                        <!--[if mso]></td></tr></table><![endif]-->
                                                     </td>
                                                 </tr>
                                             </tbody>
