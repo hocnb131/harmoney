@@ -120,7 +120,7 @@
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td><span style="font-size: 14px; line-height: 150%;">Tổng:</span></td>
-                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">$80.67</span></td>
+                                                                                                    <td><span style="font-size: 14px; line-height: 150%;">80.67 VNĐ</span></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -275,7 +275,7 @@
                                                                                                 <tr>
                                                                                                     <td>Natural Balance L.I.D. Sweet Potato & Venison</td>
                                                                                                     <td style="text-align: center;" width="60">1</td>
-                                                                                                    <td style="text-align: center;" width="100">$20.00</td>
+                                                                                                    <td style="text-align: center;" width="100">20.00 VNĐ</td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -374,7 +374,7 @@
                                                                                                 <tr>
                                                                                                     <td>Blue Buffalo Chicken & Brown Rice</td>
                                                                                                     <td style="text-align: center;" width="60">1</td>
-                                                                                                    <td style="text-align: center;" width="100">$18.00</td>
+                                                                                                    <td style="text-align: center;" width="100">18.00 VNĐ</td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -430,15 +430,15 @@
                                                                                             <tbody>
                                                                                                 <tr>
                                                                                                     <td style="text-align: right; font-size: 18px; line-height: 150%;">Tổng:</td>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">$40.57</td>
+                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">VNĐ</td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="text-align: right; font-size: 18px; line-height: 150%;">Coupon:</td>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">$0.00</td>
+                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%;">VNĐ</td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td style="text-align: right; font-size: 18px; line-height: 150%;"><strong>Giá cuối:</strong></td>
-                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%; color: #d48344;"><strong>$40.57</strong></td>
+                                                                                                    <td style="text-align: right; font-size: 18px; line-height: 150%; color: #d48344;"><strong>VNĐ</strong></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
