@@ -1,0 +1,36 @@
+.breadcrumbs {
+  background: #f5f5f5;
+  text-align: left;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.breadcrumbs .breadcrumb {
+  margin: 0;
+  padding: 8px 0;
+}
+
+.breadcrumbs a {
+  color: #777777;
+}
+
+.breadcrumbs a:hover {
+  color: red;
+}
+
+.breadcrumbs i {
+  color: #777777;
+}
+
+.breadcrumbs li:before {
+  display: none;
+}
+
+.breadcrumbs li.active {
+  color: black;
+}
+
+.breadcrumbs i {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=breadcrumbs_simple.css.map */

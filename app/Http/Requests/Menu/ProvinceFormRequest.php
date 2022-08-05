@@ -24,7 +24,8 @@ class ProvinceFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|numeric|',
+            // 'name' => 'required|numeric|',
+            'name' => 'required|string|',
             // 'name' => 'required|regex:/^([a-zA-Z]+)([a-zA-Z]+)*$/'
         ];
     }

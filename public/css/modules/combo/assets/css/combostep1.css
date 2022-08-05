@@ -1,0 +1,265 @@
+.main {
+  background-color: #f4f4f5;
+  padding-top: 20px;
+}
+
+.combostep1-wrapper {
+  padding: 20px;
+  background-color: white;
+}
+
+.select-hotel, .select-room {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.select-hotel:focus-visible, .select-room:focus-visible {
+  outline: none;
+}
+
+.disabled-hotel-parent {
+  opacity: 0.3;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.combostep1-left {
+  width: 70%;
+}
+
+.combostep1-left img {
+  width: 100%;
+  max-width: 810px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-right: 20px;
+}
+
+.hotel-picker {
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hotel-picker .title-hotel-picker {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.hotel-picker .input-box {
+  background-color: #f5f5f6;
+  padding: 15px;
+  max-height: 50px;
+  margin: 5px;
+}
+
+.hotel-picker .date-range-room {
+  width: 90%;
+  background-color: #f5f5f6;
+  border: 0px;
+}
+
+.hotel-picker .date-range-room:hover {
+  cursor: pointer;
+}
+
+.hotel-picker .truncate-text {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.combostep1-right {
+  width: 30%;
+  position: relative;
+}
+
+.combostep1-right .combostep1-title {
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.combostep1-right .combostep1-code {
+  color: #666666;
+  font-weight: bold;
+}
+
+.combostep1-right .combostep1-price span {
+  color: #f2a900;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.combostep1-right .combostep1-hotline {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.combostep1-process {
+  counter-reset: section;
+  height: 48px;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.combostep1-process .process-step {
+  counter-increment: section;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.combostep1-process .process-step:nth-child(1) {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.combostep1-process .process-step:nth-child(3) {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.combostep1-process .process-step:not(:nth-child(1)) {
+  border-left: 1px solid #ddd;
+}
+
+.combostep1-process .process-step .status {
+  position: relative;
+  color: #333;
+  padding-left: 40px;
+}
+
+.combostep1-process .process-step .status::before {
+  position: absolute;
+  content: "" counter(section) "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #f2a900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f2a900;
+  background: white;
+  left: 5px;
+  top: -5px;
+}
+
+.combostep1-process .active {
+  background-color: #f2a900;
+}
+
+.combostep1-process .active .status {
+  color: white;
+}
+
+.combostep1-process .active .status::before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+
+.combostep1-process .current {
+  background-color: #f2a900;
+}
+
+.combostep1-process .current .status {
+  color: white;
+}
+
+.btn-primary-mt {
+  background-color: #f2a900;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 30px;
+  min-width: 200px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.quantity-combo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  background: white;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  border-radius: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
+}
+
+.quantity-combo input {
+  border: none;
+  text-align: center;
+  width: 33px;
+  border-bottom: 1px solid #c8c8c8;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.quantity-combo input:focus-visible {
+  outline: none;
+}
+
+.quantity-combo button {
+  border: none;
+  background-color: transparent;
+}
+
+.change-quantity input {
+  background-color: white;
+  height: inherit !important;
+  padding: 0 !important;
+}
+
+.change-quantity .a_btn {
+  width: initial !important;
+  height: initial !important;
+  border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .combostep1-left {
+    width: 100%;
+  }
+  .combostep1-left img {
+    padding-right: 0px;
+  }
+  .combostep1-right {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=combostep1.css.map */

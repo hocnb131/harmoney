@@ -1,0 +1,139 @@
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.list-offer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.item-offer .image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.item-offer .image img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: 0.2s;
+}
+.item-offer .image:hover {
+  overflow: hidden;
+}
+.item-offer .image:hover img {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+.item-offer .image div {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 31px;
+  text-transform: uppercase;
+  padding: 4px 8px 4px 10px;
+  background-color: #f2a900;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: 40px;
+  z-index: 2;
+}
+.item-offer .image div::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 0px;
+  background-image: url("../../../../images/tag.png");
+  width: 56px;
+  height: 40px;
+  z-index: -1;
+}
+.item-offer .image div sup {
+  font-size: 14px;
+}
+.item-offer .text h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.item-offer .text h3 a {
+  color: #3c3c3b;
+}
+.item-offer .text .gia-user {
+  display: flex;
+  justify-content: space-between;
+}
+.item-offer .text .gia-user .gia p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f2a900;
+  margin-bottom: 0;
+}
+.item-offer .text .gia-user .user {
+  display: flex;
+}
+.item-offer .text .gia-user .user .img {
+  margin-right: 5px;
+}
+.item-offer .text .gia-user .user .img img {
+  width: auto !important;
+}
+.item-offer .text .gia-user .user p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #3c3c3b;
+  margin-bottom: 0;
+}
+
+.pagination {
+  justify-content: center !important;
+  margin: 40px 0;
+}
+.pagination a {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+}
+.pagination .current {
+  background-color: #F2A900;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .list-offer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .item-offer .image img {
+    height: auto;
+  }
+
+  .item-offer .text h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .item-offer .text .gia-user {
+    flex-wrap: wrap;
+    grid-gap: 10px;
+  }
+}/*# sourceMappingURL=home.css.map */

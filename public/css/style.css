@@ -1,0 +1,70 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container{
+    width: 100%;
+}
+.boxcenter{
+    margin: 0 auto;
+    width: 80%;
+}
+.header{
+    float: left;
+    width: 100%;
+    min-height: 70px;
+    line-height: 70px;
+}
+.header-contact{
+    float: left;
+    width: 33.33%;
+    min-height: 100px;
+    font-size: 16px;
+}
+.header-contact a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.header-contact a i{
+    margin-right: 5px;
+    font-size: 24px;
+}
+.header-logo{
+    float: left;
+    width: 33.33%;
+    min-height: 70px;
+    text-align: center;
+}
+.header-logo img{
+    width: 103px;
+    height: 55px;
+    margin-top: 5px;
+}
+
+.header-nav{
+    float: left;
+    width: 33.33%;
+    min-height: 70px;
+    font-size: 16px;
+    text-align: right;
+}
+.header-nav a{
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.content{
+    width: 100%;
+    padding-top: 100px;
+    background-color: red;
+    min-height: 1000px;
+}
+.cl{
+    clear:both;
+}
+.footer{
+    width: 100%;
+    min-height: 292px;
+    background-color: pink;
+}

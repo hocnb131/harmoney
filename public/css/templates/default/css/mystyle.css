@@ -1,0 +1,278 @@
+.rating {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #00af87;
+  border-radius: 50%;
+  position: relative;
+}
+.rating::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #00af87;
+  top: 50%;
+  left: 50%;
+}
+
+#uu-dai .gia p {
+  font-size: 20px !important;
+}
+
+.wrap-loading {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rating-active::after {
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.rating-half::after {
+  width: 5px;
+  height: 10px;
+  transform: translate(-85%, -50%);
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-right: 0;
+}
+
+.ldio-d82d0rdnc3e div {
+  position: absolute;
+  -webkit-animation: ldio-d82d0rdnc3e 1s linear infinite;
+          animation: ldio-d82d0rdnc3e 1s linear infinite;
+  width: 140px;
+  height: 140px;
+  top: 30px;
+  left: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #f0c06a;
+  background-color: white;
+}
+
+.loadingio-spinner-eclipse-akld8va2qbt {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+
+.ldio-d82d0rdnc3e {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+}
+
+.ldio-d82d0rdnc3e div {
+  box-sizing: content-box;
+}
+
+@-webkit-keyframes ldio-d82d0rdnc3e {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ldio-d82d0rdnc3e {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.uu-diem .item {
+  display: flex;
+  transition: 0.3s;
+}
+.uu-diem .item svg {
+  transition: 0.3s;
+}
+.uu-diem .item p {
+  transition: 0.3s;
+}
+.uu-diem .item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.uu-diem .item:hover p {
+  color: #f2a900;
+}
+.uu-diem .item:hover svg {
+  fill: #f2a900 !important;
+}
+.uu-diem .item .image {
+  margin-right: 25px;
+}
+.uu-diem .item .text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 144%;
+  color: #3c3c3b;
+}
+
+#scheduleModal {
+  z-index: 1051;
+}
+#scheduleModal .modal-dialog {
+  min-width: 956px;
+  height: 714px;
+}
+#scheduleModal .modal-dialog .ui-datepicker-header {
+  background-color: white;
+  border: none;
+}
+#scheduleModal .modal-dialog .ui-state-active {
+  color: #333;
+}
+#scheduleModal .modal-dialog .ui-datepicker-next .ui-icon {
+  background-image: url("../../../images/daterange_right.svg");
+}
+#scheduleModal .modal-dialog .ui-icon-circle-triangle-e,
+#scheduleModal .modal-dialog .ui-icon-circle-triangle-w {
+  background-position: unset;
+}
+#scheduleModal .modal-dialog .ui-datepicker-prev {
+  right: 25px;
+  left: inherit;
+}
+#scheduleModal .modal-dialog .ui-datepicker-prev .ui-icon {
+  background-image: url("../../../images/daterange_left.svg");
+}
+#scheduleModal .modal-dialog .ui-state-disabled .ui-state-default {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#scheduleModal .modal-dialog .ui-state-default {
+  font-weight: bold;
+}
+#scheduleModal .modal-dialog .ui-state-default:hover {
+  background-color: rgba(51, 51, 51, 0.1254901961);
+}
+#scheduleModal .modal-dialog .ui-widget {
+  border: none;
+  width: 100%;
+}
+#scheduleModal .modal-dialog .ui-widget .ui-datepicker-title {
+  display: flex;
+  height: 50px;
+  font-size: 30px;
+  margin-left: 0px;
+}
+#scheduleModal .modal-dialog .dp-highlight a {
+  background-color: rgba(242, 169, 0, 0.0862745098);
+  color: #333;
+}
+#scheduleModal .modal-dialog .dp-highlight-2 a {
+  background-color: #f2a900 !important;
+  color: white;
+}
+#scheduleModal .modal-dialog th {
+  text-align: left;
+}
+#scheduleModal .modal-dialog td {
+  width: 124px;
+  height: 64px;
+  border-spacing: 0px;
+  border: none;
+  padding: 0px;
+  border: 1px solid #ddd;
+}
+#scheduleModal .modal-dialog td a {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: none;
+}
+#scheduleModal .input {
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+}
+#scheduleModal .drop-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  color: #3c3c3b;
+  background-repeat: no-repeat;
+  background-position: 12px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#scheduleModal #range_date_hotel {
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border: none;
+  width: 100%;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  color: #3c3c3b;
+}
+#scheduleModal .btn-order-modal {
+  background-color: #f2a900 !important;
+  padding: 17px 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .title-home {
+    margin-bottom: 10px !important;
+  }
+
+  .logo img {
+    width: 86px;
+    height: 46px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .uu-dai, .diem-den, .block-home {
+    margin-top: 30px !important;
+  }
+
+  #diem-den {
+    margin-top: 0px !important;
+  }
+
+  .footer-bottom .right a {
+    margin: 5px;
+  }
+}/*# sourceMappingURL=mystyle.css.map */

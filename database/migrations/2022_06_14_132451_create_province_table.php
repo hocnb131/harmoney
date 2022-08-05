@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('province', function (Blueprint $table) {
             $table->id();
-            $table->integer('name');
+            $table->string('name');
             // $table->date('create_at');
             // $table->char('create_at');
             $table->integer('status');
