@@ -1,9 +1,5 @@
 @extends('layouts.home')
 @section('content-home')
-
-
-
-
 <div class="uu-diem container d-flex flex-wrap">
     <div class="col-md-3 col-6">
         <div class="item d-flex flex-column flex-md-row">

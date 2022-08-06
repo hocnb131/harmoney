@@ -33,9 +33,7 @@ use App\Http\Controllers\MailController;
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< Updated upstream
 Route::get('send-mail', [MailController::class, 'index']);
-=======
 Route::get('/trangchu', function () {
     return view('layouts.home');
 });
@@ -45,14 +43,9 @@ Route::prefix('vi')->group(function(){
     Route::get('/trangchu',[HomeController::class,'index'])->name('trangchu');
     Route::get('/trangchu',[HomeController::class,'index'])->name('trangchu');
 });
-
 Route::prefix('en')->group(function(){
-
+    
 });
-
-
-
->>>>>>> Stashed changes
 Auth::routes();
 Route::prefix('admin')->group(function(){
         // Route::get('/',[HomeController::class,'index'])->name('home');
