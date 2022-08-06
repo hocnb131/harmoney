@@ -41,6 +41,8 @@ Route::prefix('vi')->group(function(){
     Route::get('/trangchu',[HomeController::class,'index'])->name('trangchu');
     Route::get('/diemden',[HomeController::class,'diemden'])->name('diemden');
     Route::get('/tintuc',[HomeController::class,'tintuc'])->name('tintuc');
+    Route::get('/chitiettin',[HomeController::class,'chitiettin'])->name('chitiettin');
+
 });
 Route::prefix('en')->group(function(){
     

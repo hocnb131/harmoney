@@ -16,6 +16,9 @@ class HomeController extends Controller
     public function tintuc(){
         return view('user.language.vi.news.index');
     }
+    public function chitiettin(){
+        return view('user.language.vi.news.detail');
+    }
     public function diemden(){
         $province = DB::table('province')->get();
         $branch = DB::table('branch')->get();

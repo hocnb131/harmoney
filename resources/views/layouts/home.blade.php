@@ -29,7 +29,8 @@
     <meta http-equiv="REFRESH" content="1800">
 <!--  -->
 <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/home.css"> 
-<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css?v=1.69">
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css">
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/detail.css">
 <!--  -->
     <link rel="canonical" href="index.htm">
     <link rel="alternate" media="handheld" href="index.htm">
