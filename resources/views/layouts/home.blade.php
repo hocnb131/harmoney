@@ -28,6 +28,7 @@
     <meta name="RATING" content="GENERAL">
     <meta http-equiv="REFRESH" content="1800">
 <!--  -->
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/home.css"> 
 <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css?v=1.69">
 <!--  -->
     <link rel="canonical" href="index.htm">
@@ -49,7 +50,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/templates/default/css/mmenu.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/templates/default/css/daterangepicker.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/templates/default/css/select2.min.css">
-
 </head>
 
 <body>
