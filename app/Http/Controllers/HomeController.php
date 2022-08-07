@@ -25,7 +25,7 @@ class HomeController extends Controller
         return view('user.language.vi.destination.index',compact('province','branch'));
     }
     public function khachsan(){
-        return view('user.language.vi.hotel');
+        return view('user.language.vi.hotel.index');
     }
 
 }
