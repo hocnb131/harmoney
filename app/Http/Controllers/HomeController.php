@@ -27,5 +27,4 @@ class HomeController extends Controller
     public function khachsan(){
         return view('user.language.vi.hotel.index');
     }
-
 }

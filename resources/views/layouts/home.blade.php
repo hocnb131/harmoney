@@ -31,7 +31,16 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/home.css"> 
 <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css">
 <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/detail.css">
-<!--  -->
+{{-- Brand --}}
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/lightGallery/dist/css/lightgallery.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/lightGallery/dist/css/lg-video.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/lightGallery/dist/css/lg-zoom.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/lightGallery/dist/css/lg-thumbnail.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/lightGallery/dist/css/lightgallery-bundle.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/jquery/jquery.ui/jquery-ui.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/foods/assets/css/flickity.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/hotels/assets/css/hotels.css">
+
     <link rel="canonical" href="index.htm">
     <link rel="alternate" media="handheld" href="index.htm">
     <link rel="alternate" href="index.htm" hreflang="x">
@@ -39,8 +48,7 @@
     <link rel="alternate" type="application/rss+xml" title="Mường Thanh Hospitality Feed"
         href="https://booking.muongthanh.com/rss.xml">
     <script src="{{url('/css')}}/libraries/jquery/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen"
-        href="{{url('/css')}}/libraries/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/libraries/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/templates/default/css/bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/templates/default/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/templates/default/css/mystyle.css">
@@ -1044,6 +1052,34 @@
             </div>
         </div>
     </div>
+    {{-- <div class="sticky-menu">
+        <ul id="list-example" class="container menu-hotel navigation">
+            <li>
+                <a href="#overview" class="scroll-to">Overview</a>
+            </li>
+            <li>
+                <a href="#list-room-wrapper" class="scroll-to">Rooms Type</a>
+            </li>
+            <li>
+                <a href="#offers" class="scroll-to">Special Offers</a>
+            </li>
+            <li>
+                <a href="#services" class="scroll-to">Services</a>
+            </li>
+            <li>
+                <a href="#position" class="scroll-to">Location</a>
+            </li>
+            <li>
+                <a href="#qna" class="scroll-to">FAQs</a>
+            </li>
+            <li>
+                <a href="#regulation" class="scroll-to">HOUSE RULES</a>
+            </li>
+            <li>
+                <a href="#ranking" class="scroll-to">reviews</a>
+            </li>
+        </ul>
+    </div> --}}
 </div>
         @yield('content-home')
         <footer>
@@ -1327,8 +1363,7 @@
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/mmenu.polyfills.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/mmenu.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/moment.min.js?v=1.69"></script>
-    <script language="javascript" type="text/javascript"
-        src="{{url('/css')}}/templates/default/js/daterangepicker.min.js?v=1.69"></script>
+    <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/daterangepicker.min.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/select2.min.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/jquery.sticky.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/template.js?v=1.69"></script>

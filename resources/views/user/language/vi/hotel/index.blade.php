@@ -1,36 +1,8 @@
-@extends('layouts.home-2')
-@section('content-home-2')
-    <div class="sticky-menu">
-    <ul id="list-example" class="container menu-hotel navigation">
-        <li>
-            <a href="#overview" class="scroll-to">Overview</a>
-        </li>
-        <li>
-            <a href="#list-room-wrapper" class="scroll-to">Rooms Type</a>
-        </li>
-        <li>
-            <a href="#offers" class="scroll-to">Special Offers</a>
-        </li>
-        <li>
-            <a href="#services" class="scroll-to">Services</a>
-        </li>
-        <li>
-            <a href="#position" class="scroll-to">Location</a>
-        </li>
-        <li>
-            <a href="#qna" class="scroll-to">FAQs</a>
-        </li>
-        <li>
-            <a href="#regulation" class="scroll-to">HOUSE RULES</a>
-        </li>
-        <li>
-            <a href="#ranking" class="scroll-to">reviews</a>
-        </li>
-    </ul>
-</div>
+@extends('layouts.home')
+@section('content-home')
 <div>
     <div class="banner-room " style="
-            background-image: url({{url('/css')}}/images/brands/2021/02/22/original/cuadong_1557914048_1613966856.jpg), url({{url('/css')}}/images/tropical-beach.jpeg);
+            background-image: url(images/brands/2021/02/22/original/cuadong_1557914048_1613966856.jpg), url(images/tropical-beach.jpeg);
             width: 100%;
             background-position: center;
             background-attachment: fixed;
@@ -139,7 +111,7 @@
             <div class="owl-carousel owl-theme" id="list-room">
                                     			<div class="card">
 				<div data-bs-toggle="modal" data-bs-target="#room-box-modal" class="image-box" data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_1984611_17020613410050798111_1574911189.jpg","title":"Deluxe Twin "},{"id":"1440","record_id":"230","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-twin_1655784654.jpeg","title":"Deluxe-Twin.jpeg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Deluxe Twin ' data-summary='Phòng với diện tích 33m2, hai giường single size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.' data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Deluxe Twin " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_1984611_17020613410050798111_1574911189.jpg","title":"Deluxe Twin "},{"id":"1440","record_id":"230","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-twin_1655784654.jpeg","title":"Deluxe-Twin.jpeg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]'>
-					<img onerror="this.src='/{{url('/css')}}/images/no-image.png'" class="card-img-top" src="{{url('/css')}}/images/rooms/hls/original/sm_large_1984611_17020613410050798111_1574911189.jpg" alt="Deluxe Twin ">
+					<img onerror="this.src='/images/no-image.png'" class="card-img-top" src="images/rooms/hls/original/sm_large_1984611_17020613410050798111_1574911189.jpg" alt="Deluxe Twin ">
 				</div>
 				<div class="card-body">
 					<h5 data-bs-toggle="modal" data-bs-target="#room-box-modal" class="card-title fw-bold" data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Deluxe Twin " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_1984611_17020613410050798111_1574911189.jpg","title":"Deluxe Twin "},{"id":"1440","record_id":"230","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-twin_1655784654.jpeg","title":"Deluxe-Twin.jpeg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Deluxe Twin ' data-summary='Phòng với diện tích 33m2, hai giường single size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.'>
@@ -170,7 +142,7 @@
 			</div>
 	                                    			<div class="card">
 				<div data-bs-toggle="modal" data-bs-target="#room-box-modal" class="image-box" data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_es_1577518644.jpg","title":"Executive Suite "},{"id":"1441","record_id":"229","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/executive-suite2_1655784697.jpg","title":"Executive-Suite2.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Executive Suite ' data-summary='Phòng với diện tích 53m2, một giường king size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.' data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Executive Suite " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_es_1577518644.jpg","title":"Executive Suite "},{"id":"1441","record_id":"229","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/executive-suite2_1655784697.jpg","title":"Executive-Suite2.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]'>
-					<img onerror="this.src='/{{url('/css')}}/images/no-image.png'" class="card-img-top" src="{{url('/css')}}/images/rooms/hls/original/sm_large_es_1577518644.jpg" alt="Executive Suite ">
+					<img onerror="this.src='/images/no-image.png'" class="card-img-top" src="images/rooms/hls/original/sm_large_es_1577518644.jpg" alt="Executive Suite ">
 				</div>
 				<div class="card-body">
 					<h5 data-bs-toggle="modal" data-bs-target="#room-box-modal" class="card-title fw-bold" data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Executive Suite " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_es_1577518644.jpg","title":"Executive Suite "},{"id":"1441","record_id":"229","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/executive-suite2_1655784697.jpg","title":"Executive-Suite2.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Executive Suite ' data-summary='Phòng với diện tích 53m2, một giường king size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.'>
@@ -201,7 +173,7 @@
 			</div>
 	                                    			<div class="card">
 				<div data-bs-toggle="modal" data-bs-target="#room-box-modal" class="image-box" data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_501a5330__1__1574760920.jpg","title":"Deluxe King "},{"id":"1444","record_id":"226","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-king_1655784791.jpeg","title":"Deluxe-King.jpeg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Deluxe King ' data-summary='Phòng với diện tích 33m2, một giường đôi , đầy đủ các thiết bị nội thất nhằm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.' data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Deluxe King " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_501a5330__1__1574760920.jpg","title":"Deluxe King "},{"id":"1444","record_id":"226","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-king_1655784791.jpeg","title":"Deluxe-King.jpeg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]'>
-					<img onerror="this.src='/{{url('/css')}}/images/no-image.png'" class="card-img-top" src="{{url('/css')}}/images/rooms/hls/original/sm_large_501a5330__1__1574760920.jpg" alt="Deluxe King ">
+					<img onerror="this.src='/images/no-image.png'" class="card-img-top" src="images/rooms/hls/original/sm_large_501a5330__1__1574760920.jpg" alt="Deluxe King ">
 				</div>
 				<div class="card-body">
 					<h5 data-bs-toggle="modal" data-bs-target="#room-box-modal" class="card-title fw-bold" data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Deluxe King " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_501a5330__1__1574760920.jpg","title":"Deluxe King "},{"id":"1444","record_id":"226","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-king_1655784791.jpeg","title":"Deluxe-King.jpeg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Deluxe King ' data-summary='Phòng với diện tích 33m2, một giường đôi , đầy đủ các thiết bị nội thất nhằm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.'>
@@ -229,7 +201,7 @@
 			</div>
 	                                    			<div class="card">
 				<div data-bs-toggle="modal" data-bs-target="#room-box-modal" class="image-box" data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_img_0127_1577518487.jpeg","title":"Deluxe Triple "},{"id":"1443","record_id":"227","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-triple_1655784764.jpg","title":"Deluxe-Triple.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Deluxe Triple ' data-summary='Phòng với diện tích 37m2, 3 giường single size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.' data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Deluxe Triple " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_img_0127_1577518487.jpeg","title":"Deluxe Triple "},{"id":"1443","record_id":"227","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-triple_1655784764.jpg","title":"Deluxe-Triple.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]'>
-					<img onerror="this.src='/{{url('/css')}}/images/no-image.png'" class="card-img-top" src="{{url('/css')}}/images/rooms/hls/original/sm_large_img_0127_1577518487.jpeg" alt="Deluxe Triple ">
+					<img onerror="this.src='/images/no-image.png'" class="card-img-top" src="images/rooms/hls/original/sm_large_img_0127_1577518487.jpeg" alt="Deluxe Triple ">
 				</div>
 				<div class="card-body">
 					<h5 data-bs-toggle="modal" data-bs-target="#room-box-modal" class="card-title fw-bold" data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Deluxe Triple " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_img_0127_1577518487.jpeg","title":"Deluxe Triple "},{"id":"1443","record_id":"227","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/deluxe-triple_1655784764.jpg","title":"Deluxe-Triple.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Deluxe Triple ' data-summary='Phòng với diện tích 37m2, 3 giường single size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn.'>
@@ -257,7 +229,7 @@
 			</div>
 	                                    			<div class="card">
 				<div data-bs-toggle="modal" data-bs-target="#room-box-modal" class="image-box" data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_grand_suite_1577518913.jpg","title":"Grand Suite "},{"id":"1442","record_id":"228","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/grand-suite2_1655784730.jpg","title":"Grand-Suite2.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Grand Suite ' data-summary='Phòng với diện tích 68m2, mộtgiường queen size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn<br>' data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Grand Suite " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_grand_suite_1577518913.jpg","title":"Grand Suite "},{"id":"1442","record_id":"228","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/grand-suite2_1655784730.jpg","title":"Grand-Suite2.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]'>
-					<img onerror="this.src='/{{url('/css')}}/images/no-image.png'" class="card-img-top" src="{{url('/css')}}/images/rooms/hls/original/sm_large_grand_suite_1577518913.jpg" alt="Grand Suite ">
+					<img onerror="this.src='/images/no-image.png'" class="card-img-top" src="images/rooms/hls/original/sm_large_grand_suite_1577518913.jpg" alt="Grand Suite ">
 				</div>
 				<div class="card-body">
 					<h5 data-bs-toggle="modal" data-bs-target="#room-box-modal" class="card-title fw-bold" data-services='[{"title":"Wardrobe","image":"images\/rooms\/service\/2022\/05\/original\/phong-tu-quan-ao_1652072324.svg"},{"title":"Bed sheets, pillows","image":"images\/rooms\/service\/2022\/05\/original\/ga-trai-giuong-goi_1652071907.svg"},{"title":"Non-Smoking Room","image":"images\/rooms\/service\/2022\/05\/original\/phong-khong-hut-thuoc_1652071396.svg"},{"title":"Shower","image":"images\/rooms\/service\/2022\/05\/original\/voi-sen_1652071317.svg"},{"title":"Mini bar","image":"images\/rooms\/service\/2022\/05\/original\/bar_1652072189.svg"},{"title":"Internet access via network wire","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-interner-qua-day-mang_1652071491.svg"},{"title":"Air conditioning","image":"images\/rooms\/service\/2022\/05\/original\/_1652070959.svg"},{"title":"Desk fan","image":"images\/rooms\/service\/2022\/05\/original\/quat-ban_1652072272.svg"},{"title":"Bathroom - shower","image":"images\/rooms\/service\/2022\/05\/original\/phong-tam-voi-sen_1652071650.svg"},{"title":"Coffee making facilities","image":"images\/rooms\/service\/2022\/05\/original\/may-pha-cafe_1652071621.svg"},{"title":"Washer\/Dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-giat-may-say_1652071805.svg"},{"title":"Balcony","image":"images\/rooms\/service\/2022\/05\/original\/ban-cong_1652071747.svg"},{"title":"Hair dryer","image":"images\/rooms\/service\/2022\/05\/original\/may-say-toc_1652071570.svg"},{"title":"Room with bathtub","image":"images\/rooms\/service\/2022\/05\/original\/phong-co-bon-tam_1652071850.svg"},{"title":"In-room safe","image":"images\/rooms\/service\/2022\/05\/original\/ket-an-toan_1652071524.svg"},{"title":"Internet WiFi access in room","image":"images\/rooms\/service\/2022\/05\/original\/truy-cap-internet-qua-wifi_1652071465.svg"},{"title":"Bathroom items","image":"images\/rooms\/service\/2022\/05\/original\/mirror_1652071096.svg"},{"title":"Towels provided","image":"images\/rooms\/service\/2022\/05\/original\/6588721_clean_cleaning_household_housekeeping_towel_icon-1_1652071066.svg"},{"title":"Telephone","image":"images\/rooms\/service\/2022\/05\/original\/1_1652071121.svg"},{"title":"Lamp","image":"images\/rooms\/service\/2022\/05\/original\/den-ban_1652071215.svg"},{"title":"TV – cable\/satellite","image":"images\/rooms\/service\/2022\/05\/original\/truyen-hinh-cap-ve-tinh_1652071255.svg"},{"title":"Work desk","image":"images\/rooms\/service\/2022\/05\/original\/vector_1652071017.svg"}]' data-title="Grand Suite " data-images='[{"image":"images\/rooms\/hls\/original\/sm_large_grand_suite_1577518913.jpg","title":"Grand Suite "},{"id":"1442","record_id":"228","session_id":null,"image":"images\/rooms\/2022\/06\/21\/original\/grand-suite2_1655784730.jpg","title":"Grand-Suite2.jpg","ordering":null,"temp":null,"size":null,"type_size":null,"color_id":null}]' data-title='Grand Suite ' data-summary='Phòng với diện tích 68m2, mộtgiường queen size, đầy đủ các thiết bị nội thất nhầm đem lại sự thoải mái nhất có thể cho kỳ nghĩ dưỡng cũng như các kỳ công tác làm việc dài hạn<br>'>
@@ -295,7 +267,7 @@
                                             <div class="item">
                             <div class="image">
                                 <a title="SUMMER ESCAPE 2022 - Enciting Vacation packages from Mường Thanh Hospitality" href="offers/summer-escape-2022-vacation-package-muongthanh-hotels.htm">
-                                    <img src="{{url('/css')}}/images/offer/2022/07/resize/summer-escape-800x533_1657511132.jpg" alt="SUMMER ESCAPE 2022 - Enciting Vacation packages from Mường Thanh Hospitality" class="img-responsive">
+                                    <img src="images/offer/2022/07/resize/summer-escape-800x533_1657511132.jpg" alt="SUMMER ESCAPE 2022 - Enciting Vacation packages from Mường Thanh Hospitality" class="img-responsive">
                                 </a>
                                                             </div>
                             <div class="text">
@@ -309,7 +281,7 @@
                                     </div>
                                     <div class="user">
                                         <div class="img">
-                                            <img src="{{url('/css')}}/images/user-den.svg" alt="" class="img-responsive">
+                                            <img src="images/user-den.svg" alt="" class="img-responsive">
                                         </div>
                                         <p>4528 interested person</p>
                                     </div>
@@ -341,14 +313,14 @@
                                             <div class="owl-carousel owl-theme" id="list-restaurant">
                                                             			<div class="card">
 				<div class="image-box">
-					<img class="card-img-top" onerror="this.src='/{{url('/css')}}/images/no-image.png'" src="{{url('/css')}}/images/foods/2022/06/lkp_4240.jpg" alt="Lam Giang Restaurant">
+					<img class="card-img-top" onerror="this.src='/images/no-image.png'" src="images/foods/2022/06/lkp_4240.jpg" alt="Lam Giang Restaurant">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title fw-bold">Lam Giang Restaurant</h5>
 					<div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg" alt="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/vector_1654055515.svg" alt="images/hotels/special_point/original/vector_1654055515.svg">
 									<span class="fw-bold">Location</span>
 								</div>
 								<div>
@@ -357,7 +329,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/frame-900_1654055032.svg" alt="{{url('/css')}}/images/hotels/special_point/original/frame-900_1654055032.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/frame-900_1654055032.svg" alt="images/hotels/special_point/original/frame-900_1654055032.svg">
 									<span class="fw-bold">Capacity</span>
 								</div>
 								<div>
@@ -366,7 +338,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg" alt="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/group_1654053937.svg" alt="images/hotels/special_point/original/group_1654053937.svg">
 									<span class="fw-bold">Opening hours</span>
 								</div>
 								<div>
@@ -382,14 +354,14 @@
 			</div>
 		                                                            			<div class="card">
 				<div class="image-box">
-					<img class="card-img-top" onerror="this.src='/{{url('/css')}}/images/no-image.png'" src="{{url('/css')}}/images/foods/2022/06/_nd_5091.jpg" alt="Lam Ha Bar ">
+					<img class="card-img-top" onerror="this.src='/images/no-image.png'" src="images/foods/2022/06/_nd_5091.jpg" alt="Lam Ha Bar ">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title fw-bold">Lam Ha Bar </h5>
 					<div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg" alt="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/vector_1654055515.svg" alt="images/hotels/special_point/original/vector_1654055515.svg">
 									<span class="fw-bold">Location</span>
 								</div>
 								<div>
@@ -398,7 +370,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/frame-900_1654055032.svg" alt="{{url('/css')}}/images/hotels/special_point/original/frame-900_1654055032.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/frame-900_1654055032.svg" alt="images/hotels/special_point/original/frame-900_1654055032.svg">
 									<span class="fw-bold">Capacity</span>
 								</div>
 								<div>
@@ -407,7 +379,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg" alt="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/group_1654053937.svg" alt="images/hotels/special_point/original/group_1654053937.svg">
 									<span class="fw-bold">Opening hours</span>
 								</div>
 								<div>
@@ -427,14 +399,14 @@
                                             <div class="owl-carousel owl-theme" id="list-meeting">
                                                             			<div class="card">
 				<div class="image-box">
-					<img class="card-img-top" onerror="this.src='/{{url('/css')}}/images/no-image.png'" src="{{url('/css')}}/images/events/2022/06/hoi-truong-lam-hong.jpg" alt="Lam Hong conference and banquet hall">
+					<img class="card-img-top" onerror="this.src='/images/no-image.png'" src="images/events/2022/06/hoi-truong-lam-hong.jpg" alt="Lam Hong conference and banquet hall">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title fw-bold">Lam Hong conference and banquet hall</h5>
 					<div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg" alt="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/vector_1654055515.svg" alt="images/hotels/special_point/original/vector_1654055515.svg">
 									<span class="fw-bold">Location</span>
 								</div>
 								<div>
@@ -443,7 +415,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/frame-900_1654055032.svg" alt="{{url('/css')}}/images/hotels/special_point/original/frame-900_1654055032.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/frame-900_1654055032.svg" alt="images/hotels/special_point/original/frame-900_1654055032.svg">
 									<span class="fw-bold">Capacity</span>
 								</div>
 								<div>
@@ -452,7 +424,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg" alt="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/group_1654053937.svg" alt="images/hotels/special_point/original/group_1654053937.svg">
 									<span class="fw-bold">Opening hours</span>
 								</div>
 								<div>
@@ -538,14 +510,14 @@
                                             <div class="owl-carousel owl-theme" id="list-service">
                                                             			<div class="card">
 				<div class="image-box">
-					<img class="card-img-top" onerror="this.src='/{{url('/css')}}/images/no-image.png'" src="{{url('/css')}}/images/service/2022/08/original/tram-spa-muong-thanh-ca-mau_1659507477.jpg" alt="Trà Hoa Spa & Massage">
+					<img class="card-img-top" onerror="this.src='/images/no-image.png'" src="images/service/2022/08/original/tram-spa-muong-thanh-ca-mau_1659507477.jpg" alt="Trà Hoa Spa & Massage">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title fw-bold">Trà Hoa Spa & Massage</h5>
 					<div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg" alt="{{url('/css')}}/images/hotels/special_point/original/vector_1654055515.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/vector_1654055515.svg" alt="images/hotels/special_point/original/vector_1654055515.svg">
 									<span class="fw-bold">Location</span>
 								</div>
 								<div>
@@ -554,7 +526,7 @@
 							</div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg" alt="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/group_1654053937.svg" alt="images/hotels/special_point/original/group_1654053937.svg">
 									<span class="fw-bold">Opening hours</span>
 								</div>
 								<div>
@@ -573,14 +545,14 @@
 			</div>
 		                                                            			<div class="card">
 				<div class="image-box">
-					<img class="card-img-top" onerror="this.src='/{{url('/css')}}/images/no-image.png'" src="{{url('/css')}}/images/service/2022/08/original/hoaban_1659602831.jpg" alt="Other Services">
+					<img class="card-img-top" onerror="this.src='/images/no-image.png'" src="images/service/2022/08/original/hoaban_1659602831.jpg" alt="Other Services">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title fw-bold">Other Services</h5>
 					<div>
 													<div class="d-flex">
 								<div style="width: 40%" class="d-flex">
-									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg" alt="{{url('/css')}}/images/hotels/special_point/original/group_1654053937.svg">
+									<img style="width: 15px; height: 15px; margin-right: 5px; margin-top: 3px" src="images/hotels/special_point/original/group_1654053937.svg" alt="images/hotels/special_point/original/group_1654053937.svg">
 									<span class="fw-bold">Opening hours</span>
 								</div>
 								<div>
@@ -617,7 +589,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/phong-tam_1653881993.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/phong-tam_1653881993.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/phong-tam_1653881993.svg" alt="images/hotels/service/2022/05/original/phong-tam_1653881993.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Bathroom                                </span>
                             </div>
@@ -646,7 +618,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/cho-dau-xe_1653880279.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/cho-dau-xe_1653880279.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/cho-dau-xe_1653880279.svg" alt="images/hotels/service/2022/05/original/cho-dau-xe_1653880279.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Parking                                </span>
                             </div>
@@ -659,7 +631,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/an-ninh_1653880147.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/an-ninh_1653880147.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/an-ninh_1653880147.svg" alt="images/hotels/service/2022/05/original/an-ninh_1653880147.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Safety & security                                </span>
                             </div>
@@ -674,7 +646,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/cham-soc-sk_1653879993.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/cham-soc-sk_1653879993.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/cham-soc-sk_1653879993.svg" alt="images/hotels/service/2022/05/original/cham-soc-sk_1653879993.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Wellness                                </span>
                             </div>
@@ -701,7 +673,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/dv-doanh-nhan_1653880064.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/dv-doanh-nhan_1653880064.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/dv-doanh-nhan_1653880064.svg" alt="images/hotels/service/2022/05/original/dv-doanh-nhan_1653880064.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Business facilities                                </span>
                             </div>
@@ -722,7 +694,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/dv-lau-don_1653879959.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/dv-lau-don_1653879959.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/dv-lau-don_1653879959.svg" alt="images/hotels/service/2022/05/original/dv-lau-don_1653879959.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Cleaning services                                </span>
                             </div>
@@ -747,7 +719,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/dich-vu-le-tan_1653879873.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/dich-vu-le-tan_1653879873.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/dich-vu-le-tan_1653879873.svg" alt="images/hotels/service/2022/05/original/dich-vu-le-tan_1653879873.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Reception services                                </span>
                             </div>
@@ -766,7 +738,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/phong-tam_1653879731.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/phong-tam_1653879731.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/phong-tam_1653879731.svg" alt="images/hotels/service/2022/05/original/phong-tam_1653879731.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Outdoor swimming pool                                </span>
                             </div>
@@ -781,7 +753,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/internet_1653880176.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/internet_1653880176.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/internet_1653880176.svg" alt="images/hotels/service/2022/05/original/internet_1653880176.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Internet                                </span>
                             </div>
@@ -794,7 +766,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/ngon-ngu-sd_1653880093.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/ngon-ngu-sd_1653880093.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/ngon-ngu-sd_1653880093.svg" alt="images/hotels/service/2022/05/original/ngon-ngu-sd_1653880093.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Languages spoken                                </span>
                             </div>
@@ -811,7 +783,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/nha-bep_1653879931.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/nha-bep_1653879931.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/nha-bep_1653879931.svg" alt="images/hotels/service/2022/05/original/nha-bep_1653879931.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Kitchen                                </span>
                             </div>
@@ -824,7 +796,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/phong-ngu_1653879832.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/phong-ngu_1653879832.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/phong-ngu_1653879832.svg" alt="images/hotels/service/2022/05/original/phong-ngu_1653879832.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Bedroom                                </span>
                             </div>
@@ -839,7 +811,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/phuong-tien_1653879765.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/phuong-tien_1653879765.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/phuong-tien_1653879765.svg" alt="images/hotels/service/2022/05/original/phuong-tien_1653879765.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Means of transport                                </span>
                             </div>
@@ -858,7 +830,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/tien-ich-trong-phong_1653880032.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/tien-ich-trong-phong_1653880032.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/tien-ich-trong-phong_1653880032.svg" alt="images/hotels/service/2022/05/original/tien-ich-trong-phong_1653880032.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Room Amenities                                </span>
                             </div>
@@ -873,7 +845,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/tong-quat_1653880243.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/tong-quat_1653880243.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/tong-quat_1653880243.svg" alt="images/hotels/service/2022/05/original/tong-quat_1653880243.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     General                                </span>
                             </div>
@@ -898,7 +870,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/truyen-thong-cong-nghe_1653880341.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/truyen-thong-cong-nghe_1653880341.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/truyen-thong-cong-nghe_1653880341.svg" alt="images/hotels/service/2022/05/original/truyen-thong-cong-nghe_1653880341.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Media & Technology                                </span>
                             </div>
@@ -909,7 +881,7 @@
                                     <div class="box-service mb-2">
                         <div style="display: inline-block;">
                             <div class="ms-3 d-flex">
-                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="{{url('/css')}}/images/hotels/service/2022/05/original/do-an-thuc-uong_1653880213.svg" alt="{{url('/css')}}/images/hotels/service/2022/05/original/do-an-thuc-uong_1653880213.svg">
+                                                                    <img style="width: 20px; height: 20px; margin-right: 5px" src="images/hotels/service/2022/05/original/do-an-thuc-uong_1653880213.svg" alt="images/hotels/service/2022/05/original/do-an-thuc-uong_1653880213.svg">
                                                                 <span class="fw-bold" style="font-size: 16px">
                                     Food & Drink                                </span>
                             </div>
@@ -940,11 +912,11 @@
                                                                 <span class="fw-bold">Restaurants &amp; cafes</span>
                     </div>
                                             <div class="d-flex justify-content-between p-2 item-location">
-                            <p class="mb-0">Nhà hàng Nhà hàng Đại Dương</p>
+                            <p class="mb-0">Nhà hàng  Nhà hàng Đại Dương</p>
                             <p class="mb-0">1 km</p>
                         </div>
                                             <div class="d-flex justify-content-between p-2 item-location">
-                            <p class="mb-0">Cafe/quán bar Cafe điện ảnh 3, Bar 48 Nguyễn Sỹ Sách</p>
+                            <p class="mb-0">Cafe/quán bar  Cafe điện ảnh 3, Bar 48 Nguyễn Sỹ Sách</p>
                             <p class="mb-0">1 km</p>
                         </div>
                                     </div>
@@ -959,19 +931,19 @@
                                                                 <span class="fw-bold">Natural beauty</span>
                     </div>
                                             <div class="d-flex justify-content-between p-2 item-location">
-                            <p class="mb-0">Hồ Hồ Goong</p>
+                            <p class="mb-0">Hồ  Hồ Goong</p>
                             <p class="mb-0">2 km</p>
                         </div>
                                             <div class="d-flex justify-content-between p-2 item-location">
-                            <p class="mb-0">Núi Núi Quyết</p>
+                            <p class="mb-0">Núi  Núi Quyết</p>
                             <p class="mb-0">3 km</p>
                         </div>
                                             <div class="d-flex justify-content-between p-2 item-location">
-                            <p class="mb-0">Sông Sông Lam</p>
+                            <p class="mb-0">Sông  Sông Lam</p>
                             <p class="mb-0">3 km</p>
                         </div>
                                             <div class="d-flex justify-content-between p-2 item-location">
-                            <p class="mb-0">Biển/đại dương Biển Cửa Lò</p>
+                            <p class="mb-0">Biển/đại dương  Biển Cửa Lò</p>
                             <p class="mb-0">5 km</p>
                         </div>
                                     </div>
@@ -1025,7 +997,7 @@
                 <h2 class="point-ranking">4.5</h2>
                                     <div>
                         <div class="d-flex flex-column align-items-start ms-2">
-                            <p class=" fw-bold">Rất tuyệt</p>
+                                                        <p class="fw-bold">Rất tuyệt</p>
                             <div>
                                                                     <span class="rating rating-active me-1"></span>
                                                                     <span class="rating rating-active me-1"></span>
@@ -1105,7 +1077,7 @@
                             <div class="owl-theme owl-carousel" id="news">
                                             <a href="news/mega-sale-2022-uu-dai-chao-he-len-toi-70-tu-muong-thanh.htm" class="card">
                             <div style="overflow: hidden">
-                                <img src="{{url('/css')}}/images/news/2022/06/original/mega-sales-2022_1653647829_1654162071.jpeg" class="card-img-top" alt="{{url('/css')}}/images/news/2022/06/original/mega-sales-2022_1653647829_1654162071.jpeg">
+                                <img src="images/news/2022/06/original/mega-sales-2022_1653647829_1654162071.jpeg" class="card-img-top" alt="images/news/2022/06/original/mega-sales-2022_1653647829_1654162071.jpeg">
                             </div>
                             <div class="card-body">
                                 <p class="card-title mb-0 d-flex align-items-center">

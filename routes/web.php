@@ -43,7 +43,6 @@ Route::prefix('vi')->group(function(){
     Route::get('/tintuc',[HomeController::class,'tintuc'])->name('tintuc');
     Route::get('/chitiettin',[HomeController::class,'chitiettin'])->name('chitiettin');
     Route::get('/khachsan',[HomeController::class,'khachsan'])->name('khachsan');
-
 });
 Route::prefix('en')->group(function(){
     
