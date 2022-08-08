@@ -1367,6 +1367,16 @@
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/select2.min.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/jquery.sticky.js?v=1.69"></script>
     <script language="javascript" type="text/javascript" src="{{url('/css')}}/templates/default/js/template.js?v=1.69"></script>
+    <script language="javascript" type="text/javascript" src="libraries/lightGallery/dist/lightgallery.umd.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="libraries/lightGallery/dist/plugins/video/lg-video.min.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="libraries/lightGallery/dist/plugins/zoom/lg-zoom.min.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="libraries/lightGallery/dist/plugins/hash/lg-hash.min.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="libraries/lightGallery/dist/plugins/thumbnail/lg-thumbnail.min.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="modules/hotels/assets/js/hotels.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="modules/hotels/assets/js/booking.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="libraries/jquery/jquery.ui/jquery-ui.js?v=1.73"></script>
+    <script language="javascript" type="text/javascript" src="modules/foods/assets/js/flickity.pkgd.min.js?v=1.73"></script>
+
 </body>
 
 </html>
