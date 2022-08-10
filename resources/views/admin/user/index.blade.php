@@ -48,10 +48,10 @@
     
             <td>
                 @if($d->status == 0)
-                <span class="badge badge-danger">On</span>
+                <span class="badge badge-success">On</span>
                 @else
 
-                <span class="badge badge-success">Off</span>
+                <span class="badge badge-danger">Off</span>
                 @endif
             </td>
             <td>          

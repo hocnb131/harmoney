@@ -15,15 +15,15 @@ class ServiceTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('service')
-        ->insert(
-            [
-            'name' => 'Day la ten',
-            'icon' => 'Icon day',
-            'room_id'=>'1',
-            'serviceType'=>'Loai dich vu',
-            ],   
-        );
+        // DB::table('service')
+        // ->insert(
+        //     [
+        //     'name' => 'Day la ten',
+        //     'icon' => 'Icon day',
+        //     'room_id'=>'1',
+        //     'serviceType'=>'Loai dich vu',
+        //     ],   
+        // );
       
     }
 }

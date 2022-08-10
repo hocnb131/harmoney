@@ -15,15 +15,15 @@ class TicketTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('ticket')
-        ->insert(
-            [
-            'room_id' => '121',
-            'payment_id' => '1211',
-            'user_id'=>'131',
-            'status'=>'551',
-            ],   
-        );
+        // DB::table('ticket')
+        // ->insert(
+        //     [
+        //     'room_id' => '121',
+        //     'payment_id' => '1211',
+        //     'user_id'=>'131',
+        //     'status'=>'551',
+        //     ],   
+        // );
       
     }
 }

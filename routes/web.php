@@ -30,27 +30,28 @@ use App\Http\Controllers\MailController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('send-mail', [MailController::class, 'index']);
-Route::get('/trangchu', function () {
-    return view('layouts.home');
+
+Route::controller(HomeController::class)->group(function(){
+    Route::get('/','index')->name('trangchu');
+    Route::get('/home','index')->name('trangchu');
+    Route::get('/diemden/{id?}','diemden')->name('diemden');
+    Route::get('/tintuc','tintuc')->name('tintuc');
+    Route::get('/chitiettin','chitiettin')->name('chitiettin');
+    Route::get('/khachsan','khachsan')->name('khachsan');
+    Route::get('/review/{review_id}','editReview')->name('khachsan');
+    Route::get('/login','login')->name('login');
+    Route::get('/register','register')->name('register');
+
 });
-Route::prefix('vi')->group(function(){
-    Route::get('/trangchu',[HomeController::class,'index'])->name('trangchu');
-    Route::get('/diemden',[HomeController::class,'diemden'])->name('diemden');
-    Route::get('/tintuc',[HomeController::class,'tintuc'])->name('tintuc');
-    Route::get('/chitiettin',[HomeController::class,'chitiettin'])->name('chitiettin');
-    Route::get('/khachsan',[HomeController::class,'khachsan'])->name('khachsan');
-});
-Route::prefix('en')->group(function(){
-    
-});
+
 Auth::routes();
 Route::prefix('admin')->group(function(){
         // Route::get('/',[HomeController::class,'index'])->name('home');
-        Route::get('/',[AdminController::class,'index'])->name('home');
+        Route::get('/',[AdminController::class,'index'])->name('home')->middleware('checklogin::class');
         // Route::get('province',  'province')->name('province');
         // Route::get('role',[UserController::class,'role'])->name('user.role');
         // Route::get('create-role',[UserController::class,'create_role'])->name('create-role');

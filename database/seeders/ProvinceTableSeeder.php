@@ -15,32 +15,18 @@ class ProvinceTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('province')
-        ->insert(
-            [
-            'name' => 1,
-            // 'create_at'=>'10-10-1995',
-            // 'create_at'=>Carbon::parse(2022-15-6),
-            'status' => 1,
-            'thumbnail'=>'hinh1',
-            'thumbnailDescription'=>'hinh1',
-            'description'=>'hinh1',
-            // 'total_branch'=>'',
-            ],   
-        );
-        DB::table('province')
-        ->insert(
-            [
-            'name' => 2,
-            // 'create_at'=>'10-10-1995',
-            // 'create_at'=>Carbon::parse(2022-16-7),
-            'status' => 0,
-            'thumbnail'=>'hinh2',
-            'thumbnailDescription'=>'hinh2',
-            'description'=>'hinh2',
-            // 'total_branch'=>'',
-
-            ],   
-        );
+        // DB::table('province')
+        // ->insert(
+        //     [
+        //     'name' => 'Hà Nội',
+        //     // 'create_at'=>'10-10-1995',
+        //     // 'create_at'=>Carbon::parse(2022-15-6),
+        //     'status' => 0,
+        //     'thumbnail'=>'hinh1',
+        //     'thumbnailDescription'=>'hinh1',
+        //     'description'=>'Hà Nội',
+        //     // 'total_branch'=>'',
+        //     ],   
+        // );
     }
 }

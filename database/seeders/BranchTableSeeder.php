@@ -15,22 +15,22 @@ class BranchTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('branch')
-        ->insert(
-            [
-            'thumbnail' => 'hinh3',
-            'thumbnailDescription'=> 'hinh333',
-            'description' => '1',
-            'status'=> 1,
-            'address'=>'100 quang trung',
-            'phoneNumber'=>'0123456789',
-            'email'=>'quyennc@gmail.com',
-            'name'=>'hcm',
-            'nameEn'=>'hcmEn',
-            'slug'=>'harmoney hcm',
-            'province_id'=>'4',
+        // DB::table('branch')
+        // ->insert(
+        //     [
+        //     'thumbnail' => 'hinh3',
+        //     'thumbnailDescription'=> 'hinh333',
+        //     'description' => '1',
+        //     'status'=> 1,
+        //     'address'=>'100 quang trung',
+        //     'phoneNumber'=>'0123456789',
+        //     'email'=>'quyennc@gmail.com',
+        //     'name'=>'hcm',
+        //     'nameEn'=>'hcmEn',
+        //     'slug'=>'harmoney hcm',
+        //     'province_id'=>'4',
 
-            ],   
-        );
+        //     ],   
+        // );
     }
 }

@@ -15,18 +15,18 @@ class BlogTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('blog')
-        ->insert(
-            [
-            'status' => 1,
-            'content' => 'abc',
-            'slug'=>'abc',
-            'name'=>'abc',
-            'nameEn'=>1,
-            'thumbnail'=>'abc',
-            // 'total_branch'=>'',
-            ],   
-        );
+        // DB::table('blog')
+        // ->insert(
+        //     [
+        //     'status' => 0,
+        //     'content' => 'Kiên Giang - Những địa điểm phải ghé qua mà bạn đã biết chưa?',
+        //     'slug'=>'kien-giang-dia-diem-du-lich',
+        //     'name'=>'Kiên Giang - Những địa điểm phải ghé qua mà bạn đã biết chưa?',
+        //     'nameEn'=>1,
+        //     'thumbnail'=>'abc',
+        //     // 'total_branch'=>'',
+        //     ],   
+        // );
       
     }
 }

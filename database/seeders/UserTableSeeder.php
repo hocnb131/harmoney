@@ -15,27 +15,6 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('user')
-        ->insert(
-            [
-            'fullName' => 'Nguyen Cong Quyen',
-            'email' => 'quyen@gmail.com',
-            'phoneNumber'=> '0123456789',
-            'password' => bcrypt('hehe'),
-            // 'role' => 'admin',
-            'status' => 0
-            ],   
-        );
-        DB::table('user')->insert(
-            [
-            'fullName' => 'Dinh Thanh Hai',
-            'email' => 'hai@gmail.com',
-            'phoneNumber'=> '0123456789',
-            'password' => bcrypt('hehe'),
-            // 'role' => 'editor',
-            'status' => 1
-            ],
-        );
         DB::table('user')->insert(
             [
             'fullName' => 'Nguyen Ba Hoc',
@@ -56,6 +35,15 @@ class UserTableSeeder extends Seeder
             'status' => 0
             ],
         );
-            
+        DB::table('user')->insert(
+            [
+            'fullName' => 'Dinh Thanh Hai',
+            'email' => 'hai@gmail.com',
+            'phoneNumber'=> '0123456789',
+            'password' => bcrypt('hehe'),
+            // 'role' => 'editor',
+            'status' => 1
+            ],
+        );    
     }
 }

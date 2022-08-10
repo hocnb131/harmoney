@@ -15,16 +15,16 @@ class PaymentTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('payment')
-        ->insert(
-            [
-            'ticket_id' => '121',
-            'user_id' => '21',
-            'paymentMethod'=>'abc',
-            'amount'=>'3',
-            'status'=>'2',
+        // DB::table('payment')
+        // ->insert(
+        //     [
+        //     'ticket_id' => '121',
+        //     'user_id' => '21',
+        //     'paymentMethod'=>'abc',
+        //     'amount'=>'3',
+        //     'status'=>'2',
         
-            ],   
-        );
+        //     ],   
+        // );
     }
 }

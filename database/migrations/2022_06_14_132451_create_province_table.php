@@ -16,14 +16,11 @@ return new class extends Migration
         Schema::create('province', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            // $table->date('create_at');
-            // $table->char('create_at');
             $table->integer('status');
             $table->char('thumbnail',255)->nullable();
             $table->char('thumbnailDescription',255)->nullable();
             $table->char('description',255)->nullable();           
             $table->timestamps();
-            // $table->integer('total_branch');
         });
     }
 
