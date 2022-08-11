@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Mail;
 use App\Mail\DemoMail;
+use App\Models\User;
   
 class MailController extends Controller
 {
@@ -15,12 +16,13 @@ class MailController extends Controller
      */
     public function index()
     {
-        $mailData = [
-            'name' => 'Hai'
-        ];
-         
-        Mail::to('dthaj95@gmail.com')->send(new DemoMail($mailData));
-           
+        $user = User::find(1)->toArray();
+
+        Mail::to($user['email'])->send(new DemoMail());   
         dd("Email is sent successfully.");
+        if (Mail::failures() != 0) {
+            return "Email has been sent successfully.";
+        }
+        return "Oops! There was some error sending the email.";
     }
 }
