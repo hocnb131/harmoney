@@ -45,6 +45,8 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/review/{review_id}','editReview')->name('khachsan');
     Route::get('/login','login')->name('login');
     Route::get('/register','register')->name('register');
+    Route::get('/datkhachsan','datkhachsan')->name('datkhachsan');
+    Route::get('/datphong','datphong')->name('datphong');
 
 });
 

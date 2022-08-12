@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/home.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/detail.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/booking/assets/css/home.css">
 
 
     <link rel="canonical" href="index.htm">
@@ -79,7 +80,7 @@
                                 </a>
                                 <div class="logo">
                                     <a href="index.htm" title="Mường Thanh Hospitality">
-                                        <img src="{{url('/css')}}/images/config/logo_1650360911.svg" alt="Mường Thanh Hospitality" class="img-repsonsive site-logo">
+                                        <img src="{{url('/css')}}/images/logo_harmony.jpg" alt="Harmony Hospitality" class="img-repsonsive site-logo">
                                     </a>
                                 </div>
                                 <a class="mobile">

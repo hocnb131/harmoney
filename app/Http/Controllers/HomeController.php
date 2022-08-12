@@ -25,10 +25,13 @@ class HomeController extends Controller
         return view('user.index')->with(compact('province'))->with(compact('room'));
     }
     public function tintuc(){
-        return view('user.news.index');
+        $province = DB::table('province')->get();
+        return view('user.news.index', compact('province'));
     }
     public function chitiettin(){
-        return view('user.news.detail');
+        $province = DB::table('province')->get();
+        $branch = DB::table('branch')->get();
+        return view('user.news.detail', compact('province'));
     }
     public function diemden(){
         $province = DB::table('province')->get();
@@ -45,5 +48,14 @@ class HomeController extends Controller
         }else{
             return "Ban khong co quyen";
         };
+    }
+    public function datkhachsan(){
+        $province = DB::table('province')->get();
+        return view('user.booking.hotel', compact('province'));
+    }
+    public function datphong(){
+        $province = DB::table('province')->get();
+        $branch = DB::table('branch')->get();
+        return view('user.booking.room', compact('province'));
     }
 }
