@@ -38,14 +38,19 @@ Route::get('send-mail', [MailController::class, 'index']);
 Route::controller(HomeController::class)->group(function(){
     Route::get('/','index')->name('trangchu');
     Route::get('/home','index')->name('trangchu');
-    Route::get('/diemden/{id?}','diemden')->name('diemden');
+    Route::get('/diem-den/{id?}','diemden')->name('diemden');
     Route::get('/tintuc','tintuc')->name('tintuc');
     Route::get('/chitiettin','chitiettin')->name('chitiettin');
     Route::get('/khachsan','khachsan')->name('khachsan');
     Route::get('/review/{review_id}','editReview')->name('khachsan');
     Route::get('/login','login')->name('login');
     Route::get('/register','register')->name('register');
+<<<<<<< HEAD
+=======
+    Route::get('/datkhachsan','datkhachsan')->name('datkhachsan');
+    Route::get('/datphong','datphong')->name('datphong');
 
+>>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
 });
 
 Auth::routes();

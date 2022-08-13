@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Room;
 use App\Models\Review;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Gate;
 
 
@@ -21,19 +22,23 @@ class HomeController extends Controller
     }
     public function index(){
         $province = DB::table('province')->orderByRaw('id')->get();
-        $room = DB::table('room')->orderByRaw('id')->get();
+        $room = DB::table('room')->orderByDesc('id')->get();
         return view('user.index')->with(compact('province'))->with(compact('room'));
     }
     public function tintuc(){
-        return view('user.news.index');
+        $province = DB::table('province')->get();
+        return view('user.news.index', compact('province'));
     }
     public function chitiettin(){
-        return view('user.news.detail');
-    }
-    public function diemden(){
         $province = DB::table('province')->get();
         $branch = DB::table('branch')->get();
-        return view('user.destination.index',compact('province','branch'));
+        return view('user.news.detail', compact('province'));
+    }
+    public function diemden($id = null){
+        $province = DB::table('province')->orderByRaw('id')->get();
+        $branch = DB::table('branch')->orderByRaw('id')->get();
+        return view('user.destination.diem-den'.$id,compact('province','id'));
+        
     }
     public function khachsan(){
         return view('user.hotel.index');
@@ -45,5 +50,14 @@ class HomeController extends Controller
         }else{
             return "Ban khong co quyen";
         };
+    }
+    public function datkhachsan(){
+        $province = DB::table('province')->get();
+        return view('user.booking.hotel', compact('province'));
+    }
+    public function datphong(){
+        $province = DB::table('province')->get();
+        $branch = DB::table('branch')->get();
+        return view('user.booking.room', compact('province'));
     }
 }

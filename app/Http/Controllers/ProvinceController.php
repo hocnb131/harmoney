@@ -23,7 +23,7 @@ class ProvinceController extends Controller
         // return view('admin.province.index',compact('data'));
         // $data = DB::select('select * from province');
         // $data = DB::table('province')->orderBy('id','desc')->paginate(2);
-        $data = DB::table('province')->orderBy('id','desc')->paginate(5);
+        $data = DB::table('province')->orderByRaw('id')->paginate(5);
         // $data = DB::table('province')->get();
         // dd($data);
         // $data = DB::table('province')->orderBy('id','desc')->search()->paginate(1);
@@ -31,10 +31,11 @@ class ProvinceController extends Controller
         $data = DB::table('province')->orderBy('id','desc')->where('name','like','%'.$key.'%')->paginate(10);
 
         }
+        $h = gmdate('d/m/Y',time()+3600*7);
         // $newDateFormat3 = Carbon::parse($data->create_at)->format('d/m/Y');
         // $newDateFormat2 = date('d/m/Y', strtotime($user->created_at));
         // return view('admin.province.index',['data'=>$data]);
-        return view('admin.province.index',compact('data'));
+        return view('admin.province.index',compact('data','h'));
         // return $data;
     }
 
@@ -107,7 +108,8 @@ class ProvinceController extends Controller
      */
     public function show(Province $province)
     {
-        //
+        return $province;
+        dd($province);
     }
 
     /**
@@ -135,7 +137,7 @@ class ProvinceController extends Controller
      * @param  \App\Models\Province  $province
      * @return \Illuminate\Http\Response
      */
-    public function update(ProvinceEditFormRequest $request, Province $province)
+    public function update(ProvinceFormRequest $request, Province $province)
     {
         // $province = Province::find($province);
         // // $province->id = $request->id;

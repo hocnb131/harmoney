@@ -49,7 +49,7 @@
                     @endif
                 </td>
 
-                <td><img src="{{url('/uploads')}}/{{$d->thumbnail}}" width="50" alt=""></td>
+                <td><img src="{{url('/uploads')}}/{{$d->thumbnail}}" width="60" height="60" alt=""></td>
 
                 <td>{{$d->thumbnailDescription}}</td>
                 <td>{{$d->description}}</td>
@@ -80,7 +80,7 @@
 
                 </td>
                 {{-- <td>{{$d->province_id}}</td> --}}
-                <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
+                <td>{{$h}}</td>
                 <td>{{\Carbon\Carbon::parse($d->created_at)->Format('d-m-Y')}}</td>
             </tr>
             @endforeach

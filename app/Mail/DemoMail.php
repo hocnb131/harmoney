@@ -18,9 +18,9 @@ class demoMail extends Mailable
      *
      * @return void
      */
-    public function __construct($mailData)
+    public function __construct()
     {
-        $this->mailData = $mailData;
+        // $this->mailData = $mailData;
     }
   
     /**
@@ -30,7 +30,7 @@ class demoMail extends Mailable
      */
     public function build()
     {
-        $address = config("harmonyhotel@gmail.com");
+        $address = config("mail.from.address");
         $name = 'Harmony Hotel';
         $this->subject('Xác nhận đặt phòng thành công')
                     ->view('emails.demoMail')
