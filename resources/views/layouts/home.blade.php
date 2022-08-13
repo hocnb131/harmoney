@@ -30,7 +30,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/home.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/detail.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/booking/assets/css/home.css">
+    {{-- <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/booking/assets/css/home.css"> --}}
 
 
     <link rel="canonical" href="index.htm">
