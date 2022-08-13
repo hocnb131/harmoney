@@ -329,7 +329,7 @@
             <a title="Xem thêm" href="uu-dai.htm">Xem thêm <i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-<<<<<<< HEAD
+
     <div class="more">
         <a title="Xem thêm" href="combo-gia-tot.htm">Xem thêm <i class="fa fa-arrow-right"></i></a>
     </div>
@@ -380,12 +380,19 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
     <div class="uu-dai container">
         <h2 class="title-home"><span>Combo</span> Giá tốt</h2>
         <div id="combo" class="owl-carousel owl-theme">
             <div class="item-offer">
                 <div class="image">
+
+    <div class="uu-dai container">
+        <h2 class="title-home"><span>Combo</span> Giá tốt</h2>
+        <div id="combo" class="owl-carousel owl-theme">
+            <div class="item-offer">
+                <div class="image">
+
                     <a title="Combo nghỉ dưỡng 3N2Đ tại Đà Nẵng - Huế"
                         href="combo-gia-tot/combo-nghi-duong-3n2d-hue-da-nang.htm">
                         <img src="{{ url('/css') }}/images/combo/2022/07/resize/combo-hue-da-nang-800x533_1657164239.jpg"
@@ -589,7 +596,7 @@
                             alt="">
                         <!--  -->
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -601,7 +608,7 @@
                             </svg>
                             {{$province[0]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </div>
@@ -627,7 +634,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -651,7 +658,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/3018543_0_97_1920_1182_600x0_80_0_0_9e7f20dd1bec801816587f7e72f1a907_1653635923.jpeg"
                             alt="{{ url('/css') }}/images/cities/2022/05/27/original/3018543_0_97_1920_1182_600x0_80_0_0_9e7f20dd1bec801816587f7e72f1a907_1653635923.jpeg">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -663,7 +670,7 @@
                             </svg>
                             {{$province[1]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </a>
@@ -687,7 +694,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -709,7 +716,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/da-nang_1653644753.jpg"
                             alt="{{ url('/css') }}/images/cities/2022/05/27/original/da-nang_1653644753.jpg">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -721,7 +728,7 @@
                             </svg>
                             {{$province[2]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </a>
@@ -747,7 +754,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -771,7 +778,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/nha-trang-doc_1653646161.jpg"
                             alt="">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -783,7 +790,7 @@
                             </svg>
                             {{$province[3]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </div>
@@ -810,7 +817,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -834,7 +841,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/sapa_1653647016.jpg"
                             alt="{{ url('/css') }}/images/cities/2022/05/27/original/sapa_1653647016.jpg">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -846,7 +853,7 @@
                             </svg>
                             {{$province[4]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </a>
@@ -870,7 +877,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -892,7 +899,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/quang-ninh_1653646313.jpg"
                             alt="{{ url('/css') }}/images/cities/2022/05/27/original/quang-ninh_1653646313.jpg">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -904,7 +911,7 @@
                             </svg>
                             {{$province[5]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </a>
@@ -929,7 +936,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -953,7 +960,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/nghe-an-2_1653647501.jpg"
                             alt="">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -965,7 +972,7 @@
                             </svg>
                             {{$province[6]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </div>
@@ -991,7 +998,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -1015,7 +1022,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/quang-binh_1653646488.jpg"
                             alt="{{ url('/css') }}/images/cities/2022/05/27/original/quang-binh_1653646488.jpg">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1027,7 +1034,7 @@
                             </svg>
                             {{$province[7]->name}}
                         </p>
-<<<<<<< HEAD
+
                         <p style="color: white;"></p>
                     </span>
                 </a>
@@ -1051,7 +1058,7 @@
                         class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                         <p style="color: white; font-size: 18px;"
                             class="d-flex align-items-center text-uppercase fw-bold mb-0">
-=======
+
                         <span class="item-diem-den-detail d-flex align-items-center justify-content-center flex-column">
                             <p style="color: white; font-size: 18px;"
                                 class="d-flex align-items-center text-uppercase fw-bold mb-0">
@@ -1073,7 +1080,7 @@
                         <img src="{{ url('/css') }}/images/cities/2022/05/27/resized/phu-quoc2_1653645027.jpg"
                             alt="{{ url('/css') }}/images/cities/2022/05/27/original/phu-quoc2_1653645027.jpg">
                         <p class="item-diem-den-title">
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
                             <svg class="me-2" width="17" height="21" viewbox="0 0 17 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1103,18 +1110,22 @@
                         </span>
                     </a>
                 </div>
+
+            </div>
+            <div class="more">
+                <a href="diem-den.htm">Xem thêm <i class="fa fa-arrow-right"></i></a>
+
             </div>
             <div class="more">
                 <a href="diem-den.htm">Xem thêm <i class="fa fa-arrow-right"></i></a>
             </div>
             @endfor
         </div>
-<<<<<<< HEAD
+
         <div class="more">
             <a href="{{route('diemden')}}">Xem thêm <i class="fa fa-arrow-right"></i></a>
         </div>
-=======
->>>>>>> 6bf06133695d0e765be6d0e182148ca27edd8292
+
     </div>
     <div class="block-news block-home" style="margin-top: 80px">
         <div class="container">

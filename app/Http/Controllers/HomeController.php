@@ -30,6 +30,14 @@ class HomeController extends Controller
         return view('user.news.index', compact('province'));
     }
     public function chitiettin(){
+
+
+        $province = DB::table('province')->get();
+        $branch = DB::table('branch')->get();
+        return view('user.news.detail', compact('province'));
+    }
+    public function diemden(){
+
         $province = DB::table('province')->get();
         $branch = DB::table('branch')->get();
         return view('user.news.detail', compact('province'));
