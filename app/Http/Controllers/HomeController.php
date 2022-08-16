@@ -68,4 +68,8 @@ class HomeController extends Controller
         $branch = DB::table('branch')->get();
         return view('user.booking.room', compact('province'));
     }
+    public function thanhtoan(){
+        $province = DB::table('province')->get();
+        return view('user.booking.payment', compact('province'));
+    }
 }

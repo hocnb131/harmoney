@@ -47,8 +47,8 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/register','register')->name('register');
 
 
-
-
+    
+    Route::get('/thanhtoan','thanhtoan')->name('thanhtoan');
     Route::get('/datkhachsan','datkhachsan')->name('datkhachsan');
     Route::get('/datphong','datphong')->name('datphong');
 

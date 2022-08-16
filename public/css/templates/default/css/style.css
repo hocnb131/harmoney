@@ -1090,7 +1090,7 @@ footer .footer-bottom .right {
   width: 100%;
   height: 48px;
   padding: 10px 20px 10px 40px;
-  background-image: url(../../../images/map-pin.svg);
+  background-image: url(/images/map-pin.svg);
   background-repeat: no-repeat;
   background-position: 12px;
   display: flex;
@@ -1123,7 +1123,7 @@ footer .footer-bottom .right {
   font-weight: 400;
   outline: none;
   color: #3c3c3b;
-  background-image: url(../../../images/hotels.svg);
+  background-image: url(/images/hotels.svg);
   background-repeat: no-repeat;
   background-position: center left 12px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1157,17 +1157,17 @@ footer .footer-bottom .right {
   box-shadow: 0 0 8px rgba(0, 40, 100, 0.6);
 }
 .block-book .search .input input#location_search {
-  background-image: url(../../../images/map-pin.svg);
+  background-image: url(/images/map-pin.svg);
   background-repeat: no-repeat;
   background-position: 12px;
 }
 .block-book .search .input input#range_date {
-  background-image: url(../../../images/calendar.svg);
+  background-image: url(/images/calendar.svg);
   background-repeat: no-repeat;
   background-position: 12px;
 }
 .block-book .search .input input#voucher {
-  background-image: url(../../../images/voucher.svg);
+  background-image: url(/images/voucher.svg);
   background-repeat: no-repeat;
   background-position: 12px;
   width: 100%;
@@ -1178,7 +1178,7 @@ footer .footer-bottom .right {
   justify-content: end;
   width: 100%;
   height: 48px;
-  background: url("../../../images/search-trang.svg") #f2a900 center left 25px no-repeat;
+  background: url("/images/search-trang.svg") #f2a900 center left 25px no-repeat;
   padding: 15px 25px 10px;
   border: none;
   border-radius: 3px;

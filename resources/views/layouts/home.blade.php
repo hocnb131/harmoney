@@ -30,8 +30,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/home.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/destination/assets/css/destination.css">
     <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/news/assets/css/detail.css">
-    {{-- <link rel="stylesheet" type="text/css" media="screen" href="{{url('/css')}}/modules/booking/assets/css/home.css"> --}}
-
 
     <link rel="canonical" href="index.htm">
     <link rel="alternate" media="handheld" href="index.htm">
@@ -316,34 +314,6 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="sticky-menu">
-        <ul id="list-example" class="container menu-hotel navigation">
-            <li>
-                <a href="#overview" class="scroll-to">Overview</a>
-            </li>
-            <li>
-                <a href="#list-room-wrapper" class="scroll-to">Rooms Type</a>
-            </li>
-            <li>
-                <a href="#offers" class="scroll-to">Special Offers</a>
-            </li>
-            <li>
-                <a href="#services" class="scroll-to">Services</a>
-            </li>
-            <li>
-                <a href="#position" class="scroll-to">Location</a>
-            </li>
-            <li>
-                <a href="#qna" class="scroll-to">FAQs</a>
-            </li>
-            <li>
-                <a href="#regulation" class="scroll-to">HOUSE RULES</a>
-            </li>
-            <li>
-                <a href="#ranking" class="scroll-to">reviews</a>
-            </li>
-        </ul>
-    </div> --}}
         </div>
         @yield('content-home')
         <footer>
@@ -600,7 +570,5 @@
     <script language="javascript" type="text/javascript" src="modules/hotels/assets/js/booking.js?v=1.73"></script>
     <script language="javascript" type="text/javascript" src="libraries/jquery/jquery.ui/jquery-ui.js?v=1.73"></script>
     <script language="javascript" type="text/javascript" src="modules/foods/assets/js/flickity.pkgd.min.js?v=1.73"></script>
-
 </body>
-
 </html>
